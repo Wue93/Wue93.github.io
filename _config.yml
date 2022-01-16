@@ -29,16 +29,17 @@ keyword: "PMM"
 # RSS: false
 # weibo_username:     false
 zhihu_username:     yi-mi-ba-zhen-yi
-# github_username:    false
+github_username:    Wue93
 pm_id: 763699
+wechat_qr: true
 
 # Build settings
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+anchorjs: true                          
+# if you want to customize anchor. check out line:181 of `post.html`
 
 
 # Disqus settings
 disqus_username: false
-
 
 # Analytics settings
 # Baidu Analytics
@@ -53,7 +54,8 @@ sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: 
   "吴仪，PMM，读书人。
   公众号/播客: 事外"
-sidebar-avatar: img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: img/avatar.jpg      
+# use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 # Featured Tags

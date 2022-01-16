@@ -48,7 +48,6 @@ layout: layout
                 </section>
                 <% }%>
 
-
                 <!-- Friends Blog -->
                 <% if(config.friends) { %>
                 <hr>
@@ -74,7 +73,6 @@ layout: layout
             ">
             
                 <%- page.content || body %>
-
                 <!-- 如果开启评论功能 -->
                 <% if(page.comments) { %>
                     <hr>
@@ -185,8 +183,31 @@ layout: layout
                             <p><%= config['sidebar-about-description'] %></p>
                         <% }%>
 
-                        <!-- SNS Link -->
+                        <!-- SNS Links -->
                         <ul class="list-inline">
+                            <% if (config.wechat_qr) { %>
+                                <script type="text/javascript">
+                                    function  showImg(){
+                                    document.getElementById("wxImg").style.display='block';
+                                    }
+                                    function hideImg(){
+                                    document.getElementById("wxImg").style.display='none';
+                                    }
+                                </script>
+                                <li>  
+                                    <a href="javascript:void(0)" onMouseOut="hideImg()"  onmouseover="showImg()">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-wechat fa-stack-1x fa-inverse">
+                                            </i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <div id="wxImg" style="display:none;position:absolute;">
+                                    <img src="img/wechat-qr.jpg" >
+                                </div>
+                            <% } %>
+
                             <% if (config.RSS) { %>
                                 <li>
                                     <a href="<%= config.root + 'feed.xml' %>">
@@ -197,16 +218,7 @@ layout: layout
                                     </a>
                                 </li>
                             <% } %>
-                            <% if (config.twitter_username) { %>
-                                <li>
-                                    <a target="_blank" href="https://twitter.com/<%= config.twitter_username %>">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            <% } %>
+                            
                             <% if (config.zhihu_username) { %>
                                 <li>
                                     <a target="_blank" href="https://www.zhihu.com/people/<%= config.zhihu_username %>">
@@ -229,17 +241,6 @@ layout: layout
                                 </li>
                             <% } %>
 
-                            <% if (config.facebook_username) { %>
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/<%= config.facebook_username %>">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            <% } %>
-
                             <% if (config.github_username) { %>
                                 <li>
                                     <a target="_blank"  href="https://github.com/<%= config.github_username %>">
@@ -251,23 +252,22 @@ layout: layout
                                 </li>
                             <% } %>
 
-                            <% if (config.pm_id) { %>
-                                <li>
-                                    <a target="_blank"  href="http://www.woshipm.com/u/<%= config.pm_id %>" >  
-                                        
-                                        <img src="pm.svg" height="30" alt="人人都是产品经理" style="cursor:pointer;" >
-                                        
-                                    </a>
-                                </li>
-                            <% } %>
-                            
-                            
                             <% if (config.linkedin_username) { %>
                                 <li>
                                     <a target="_blank"  href="https://www.linkedin.com/in/<%= config.linkedin_username %>">
                                         <span class="fa-stack fa-lg">
                                             <i class="fa fa-circle fa-stack-2x"></i>
                                             <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            <% } %>
+
+                            <% if (config.pm_id) { %>
+                                <li>
+                                    <a target="_blank"  href="http://www.woshipm.com/u/<%= config.pm_id %>" >  
+                                        <span class="fa-stack fa-lg">
+                                            <img src="img/pm.svg" height="30" alt="人人都是产品经理" style="cursor:pointer;" >
                                         </span>
                                     </a>
                                 </li>
@@ -281,7 +281,6 @@ layout: layout
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
-
                     <% config.friends.forEach(function(friend){ %>
                         <li><a href="<%= friend.href %>" target="_blank"><%= friend.title %></a></li>
                     <% }); %>
