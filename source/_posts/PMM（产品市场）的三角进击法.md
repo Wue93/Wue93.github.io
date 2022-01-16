@@ -1,6 +1,8 @@
 ---
 title: PMM（产品市场）的三角进击法
 date: 2021-11-03 20:58:22
+categories:
+    - Work
 tags:
     - PMM
     - 产品市场经理
