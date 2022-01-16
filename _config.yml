@@ -84,12 +84,9 @@ sitemap:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
-archive_dir: i_dont_wanna_use_default_archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+# tag_dir: tags
+archive_dir: archive
+# category_dir: categories
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -121,7 +118,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 6
+per_page: 0
 pagination_dir: page
 
 # Extensions
