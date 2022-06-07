@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wue93.github.io/archive/index.html</loc>
+    <loc>https://wue93.github.io/about/index.html</loc>
     
     <lastmod>2022-06-07</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://wue93.github.io/about/index.html</loc>
+    <loc>https://wue93.github.io/archive/index.html</loc>
     
     <lastmod>2022-06-07</lastmod>
     
@@ -294,20 +294,6 @@
   </url>
   
   <url>
-    <loc>https://wue93.github.io/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/</loc>
-    <lastmod>2022-06-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wue93.github.io/tags/%E4%BA%BA%E7%94%9F%E6%80%9D%E8%80%83/</loc>
-    <lastmod>2022-06-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://wue93.github.io/tags/%E4%BA%A7%E5%93%81%E5%B8%82%E5%9C%BA%E7%BB%8F%E7%90%86/</loc>
     <lastmod>2022-06-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -316,6 +302,20 @@
   
   <url>
     <loc>https://wue93.github.io/tags/B2B%E8%90%A5%E9%94%80/</loc>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wue93.github.io/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/</loc>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wue93.github.io/tags/%E4%BA%BA%E7%94%9F%E6%80%9D%E8%80%83/</loc>
     <lastmod>2022-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
