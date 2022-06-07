@@ -245,34 +245,6 @@
 
   
   <url>
-    <loc>https://wue93.github.io/tags/PMM/</loc>
-    <lastmod>2022-06-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wue93.github.io/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/</loc>
-    <lastmod>2022-06-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wue93.github.io/tags/%E5%95%86%E4%B8%9A%E5%8C%96/</loc>
-    <lastmod>2022-06-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wue93.github.io/tags/%E4%BA%A7%E5%93%81%E5%95%86%E4%B8%9A%E5%8C%96/</loc>
-    <lastmod>2022-06-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://wue93.github.io/tags/%E9%98%B6%E6%AE%B5%E6%80%9D%E8%80%83/</loc>
     <lastmod>2022-06-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -287,7 +259,35 @@
   </url>
   
   <url>
+    <loc>https://wue93.github.io/tags/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/</loc>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://wue93.github.io/tags/%E4%BA%A7%E5%93%81%E8%90%A5%E9%94%80/</loc>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wue93.github.io/tags/PMM/</loc>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wue93.github.io/tags/%E4%BA%A7%E5%93%81%E5%95%86%E4%B8%9A%E5%8C%96/</loc>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wue93.github.io/tags/%E5%95%86%E4%B8%9A%E5%8C%96/</loc>
     <lastmod>2022-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -366,14 +366,14 @@
 
   
   <url>
-    <loc>https://wue93.github.io/categories/Work/</loc>
+    <loc>https://wue93.github.io/categories/Life/</loc>
     <lastmod>2022-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wue93.github.io/categories/Life/</loc>
+    <loc>https://wue93.github.io/categories/Work/</loc>
     <lastmod>2022-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
