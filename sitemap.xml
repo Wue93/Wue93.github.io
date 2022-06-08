@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wue93.github.io/tags/index.html</loc>
+    <loc>https://wue93.github.io/2022/06/08/%E6%89%93%E9%80%A0%E5%86%85%E5%AE%B9%E8%90%A5%E9%94%80%E6%88%98%E7%95%A5%E9%97%AD%E7%8E%AF/</loc>
     
     <lastmod>2022-06-08</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://wue93.github.io/2022/06/08/%E6%89%93%E9%80%A0%E5%86%85%E5%AE%B9%E8%90%A5%E9%94%80%E6%88%98%E7%95%A5%E9%97%AD%E7%8E%AF/</loc>
+    <loc>https://wue93.github.io/tags/index.html</loc>
     
     <lastmod>2022-06-08</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://wue93.github.io/2021/04/09/%E8%B7%9F%E7%9D%80%E8%BF%995%E6%9C%AC%E7%BB%8F%E5%85%B81/</loc>
+    <loc>https://wue93.github.io/2021/08/08/%E8%B7%9F%E7%9D%80%E8%BF%995%E6%9C%AC%E5%A5%BD%E4%B9%A6%EF%BC%8C%E6%80%9D%E8%80%83%E4%BA%A7%E5%93%81%E5%95%86%E4%B8%9A%E5%8C%96/</loc>
     
     <lastmod>2022-06-07</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://wue93.github.io/2021/08/08/%E8%B7%9F%E7%9D%80%E8%BF%995%E6%9C%AC%E5%A5%BD%E4%B9%A6%EF%BC%8C%E6%80%9D%E8%80%83%E4%BA%A7%E5%93%81%E5%95%86%E4%B8%9A%E5%8C%96/</loc>
+    <loc>https://wue93.github.io/2021/04/09/%E8%B7%9F%E7%9D%80%E8%BF%995%E6%9C%AC%E7%BB%8F%E5%85%B81/</loc>
     
     <lastmod>2022-06-07</lastmod>
     
@@ -326,13 +326,6 @@
   </url>
   
   <url>
-    <loc>https://wue93.github.io/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://wue93.github.io/tags/%E4%BA%BA%E7%94%9F%E6%80%9D%E8%80%83/</loc>
     <lastmod>2022-06-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -341,6 +334,13 @@
   
   <url>
     <loc>https://wue93.github.io/tags/%E5%93%B2%E5%AD%A6/</loc>
+    <lastmod>2022-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wue93.github.io/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/</loc>
     <lastmod>2022-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
