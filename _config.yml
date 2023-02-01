@@ -6,7 +6,7 @@
 title: Stay Out Space
 subtitle: 新生活是你将前往的荒野。
 author: Wue
-language:
+language: zh-CN
 timezone:
 
 # URL
@@ -43,7 +43,6 @@ disqus_username: false
 
 # Analytics settings
 # Baidu Analytics
-# ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 # ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 #ga_domain: huangxuan.me
