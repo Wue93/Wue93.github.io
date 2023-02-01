@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wue&#39;s blog">
+    <meta name="keyword"  content="PMM">
+    <link rel="shortcut icon" href="/img/shiwai.jpg">
+
+    <title>
+        
+          PMM（产品市场）的三角进击法 - Stay Out Space
+        
+    </title>
+
+    <link rel="canonical" href="https://Wue93.github.io/2021/11/03/PMM（产品市场）的三角进击法/">
+
+    <!-- Bootstrap Core CSS -->
+    
+<link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="../../../../css/hux-blog.min.css">
+
+
+    <!-- Pygments Highlight CSS -->
+    
+<link rel="stylesheet" href="../../../../css/highlight.css">
+
+
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script></script>
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="atom.xml" title="Stay Out Space" type="application/atom+xml">
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Stay Out Space</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://Wue93.github.io/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/home-bg.jpg')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#PMM" title="PMM">PMM</a>
+                        
+                          <a class="tag" href="/tags/#产品商业化" title="产品商业化">产品商业化</a>
+                        
+                          <a class="tag" href="/tags/#产品市场经理" title="产品市场经理">产品市场经理</a>
+                        
+                          <a class="tag" href="/tags/#B2B营销" title="B2B营销">B2B营销</a>
+                        
+                    </div>
+                    <h1>PMM（产品市场）的三角进击法</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by Wue on
+                        2021-11-03
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <div align="center"> <img src=fig1.jpg width=105% /> </div>
+<p>随着国内B2B、SaaS 公司的发展，to B产品营销的职能越来越细分，除了大型公司以外，更多B-C轮的公司开始设置PMM（产品市场）岗位。这是一个不同于产品运营和市场营销的岗位，伴随着市场的高度细分才逐渐活跃在人们眼前。</p>
+<p><strong>那么PMM（产品市场）到底是做什么的呢？<strong>人们常说PMM是连接产品、市场、用户的桥梁，而我现在认为</strong>PMM的工作就是在挖掘一条让产品价值流动起来的河流</strong>。这条河流，从产品初心，也就是用户价值出发，创造一个传递的通道，让市场营销、品牌公关、销售与商业化同事能够从这条河流里汲取他们所需要的营养，最常见的体现就是——工具，其呈现方式可以是培训、deck、线上活动、线下活动等。</p>
+<p>国内的资深PMM群体很有限，现状可能更多的是，具有市场sense的人学习国外较为成熟的方法论，借鉴经验，进行本土化实践的过程。当一个人接触过销售、内容、运营、市场、产品等多个方面，通常会发现很多事情都是触类旁通的，只要不设限，PMM其实不是一个不可挑战的岗位。</p>
+<p>在我从事PMM的过程中，曾尝试建立自己的GTM方法论，我将其总结为**“PMM的三角进击法”，其实也就是GTM的ABC三个面向**。</p>
+<div align="center"> <img src=fig2.jpg /> </div>
+<h2 id="gtm的a面：策略与框架">GTM的A面：策略与框架</h2>
+<p>PMM 的核心职责就是更好地传递产品价值，赋能商业化与业务团队，为更高的营收目标努力。因此作为一个职责边界并不那么明确的岗位，为了与同事们更好地协作，需要让你自己和你的团队，乃至所有与GTM相关的伙伴都明确一个共同的GTM框架，那就是“识别——开发——放大”。这也是传递产品价值，撬动客户的过程。</p>
+<div align="center"> <img src=PMM三角进击法2.PNG width=105% /> </div>
+<ol>
+<li><strong>识别</strong>：PMM最好在产品调研与设计之初就参与进去，了解需求背景，深入产品经理想要实现的目标，并且与更广泛的受众建立联系，收集更多的关键信息，这些都将帮助我们开发潜在客群，明确产品的阵地与价值，为下一步的具体产出提供指南。否则，下一步进行再多再美观的物料制作都是华而不实的设计品，而非用户想看的干货。</li>
+<li><strong>开发</strong>：这里的开发不是说直接去开发客户，而是指开发出营销、销售团队所需要的各类营销工具，例如制定针对不同行业的营销策略，制定线上线下活动计划，开发不同形式的营销物料（营销话术、白皮书、文章、视频）等。</li>
+<li><strong>放大</strong>：在放大这个部分，市场团队将发挥更大的作用，而PMM更多的是需要提供支撑，以及策略和方案上的引导。</li>
+</ol>
+<p>SAS建立了一个全球GTM架构，设置了GTM办公室和营销内容共享平台。由GTM办公室来统筹营销策略，识别关键信息，开发阵地，放大价值。由营销内容共享平台来提供一个坚实的内容资源库，确定全球的营销口径的统一和品牌的有效管理，在此基础上全球各地的团队进行一定的差异化利用。对于具备一定规模的企业来说，我认为这是一种很好的方式，能够避免重复造轮子。</p>
+<h2 id="gtm的b面：流程意识">GTM的B面：流程意识</h2>
+<p>产品GTM是一个流程，而不是一个事件或一项任务。在不同的公司、在公司不同的阶段、在不同的团队，PMM所做的事情都不太一样，只要明确宗旨是创造优秀的营销效果，那么即使在不同时间参与不同环节，做不一样的事情，其本质上都是一个GTM流程，有了高效流程，就可以引领自己更好地开展工作。</p>
+<div align="center"> <img src=PMM三角进击法3.PNG width=105% /> </div>
+<h3 id="认识流程">认识流程</h3>
+<p>作为一名PMM，你的流程就是收集所需信息，研究用户，设计GTM方案，确保方案正确实施，并评估其实施效果。不过也要明确你所在的公司还有一套完成整个盈利的大流程，有不同板块的小流程耦合运作。对于大厂来说，这个流程可能极为繁复，不仅涉及PMM，还涉及商业化、产品研发、项目经理，以及其他市场营销人员等。在你刚开始一个新的项目或一份新的工作时，要了解公司给你的定位，以此来适应公司这个“大机器”的运转模式。</p>
+<blockquote>
+<p>“如果一个人不清楚自己要驶向哪一个港口，那么所有的风向都是不利的。”</p>
+</blockquote>
+<p>除了了解“大流程”以外，你还需要清楚公司的战略，战略是公司打算如何达成目标的道路，它是你的进攻计划。这个计划包括如何分配资源，在什么时候，在什么赛道，向什么人/企业推销什么东西。战术则是为了执行这个较长期限的战略，每天要采取的具体行动，是流程中的各个环节。</p>
+<h3 id="优化流程">优化流程</h3>
+<p>无流程则无优化，无论是具体岗位工作的流程、跨团队协作的流程，还是公司的流程，都可以不断优化。优化流程，就相当于是给河流清除淤泥。你应该知道PMM最理想的做法是怎样的，针对当前的公司与产品现状，你怎么样做是最佳方案，而不仅仅是公司期望这个岗位怎么做。因为在国内的B2B公司中，PMM并非一个普遍存在的岗位，可以算是一个新兴的业务领域，所以请不要等待你的上级指导你怎么做。</p>
+<p>如果你刚成为一名PMM，抑或刚加入一个新的团队/公司，那么就需要跟你的上级与同事了解清楚整个商业化、GTM的流程，在商业化流程中，PMM越早参与越好。并且还可以与其他团队的同事聊聊，收集他们对于如何优化GTM流程及对PMM的期望的相关信息。</p>
+<p>如果当前团队各项流程都是空缺或者非标准化的，那么可以发挥自己的聪明才智梳理流程，并在实践中不断迭代它。如果公司的流程迫使你完成糟糕的策划或内容，那么请challenge它，在力所能及的范围内，做出改善。总之，就是为传递产品的价值不断清除淤泥。</p>
+<h2 id="gtm的c面：商业化包装">GTM的C面：商业化包装</h2>
+<h3 id="最佳实践-才是企业营销传播的主要内容">最佳实践 才是企业营销传播的主要内容</h3>
+<p>虽然我们身处科技领域，但是需要明确的是我们要做的营销传播应该围绕“整体产品”的“最佳实践”，而不仅仅是聚焦于技术创新层面。《跨越鸿沟》里面说，企业的营销传播不能仅从技术方面来考虑，对商业机遇的传播应该起源于一种新的机会，或一个存在已久的问题。“最佳实践”就是解决这个问题的最佳解决方案。</p>
+<p>仅仅强调技术性的突破，只能博取一部分人的青睐，面对国内复杂的商业环境，PMM如何突破产品的复杂性来传递核心价值？我认为，通过核心为“最佳实践”的“五层包装法”，建立起产品营销弹药库，是一种良好的解决方案。</p>
+<div align="center"> <img src=PMM三角进击法4.PNG width=105% /> </div>
+<h3 id="何为“五层包装法”？">何为“五层包装法”？</h3>
+<p>随着SaaS对B2B软件行业的革新，产品即服务的理念越来越深入人心，对于企业客户来说，其对SaaS的需求不是单维的，往往包含着组织提效、业务增长、战略布局等多维诉求。因此即使是面向B端的SaaS产品，也要从全局来审视，传递多维诉求的对策。PMM作为销售赋能和价值传递的角色，需要为自己的产品设计一套产品商业化包装体系，尤其是当你所负责的产品是一个涵盖多个子产品或产品线的一站式平台时。</p>
+<ol>
+<li>基础层: 包含了产品的基本规格，UI/UX层面的塑造，功能与界面的文案包装，售卖协议与相关手册等。在国外的一些公司，产品上出现的文案不是产品经理或产品运营撰写的，而是由专岗的内容工程师负责，这就是基础层包装的一种极致体现。</li>
+<li>附加层: 可以理解为包含了实施交付、产品培训、优惠增值等附加服务的包装。这是为客户提供产品所需要附加的部分，构成服务的一部分。例如客户成功服务体系的价值包装与输出。</li>
+<li>核心层: 我认为SaaS的核心层就是产品的最佳实践，因为客户购买产品不仅仅是购买一个系统或工具，其真正想要的是借由这个系统或工具所能提供的针对企业问题或诉求的解答。让你的产品成为客户问题的最佳实践，指导你的客户去践行，这是核心层的宗旨。具体而言，这也是为什么在B2B营销中，解决方案和客户案例的打造极为重要的原因。值得注意的是，目前PLG策略也越来越深入人心，在核心层包装上，可以体现为打造产品层面的低门槛、易协同、易分享等。</li>
+<li>期望层: 对目标产品的属性及功能等的认知以及对产品的心理要求，这就是期望层，它是一整套属性和条件。在B2B领域，典型的包装方式有客户证言包装，品牌荣誉奖项申报等。</li>
+<li>潜在层: 潜在层通常是不那么直观，不那么容易做到的，更多的是指一种创新和对行业趋势的捕捉，在前四层没有打牢的情况下，或许不必强求自己在潜在层费太多精力。</li>
+</ol>
+<p>这个方法论是基于科特勒的五层次产品理论而来，产品创意和设计，产品营销的策略与设计都可以从中获得启发。对于PMM来说，建立立体化的五层次商业化包装体系，能够避免内容营销方面的因小失大，因琐碎而失深度，因具体而失全局等问题。</p>
+<h2 id="结语">结语</h2>
+<p>关于“三角进击法”，本文仅作简单分享，每个部分落在实践中都有很多精细的内容需要探讨。做好PMM（产品市场），需要一种区别于内容营销与产品经理的视野，也需要有应对不同体裁要求能创作出不同作品的创造力，更需要跨团队协作与沟通能力，道阻且长，值得挑战。国内的PMM目前还是一个相对小众的从业群体，而交流会让实践中的智慧流动起来。欢迎与我交流，一起探讨有关PMM的话题。</p>
+<p><em>关于PMM与产品商业化的往期文章</em>：</p>
+<a href="/2021/08/08/%E8%B7%9F%E7%9D%80%E8%BF%995%E6%9C%AC%E5%A5%BD%E4%B9%A6%EF%BC%8C%E6%80%9D%E8%80%83%E4%BA%A7%E5%93%81%E5%95%86%E4%B8%9A%E5%8C%96/" title="《跟着这5本好书，思考 to B 产品商业化》">《跟着这5本好书，思考 to B 产品商业化》</a>
+<a href="/2021/04/09/%E8%B7%9F%E7%9D%80%E8%BF%995%E6%9C%AC%E7%BB%8F%E5%85%B81/" title="《跟着这5本经典，做好「产品市场经理」》">《跟着这5本经典，做好「产品市场经理」》</a>
+<p><em>参考资料</em>：</p>
+<blockquote>
+<p>《跨越鸿沟》杰弗里·摩尔<br>
+《营销管理分析、计划、执行与控制》科特勒<br>
+《智慧营销：营销部门数字化转型指南》阿黛尔·斯威特伍德<br>
+《从零开始打造商业化产品》杨新雷</p>
+</blockquote>
+
+
+                <hr>
+
+                
+
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2021/11/30/白皮书制作指南/" data-toggle="tooltip" data-placement="top" title="白皮书制作指南：一本白皮书就是一个项目">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2021/11/02/四分之一人生阶段/" data-toggle="tooltip" data-placement="top" title="四分之一人生阶段：如何理解“意义感缺失”">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                
+
+                
+
+            </div>
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#PMM" title="PMM">PMM</a>
+                        
+                          <a class="tag" href="/tags/#产品商业化" title="产品商业化">产品商业化</a>
+                        
+                          <a class="tag" href="/tags/#产品市场经理" title="产品市场经理">产品市场经理</a>
+                        
+                          <a class="tag" href="/tags/#B2B营销" title="B2B营销">B2B营销</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted">
+                    Copyright &copy; Stay Out Space 2023 
+                    <br>
+                    Made with love by <a href="https://Wue93.github.io">Wue</a> 
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+<script src="../../../../js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="../../../../js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="../../../../js/hux-blog.min.js"></script>
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://Wue93.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="https://Wue93.github.io/img/shiwai.jpg" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
