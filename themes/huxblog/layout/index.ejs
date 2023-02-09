@@ -16,12 +16,17 @@ layout: page
     %>
     <li class="active">
         <a href="#work" data-toggle="tab">
-            职场思索
+            Profession
         </a>
     </li>
     <li>
         <a href="#life" data-toggle="tab">
-            人生思索
+            Life
+        </a>
+    </li>
+    <li>
+        <a href="#podcast" data-toggle="tab">
+            Podcast
         </a>
     </li>
 </ul>
@@ -53,6 +58,30 @@ layout: page
 
     <div class="tab-pane fade" id="life">
         <% post_list["Life"].map(function(post){ %>
+            <div class="post-preview">
+                <a href="<%- config.root %><%- post.path %>">
+                    <h2 class="post-title">
+                        <%- post.title || "Untitled" %>
+                    </h2>
+                    <h3 class="post-subtitle">
+                        <%- post.subtitle || "" %>
+                    </h3>
+                    <div class="post-content-preview">
+                        <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>...
+                    </div>
+                </a>
+                <p class="post-meta">
+                    Posted by <%- post.author || config.author %> on
+                    <%= post.date.format(config.date_format) %>
+                </p>
+            
+            </div>
+            <hr>
+            <% }); %>
+    </div>
+
+    <div class="tab-pane fade" id="podcast">
+        <% post_list["Podcast"].map(function(post){ %>
             <div class="post-preview">
                 <a href="<%- config.root %><%- post.path %>">
                     <h2 class="post-title">
