@@ -3,7 +3,7 @@ layout: "about"
 title: "About"
 date: 2021-10-28 11:24:33
 description: "Hey, this is Wue."
-header-img: "img/about-bg.jpg"
+header-img: "img/home-bg.jpg"
 comments: false
 ---
 
