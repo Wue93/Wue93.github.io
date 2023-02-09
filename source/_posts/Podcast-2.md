@@ -2,7 +2,7 @@
 title: Vol.2 从个体感受到星火力量，我们如何谈论女性？
 categories:
   - Podcast
-date: 2023-02-09 22:38:58
+date: 2022-01-12 22:38:58
 tags:
  - 播客
 ---

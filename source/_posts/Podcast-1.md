@@ -3,7 +3,7 @@ title: Vol.1 旅行，是大型表演也是反结构的“仪式过程”
 catalog: true
 categories:
   - Podcast
-date: 2023-02-09 22:38:58
+date: 2021-09-20 22:38:58
 tags:
  - 播客
 ---
