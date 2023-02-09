@@ -208,6 +208,16 @@ layout: layout
                                 </div>
                             <% } %>
 
+                            <% if (config.pm_id) { %>
+                                <li>
+                                    <a target="_blank"  href="http://www.woshipm.com/u/<%= config.pm_id %>" >  
+                                        <span class="fa-stack fa-lg">
+                                            <img src="/img/pm.svg" height="30" alt="人人都是产品经理" style="cursor:pointer;" >
+                                        </span>
+                                    </a>
+                                </li>
+                            <% } %>
+
                             <% if (config.RSS) { %>
                                 <li>
                                     <a href="<%= config.root + 'feed.xml' %>">
@@ -258,16 +268,6 @@ layout: layout
                                         <span class="fa-stack fa-lg">
                                             <i class="fa fa-circle fa-stack-2x"></i>
                                             <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            <% } %>
-
-                            <% if (config.pm_id) { %>
-                                <li>
-                                    <a target="_blank"  href="http://www.woshipm.com/u/<%= config.pm_id %>" >  
-                                        <span class="fa-stack fa-lg">
-                                            <img src="/img/pm.svg" height="30" alt="人人都是产品经理" style="cursor:pointer;" >
                                         </span>
                                     </a>
                                 </li>
