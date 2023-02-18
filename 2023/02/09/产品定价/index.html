@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wue&#39;s blog">
+    <meta name="keyword"  content="PMM">
+    <link rel="shortcut icon" href="/img/shiwai.jpg">
+
+    <title>
+        
+          产品定价：走近战略定价金字塔 - Stay Out Space
+        
+    </title>
+
+    <link rel="canonical" href="https://Wue93.github.io/2023/02/09/产品定价/">
+
+    <!-- Bootstrap Core CSS -->
+    
+<link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="../../../../css/hux-blog.min.css">
+
+
+    <!-- Pygments Highlight CSS -->
+    
+<link rel="stylesheet" href="../../../../css/highlight.css">
+
+
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script></script>
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="atom.xml" title="Stay Out Space" type="application/atom+xml">
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Stay Out Space</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://Wue93.github.io/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/home-bg.jpg')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#产品商业化" title="产品商业化">产品商业化</a>
+                        
+                          <a class="tag" href="/tags/#产品营销" title="产品营销">产品营销</a>
+                        
+                          <a class="tag" href="/tags/#定价" title="定价">定价</a>
+                        
+                    </div>
+                    <h1>产品定价：走近战略定价金字塔</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by Wue on
+                        2023-02-09
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p><img src="2023-02-09T215628.png" alt="2023-02-09T215628"></p>
+<p>对于 Product Marketing 而言，Pricing 是不必可少的一环，不过跟同行交流下来，国内的 Product Marketing 在不同的公司中职能内容可能都不太一样，因此涉及定价工作的不多。而产品经理怎么做定价的各类小文章一搜倒是一大把。过去一段时间，我针对「产品定价」做了一番专题学习，也正在工作中逐步实践。今日进行一番总结，希望可以跟大家一起走近战略定价金字塔。</p>
+<p>小提醒：</p>
+<ul>
+<li>本文内容结合《定价战略与战术》与笔者自己的思考进行提炼。</li>
+<li>本文内容相对适合产品团队在做新产品探索、推动MVP-PMF阶段进行实践学习。</li>
+<li>本文内容不包含非常成熟的大公司或处于成熟阶段的产品会细化的定价政策与条款，相对适合并未构建复杂定价体系的情况。</li>
+</ul>
+<h2 id="战略定价金字塔是什么"><a href="#战略定价金字塔是什么" class="headerlink" title="战略定价金字塔是什么"></a>战略定价金字塔是什么</h2><p>人们通常从什么样的视角来看待定价这件事？</p>
+<p>一种常见的思路是，从目标市场的选择、竞争对手分析、用户分析，然后到产品价值定位、定价策略选择等流程来进行；今天为你分享的就是另一种思路——“战略定价金字塔”模型。</p>
+<p><img src="2023-02-09T215759.png" alt="2023-02-09T215759"></p>
+<p>这个金字塔分为五层：</p>
+<ol>
+<li>底层是创造顾客真正可认知的价值，这也是企业赖以生存的根本；</li>
+<li>在价值基础上，确定相应的价格结构，切割细分市场，利用一定的规则进行定价区隔与控制；</li>
+<li>结构完成后，产品营销就应该制定出相应的信息与工具，向目标顾客充分传递和沟通产品的价值；</li>
+<li>在最终的价格设定前，还需要有一整套的定价政策，以帮助销售团队更好地应对客户的挑战或竞争者的打击；</li>
+<li>最终，完成具体的价格设定，促成持续盈利的目标。</li>
+</ol>
+<p>无论是统筹定价体系构建，还是参与定价工作，这个战略定价金字塔模型都有利于我们理解从价值创造、沟通到执行的定价逻辑。下面我们来看看其中1、3、5三个层级的内容，这三个层级也是更适合当下的我们（产品与产品营销角色）来实践的，2、4则简单带过。</p>
+<h2 id="战略定价金字塔如何实操"><a href="#战略定价金字塔如何实操" class="headerlink" title="战略定价金字塔如何实操"></a>战略定价金字塔如何实操</h2><h3 id="1、价值创造-⭐️"><a href="#1、价值创造-⭐️" class="headerlink" title="1、价值创造 ⭐️"></a>1、价值创造 ⭐️</h3><p>作为供需关系中的供货方，我们为客户提供商品，满足客户需求，从而产生价值。那么，最基础的问题便是，如何评估客户价值？</p>
+<p>客户价值可以分为经济价值和心理价值，对于C端客户来说，心理价值不容忽视，对于B端客户来说，则更侧重于经济价值。因此我们主要来说说经济价值怎么估算。</p>
+<p>经济价值的估算，涉及到4个重要的概念，分别是总经济价值、参考价值、差异化价值、价值驱动因素。</p>
+<p><img src="2023-02-09T215848.png" alt="2023-02-09T215848"></p>
+<ul>
+<li>总经济价值，通常就是客户愿意为了产品所付出的最高金额。不同细分客群，即使是同样的价值驱动因素，对应的价值也是不一样的。</li>
+<li>差异化价值，是指我们的产品或服务跟已有的解决方案或产品之间的不同，给客户带来的价值，可以是正的，也可以是负的。比如我们提供的早期产品可能不如市场中的已有产品，那么负差异化价值就会比较大，这也是我们需要正视的地方。</li>
+<li>参考价值，是指目前已有的解决方案或产品的价值，客户所愿意为之付出的金额。</li>
+<li>价值驱动因素，就是我们产品最关注的东西，通常是需要客户深度访谈、行业专家访谈等调研后确定，主要基于了解客户企业内部的业务价值链。对于客户访谈与调研，这通常是产品经理团队已经在做的事情，只是刚开始可能不会太关注怎么利用这个过程来帮助我们做定价。</li>
+</ul>
+<p>下面我以招商加盟企业采购展厅数据大屏（含软硬件）为例，列出<strong>价值驱动因素的计算方法</strong>，仅供参考：</p>
+<p><img src="2023-02-09T215916.png" alt="2023-02-09T215916"></p>
+<p>价值驱动因素的差异，也是我们切割细分市场的根本依据。传统的细分市场划分方式通常就是按照行业进行，但是对于同一个行业而言，其存在的客户群体可能会有千差万别之处。因此，基于价值做市场细分，能够帮助我们更精准地理解客户需求，更准确地彰显价值。</p>
+<p><strong>如何进行基于价值的市场细分？</strong></p>
+<p>第一步，确定基本的细分标准</p>
+<ul>
+<li>首先，需要对整体市场进行描述概括，以确定明显的细分市场,以及这些细分市场之间的区别。这类基本分析所需要的信息输入来源主要包括：细分市场研究、行业数据库、官方统计数据和其他二手研究资源；输出的分析结果则包括购买模式、客户描述、当前客户需求初步清单和未被满足的客户需求列表等等。</li>
+<li>其次，设计出初步的细分方案。</li>
+<li>再次，检查这些初步细分方案对于销售、市场人员来说是否有道理。</li>
+</ul>
+<p>第二步，确定区别性的价值驱动因素</p>
+<ul>
+<li>深度访谈，提供关键信息；</li>
+<li>行业专家、经销商和销售人员可以提供补充信息；</li>
+</ul>
+<p>第三步，确定你的执行限制和执行优势</p>
+<p>在这一步骤，需要考虑经验、资本支出计划、个人能力和公司整体战略。比如私有化部署和SaaS 云端，对于企业来说就是一种执行限制。</p>
+<p>第四步，创建一级和二级细分市场</p>
+<p><img src="2023-02-09T215957.png" alt="2023-02-09T215957"></p>
+<p>第五步，建立具体的细分市场描述</p>
+<p>为便于区分而进行的更具体的细分市场描述，这份描述同时也是在进行定价沟通的过程中，与前线团队降低沟通成本的有利工具。建议列出每一类客户的需求、代表性客户，以及关键市场数据，尽可能量化不同细分市场之间的区别。</p>
+<p>第六步，设定细分市场的计量单位和区隔</p>
+<h3 id="2、价格结构"><a href="#2、价格结构" class="headerlink" title="2、价格结构"></a>2、价格结构</h3><h4 id="价格-产品组合设计"><a href="#价格-产品组合设计" class="headerlink" title="价格-产品组合设计"></a>价格-产品组合设计</h4><ul>
+<li>优化产品捆绑销售</li>
+<li>设计针对特定细分市场的捆绑销售</li>
+<li>战略性“松绑”</li>
+</ul>
+<h4 id="价格计量单位"><a href="#价格计量单位" class="headerlink" title="价格计量单位"></a>价格计量单位</h4><ol>
+<li>创造优良的价格计量单位<ul>
+<li>紧扣各个细分市场的价值差异</li>
+<li>紧扣为各个细分市场提供服务的成本差异</li>
+<li>易于测度和实施</li>
+<li>具有竞争优势</li>
+<li>配合客户的价值体验</li>
+</ul>
+</li>
+<li>基于绩效的计量单位</li>
+<li>搭售的计量单位</li>
+</ol>
+<h4 id="价格区隔"><a href="#价格区隔" class="headerlink" title="价格区隔"></a>价格区隔</h4><p>价格区隔是指客户为了获得价格折扣或奖励而必须遵守的政策、规则及程序等要求，例如最小购买量要求、按时间的会员资格及打包购买要求等。区隔方式有很多种，我们可以从多个维度来思考，比如区域战略、阶段规划、促销策略等，四种常见的区分方式如下所示：</p>
+<ul>
+<li>客户身份区隔</li>
+<li>购买地点区隔</li>
+<li>购买时间区隔</li>
+<li>购买数量区隔</li>
+</ul>
+<h3 id="3、价格和价值沟通-⭐️"><a href="#3、价格和价值沟通-⭐️" class="headerlink" title="3、价格和价值沟通 ⭐️"></a>3、价格和价值沟通 ⭐️</h3><p>价格和价值沟通是指我们定价的同时，需要考虑到这个价格策略在传达出去的时候，需要注意的问题，否则自己认为很完美的定价方案，其实客户很难接受。</p>
+<p>在价值沟通上需要注意这四个点：</p>
+<ul>
+<li>价值信息要适应产品特性。</li>
+<li>价值信息要适应客户购买情境。比如对于集团性客户，同样的产品在不同客户的招投标过程中，策略也是不同。</li>
+<li>适应购买流程。不同的购买流程，价值的体现也是不同的。</li>
+<li>协调购买流程中的参与者。比如我们定价的时候，要把商务折扣的空间考虑进去，给商务人员以方便。</li>
+</ul>
+<p>价格沟通则需要注意这四个点：</p>
+<ul>
+<li>价格比例评估</li>
+<li>参考价格</li>
+<li>对公平的认知</li>
+<li>收益损失框架</li>
+</ul>
+<p>以产品MVP阶段为例，价值沟通策略与价格沟通策略 示意如下：</p>
+<p><img src="2023-02-09T220211.png" alt="2023-02-09T220211"></p>
+<h3 id="4、定价政策"><a href="#4、定价政策" class="headerlink" title="4、定价政策"></a>4、定价政策</h3><p>前面的一系列评估与沟通方案制定后，就到了具体的定价政策的制定，这一部分可能最熟悉的是销售管理团队，也是销售人员们最关注的东西，关系到赢单的速度与概率。作为产品经理，对这一部分有一定的认识，在协作和沟通中做到没有信息差，就可以了。如果是产品行销团队的同学，那么定价政策也应进一步探索，与销售管理团队共同制定一系列定价政策。</p>
+<p>定价政策，包含四个部分：</p>
+<ul>
+<li>应对价格异议的政策<ul>
+<li>临时性谈判带来的问题</li>
+<li>价格政策给价格谈判带来的好处</li>
+<li>应对不同购买者类型的定价政策</li>
+<li>应对强势买家的政策</li>
+<li>让强势买家互相竞争</li>
+<li>量化给强势买家的价值</li>
+<li>消除不必要的成本</li>
+<li>进行产品渠道细分</li>
+<li>预防“分而治之”的战术</li>
+</ul>
+</li>
+<li>管理价格上涨的政策<ul>
+<li>引领整个行业范围价格上涨的政策</li>
+<li>从一次性的低定价转型的政策</li>
+</ul>
+</li>
+<li>应对经济下滑的政策</li>
+<li>促销价格政策</li>
+</ul>
+<h3 id="5、价格设定-⭐️"><a href="#5、价格设定-⭐️" class="headerlink" title="5、价格设定 ⭐️"></a>5、价格设定 ⭐️</h3><p><img src="2023-02-09T220314.png" alt="2023-02-09T220314"></p>
+<p>第一步 如何限定价格窗口</p>
+<p><img src="2023-02-09T220324.png" alt="2023-02-09T220324"></p>
+<p>窗顶的价格取决于产品为客户创造的经济价值。对于具有正差异化价值的产品，其窗底价格是竞争者的参考价格决定的，因为参考价格代表了竞争性反应的重要临界点。</p>
+<p>第二步  如何确定初始价格</p>
+<p>1）与公司全局的业务战略保持一致</p>
+<p>我们需要根据公司的业务战略，来选择一个具体的定价目标，如：</p>
+<ul>
+<li>方式1. 撇脂定价</li>
+<li>方式2. 渗透定价</li>
+<li>方式3. 中性市场定价</li>
+</ul>
+<p>如果公司对自己的技术与品牌有足够的信心，那么基于技术护城河或品牌影响力，可以产品初期就采取撇脂定价法，能收割多少用户就收割多少用户，快速榨取利润，保证现金流，从而开启更大的市场。需要注意的是，撇脂定价的条件：</p>
+<ul>
+<li>要有用户做“冤大头”；</li>
+<li>要有技术做护城河；</li>
+<li>要有品牌做试金石 。</li>
+</ul>
+<p>如果公司的战略是快速占领市场份额，第一优先级不是收回成本，提高盈利水平，那么可以采取渗透定价法，用相对较低的价格，以吸引大量客户。需要注意的是，渗透定价的条件：</p>
+<ul>
+<li>需求弹性大，更该用低价；</li>
+<li>边际成本低，才好用低价；</li>
+<li>初来乍到时，推荐用低价。</li>
+</ul>
+<p>但是，绝大部分时候，市场条件可能不允许公司采取这两种绝对的定价模式，因此公司往往会自动采取中性市场定价，最终还是根据客户所感知到的价值来定义。</p>
+<p>2）权衡价格和销量</p>
+<p>因为我们其实很难真正准确地去预估到我们调价多少对于未来销量的影响是多少，所以比起去问“这样的价格变化会导致销量怎样变化”，不如去问这两个问题：</p>
+<ul>
+<li>对于一定的价格上涨，我需要承受多少销量损失才能使利润不受损失？</li>
+<li>对于一定的价格下调，必须增加多少销量我才能提高盈利状况？</li>
+</ul>
+<p>通过对这两个问题的评估，就能一定程度上看到调价符不符合实际。</p>
+<p>3）测试或调研客户反应</p>
+<p>对于如何估计客户反应，从严谨但成本昂贵的方法到可靠性有限但易于实施的方法，排序如下：</p>
+<ul>
+<li>可控价格试验</li>
+<li>购买意图调查</li>
+<li>结构化推断</li>
+<li>增量实施分析</li>
+</ul>
+<p>下面附上一个价格敏感性驱动因素的清单，可以帮助我们在有限的条件下，评估客户的反应。</p>
+<p><img src="2023-02-09T220556.png" alt="2023-02-09T220556"></p>
+<p>4）行业专家输入</p>
+<ul>
+<li>行业营销专家的意见</li>
+<li>咨询机构分析师的意见</li>
+</ul>
+<p>第三步  如何进行新价格的沟通</p>
+<p>当我们内部已经做好了充分的调研与测算，确定了价格政策，在跟客户沟通的时候，也有很多注意事项，经过总结，主要有5个策略，具体的方法有很多种，在这里我总结了一些对应的方法。</p>
+<p><img src="2023-02-09T220613.png" alt="2023-02-09T220613"></p>
+<h2 id="定价策略的调整"><a href="#定价策略的调整" class="headerlink" title="定价策略的调整"></a>定价策略的调整</h2><p>最后，建立起了前面这一套机制后，该按照怎样的节奏去做迭代呢？定价策略什么时候需要修改呢？Profitwell的建议是：</p>
+<ul>
+<li>每两个月，就进行市场调查并实施定价测试。</li>
+<li>每三个月，评估一下当前的价格结构。</li>
+<li>每六个月，就要调整价格。</li>
+</ul>
+<p><img src="2023-02-09T220641.png" alt="2023-02-09T220641"> </p>
+<p>在实际工作中，我们可以根据产品生命周期来调整定价策略。</p>
+<p><img src="2023-02-09T220653.png" alt="2023-02-09T220653"></p>
+<p><strong>定价策略依据什么而调整？</strong></p>
+<p>《定价圣经》中的一个建议，我觉得很有帮助，那就是——建立有利于定价管理的事实档案。根据我们前面介绍的金字塔，定价过程中会产生很多资产，可能信息的来源是不同的团队，但是这些资产是定价调整时的依据，可以从定价管理的角度进行组织，便可以建立这样一套有利于定价管理的实施档案，进而构建起团队间的共识。基于这个档案进行调整。避免凭空想象和草率了事。</p>
+<p><img src="2023-02-09T220705.png" alt="2023-02-09T220705"></p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>定价战略的执行是不断协作、不断验证的过程。我们需要结合自己负责的产品所处的阶段，来制定适合当下的定价方式，然后试验、迭代，沉淀出属于自己的经验和方法论。未来若有实践而得的经验，届时再做分享，共勉之。</p>
+<p><img src="2023-02-09T220723.png" alt="2023-02-09T220723"></p>
+
+
+                <hr>
+
+                
+
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2023/02/09/一份对工作倦怠感的诊断书/" data-toggle="tooltip" data-placement="top" title="一份对“工作倦怠感”的诊断书">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2023/01/02/我在思考些什么？/" data-toggle="tooltip" data-placement="top" title="2022 我在思考些什么？">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                
+
+                
+
+            </div>
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#产品商业化" title="产品商业化">产品商业化</a>
+                        
+                          <a class="tag" href="/tags/#产品营销" title="产品营销">产品营销</a>
+                        
+                          <a class="tag" href="/tags/#定价" title="定价">定价</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted">
+                    Copyright &copy; Stay Out Space 2023 
+                    <br>
+                    Made with love by <a href="https://Wue93.github.io">Wue</a> 
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+<script src="../../../../js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="../../../../js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="../../../../js/hux-blog.min.js"></script>
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://Wue93.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="https://Wue93.github.io/img/shiwai.jpg" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
