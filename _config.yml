@@ -29,9 +29,10 @@ keyword: "PMM"
 # RSS: false
 # weibo_username:     false
 zhihu_username:     yi-mi-ba-zhen-yi
-github_username:    Wue93
+# github_username:    Wue93
 pm_id: 763699
 wechat_qr: true
+sspai_id: cug3t3us 
 
 # Build settings
 anchorjs: true                          
