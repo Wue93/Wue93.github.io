@@ -197,9 +197,7 @@ layout: layout
                                 <li>  
                                     <a href="javascript:void(0)" onMouseOut="hideImg()"  onmouseover="showImg()">
                                         <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-wechat fa-stack-1x fa-inverse">
-                                            </i>
+                                            <img src="/img/wechat.svg" height="30" alt="wechat" style="cursor:pointer;" >
                                         </span>
                                     </a>
                                 </li>
@@ -208,23 +206,11 @@ layout: layout
                                 </div>
                             <% } %>
 
-                            <% if (config.RSS) { %>
-                                <li>
-                                    <a href="<%= config.root + 'feed.xml' %>">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            <% } %>
-                            
                             <% if (config.zhihu_username) { %>
                                 <li>
                                     <a target="_blank" href="https://www.zhihu.com/people/<%= config.zhihu_username %>">
                                         <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                            <img src="/img/zhihu.svg" height="30" alt="zhihu" style="cursor:pointer;" >
                                         </span>
                                     </a>
                                 </li>
@@ -267,9 +253,7 @@ layout: layout
                                 <li>
                                     <a target="_blank"  href="https://sspai.com/u/<%= config.sspai_id %>/posts" >  
                                         <span class="fa-stack fa-lg">
-                                            <div style="display: flex; justify-content: center; align-items: center;">
-                                                <img src="/img/sspai.svg" height="32" alt="少数派" style="cursor:pointer;">
-                                            </div>
+                                            <img src="/img/sspai.svg" height="30" alt="少数派" style="cursor:pointer;">
                                         </span>
                                     </a>
                                 </li>
