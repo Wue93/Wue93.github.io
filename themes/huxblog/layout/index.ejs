@@ -5,104 +5,70 @@ layout: page
 
 <ul id="Tabs" class="nav nav-tabs">
     <%
-    var post_list={};
-    page.posts.each(function(post){
-        var category = post.categories["data"][0]["name"];
-        if(post_list[category]===undefined){
+    var tabs = [
+        { id: 'all', label: '全部' },
+        { id: 'work', label: '职业思考', category: 'Work' },
+        { id: 'life', label: '生活感悟', category: 'Life' },
+        { id: 'podcast', label: '个人播客', category: 'Podcast' }
+    ];
+    var post_list = {};
+    var all_posts = site.posts.sort('date').reverse().toArray();
+
+    all_posts.forEach(function(post){
+        var category = post.categories && post.categories.data && post.categories.data[0]
+            ? post.categories.data[0].name
+            : '';
+        if (category && post_list[category] === undefined) {
             post_list[category] = [];
         }
-        post_list[category].push(post);
-    }); 
+        if (category) {
+            post_list[category].push(post);
+        }
+    });
+
+    function renderPost(post) {
     %>
-    <li class="active">
-        <a href="#work" data-toggle="tab">
-            职业思考
-        </a>
-    </li>
-    <li>
-        <a href="#life" data-toggle="tab">
-            生活感悟
-        </a>
-    </li>
-    <li>
-        <a href="#podcast" data-toggle="tab">
-            个人播客
-        </a>
-    </li>
+        <div class="post-preview">
+            <a href="<%- config.root %><%- post.path %>">
+                <h2 class="post-title">
+                    <%- post.title || "Untitled" %>
+                </h2>
+                <h3 class="post-subtitle">
+                    <%- post.subtitle || "" %>
+                </h3>
+                <div class="post-content-preview">
+                    <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>...
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by <%- post.author || config.author %> on
+                <%= post.date.format(config.date_format) %>
+            </p>
+        </div>
+        <hr>
+    <%
+    }
+    %>
+    <% tabs.forEach(function(tab, index){ %>
+        <li class="<%= index === 0 ? 'active' : '' %>">
+            <a href="#<%- tab.id %>" data-toggle="tab">
+                <%- tab.label %>
+            </a>
+        </li>
+    <% }); %>
 </ul>
 
 <div id="Contents" class="tab-content">
-    <div class="tab-pane fade in active" id="work">  
-        <% post_list["Work"].map(function(post){ %>
-            <div class="post-preview">
-                <a href="<%- config.root %><%- post.path %>">
-                    <h2 class="post-title">
-                        <%- post.title || "Untitled" %>
-                    </h2>
-                    <h3 class="post-subtitle">
-                        <%- post.subtitle || "" %>
-                    </h3>
-                    <div class="post-content-preview">
-                        <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>...
-                    </div>
-                </a>
-                <p class="post-meta">
-                    Posted by <%- post.author || config.author %> on
-                    <%= post.date.format(config.date_format) %>
-                </p>
-            
-            </div>
-            <hr>
-            <% }); %>
-    </div>
-
-    <div class="tab-pane fade" id="life">
-        <% post_list["Life"].map(function(post){ %>
-            <div class="post-preview">
-                <a href="<%- config.root %><%- post.path %>">
-                    <h2 class="post-title">
-                        <%- post.title || "Untitled" %>
-                    </h2>
-                    <h3 class="post-subtitle">
-                        <%- post.subtitle || "" %>
-                    </h3>
-                    <div class="post-content-preview">
-                        <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>...
-                    </div>
-                </a>
-                <p class="post-meta">
-                    Posted by <%- post.author || config.author %> on
-                    <%= post.date.format(config.date_format) %>
-                </p>
-            
-            </div>
-            <hr>
-            <% }); %>
-    </div>
-
-    <div class="tab-pane fade" id="podcast">
-        <% post_list["Podcast"].map(function(post){ %>
-            <div class="post-preview">
-                <a href="<%- config.root %><%- post.path %>">
-                    <h2 class="post-title">
-                        <%- post.title || "Untitled" %>
-                    </h2>
-                    <h3 class="post-subtitle">
-                        <%- post.subtitle || "" %>
-                    </h3>
-                    <div class="post-content-preview">
-                        <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>...
-                    </div>
-                </a>
-                <p class="post-meta">
-                    Posted by <%- post.author || config.author %> on
-                    <%= post.date.format(config.date_format) %>
-                </p>
-            
-            </div>
-            <hr>
-            <% }); %>
-    </div>
+    <% tabs.forEach(function(tab, index){ %>
+        <div class="tab-pane fade <%= index === 0 ? 'in active' : '' %>" id="<%- tab.id %>">
+            <%
+            var posts = tab.category ? (post_list[tab.category] || []) : all_posts;
+            posts.forEach(function(post){
+                renderPost(post);
+            });
+            %>
+        </div>
+    <% }); %>
 </div>
 
 

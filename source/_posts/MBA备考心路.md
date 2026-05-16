@@ -2,7 +2,6 @@
 title: MBA 备考心路｜那些深夜伏案的日子
 catalog: true
 date: 2023-05-12 23:07:13
-tags:
 categories:
   - Life
 ---
