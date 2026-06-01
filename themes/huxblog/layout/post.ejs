@@ -12,7 +12,7 @@ layout: layout
         background-image: url('<%= page["header-img"] || config.root + config["header-img"] %>')
     }
 </style>
-<header class="intro-header" >
+<header class="intro-header post-hero" >
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -46,6 +46,38 @@ layout: layout
                 post-container">
 
                 <%- page.content %>
+
+                <%
+                    var pageTagNames = [];
+                    page.tags.forEach(function(tag){
+                        pageTagNames.push(tag.name);
+                    });
+                    var relatedPosts = site.posts.sort('date').reverse().filter(function(post){
+                        if (post.path === page.path || !post.tags) {
+                            return false;
+                        }
+                        var matched = false;
+                        post.tags.forEach(function(tag){
+                            if (pageTagNames.indexOf(tag.name) !== -1) {
+                                matched = true;
+                            }
+                        });
+                        return matched;
+                    }).limit(3);
+                %>
+                <% if (relatedPosts.length) { %>
+                <section class="related-posts">
+                    <h5>相关文章</h5>
+                    <div class="related-post-list">
+                        <% relatedPosts.forEach(function(post){ %>
+                        <a class="related-post-item" href="<%- config.root %><%- post.path %>">
+                            <span class="related-post-title"><%- post.title || "Untitled" %></span>
+                            <span class="related-post-meta"><%= post.date.format(config.date_format) %></span>
+                        </a>
+                        <% }) %>
+                    </div>
+                </section>
+                <% } %>
 
                 <hr>
 

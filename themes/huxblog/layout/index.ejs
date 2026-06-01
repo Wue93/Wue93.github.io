@@ -53,7 +53,7 @@ layout: page
                     <%- post.subtitle || "" %>
                 </h3>
                 <div class="post-content-preview">
-                    <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>...
+                    <%- truncate(strip_html(post.content).replace(/\s+/g, ''), {length: 110, omission: '...'}) %>
                 </div>
             </a>
             <p class="post-meta">
@@ -61,7 +61,6 @@ layout: page
                 <%= post.date.format(config.date_format) %>
             </p>
         </div>
-        <hr>
     <%
     }
     %>

@@ -4,10 +4,9 @@ date: 2021-12-01 20:15:27
 categories:
     - Work
 tags:
- - PMM
- - 市场营销
- - 产品商业化
-author: Wue
+  - 产品营销
+  - 职业选择
+author: Ylva
 catalog: true
 ---
 

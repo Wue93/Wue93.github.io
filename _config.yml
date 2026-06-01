@@ -5,7 +5,7 @@
 # Site
 title: Stay Out Space
 subtitle: 新生活是你将前往的荒野
-author: Wue
+author: Ylva
 language:
 timezone:
 
@@ -52,15 +52,14 @@ disqus_username: false
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: 
-  "吴仪, PMM, 读书人。
-  公众号/播客: 事外"
+  "吴仪, 读书人。公众号/播客: 事外。这里分享我关于技术商业、AI 工作流、产品营销与个体生活的长期写作。"
 sidebar-avatar: img/avatar.jpg      
 # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 3              # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 
 # Friends

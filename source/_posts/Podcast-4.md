@@ -5,7 +5,8 @@ categories:
   - Podcast
 date: 2022-08-13 22:18:23
 tags:
- - 播客
+  - 播客
+  - 自我秩序
 ---
 ​<audio id="audio" controls="" preload="none" display="block">
       <source id="mp3" src="https://media.xyzcdn.net/ll2oUSL_QI9Uh60XFOiYjL67asjT.m4a">

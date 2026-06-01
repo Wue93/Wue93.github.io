@@ -5,10 +5,8 @@ categories:
   - Work
 date: 2022-04-23 23:08:42
 tags:
-  - 市场营销
   - 产品营销
-  - PMM
-  - 产品商业化
+  - 阅读与书影
 ---
 
 <div align="center"> <img src=fig1.png width=105% /> </div>

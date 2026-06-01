@@ -2,11 +2,15 @@
 layout: layout
 ---
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('<%= config.root %><%= page["header-img"] || config["header-img"] %>')">
+<% var isHomeHero = page.path === 'index.html'; %>
+<header class="intro-header <%= isHomeHero ? 'home-hero' : 'inner-hero' %>" style="background-image: url('<%= config.root %><%= page["header-img"] || config["header-img"] %>')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="site-heading">
+                    <% if(isHomeHero) { %>
+                    <img class="home-hero-logo" src="<%= config.root %>img/site-logo.svg" alt="" aria-hidden="true">
+                    <% } %>
                     <h1><%= page.title || config.title %></h1>
                     <!--<hr class="small">-->
                     <span class="subheading"><%= page.description || config.subtitle || "" %></span>
@@ -150,6 +154,23 @@ layout: layout
                 col-xs-12
                 sidebar-container
             ">
+                <!-- Product Services -->
+                <section class="product-services">
+                    <h5>PAID COLUMNS</h5>
+                    <a class="service-card service-card-primary" href="<%= config.root %>2024/05/27/产品营销强壮手册/">
+                        <span class="service-label">产品营销</span>
+                        <strong>产品营销强壮手册</strong>
+                        <span class="service-copy">系统学习产品营销方法，提升定位、GTM 与销售赋能能力。</span>
+                        <span class="service-action">查看详情</span>
+                    </a>
+                    <a class="service-card" href="<%= config.root %>2026/01/24/内容营销强壮手册小报童/">
+                        <span class="service-label">内容营销</span>
+                        <strong>内容营销强壮手册</strong>
+                        <span class="service-copy">建立内容驱动增长体系，让内容从生产走向业务结果。</span>
+                        <span class="service-action">查看详情</span>
+                    </a>
+                </section>
+
                 <!-- Featured Tags -->
                 <% if(config['featured-tags']) { %>
                 <section>

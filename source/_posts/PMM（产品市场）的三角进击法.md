@@ -4,11 +4,9 @@ date: 2021-11-03 20:58:22
 categories:
     - Work
 tags:
-    - PMM
-    - 产品市场经理
-    - B2B营销
-    - 产品商业化
-author: Wue
+  - 产品营销
+  - 商业思考
+author: Ylva
 catalog: true
 ---
 

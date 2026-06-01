@@ -3,7 +3,7 @@ layout: layout
 ---
 
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('<%= config.root %><%= page["header-img"] || config["header-img"] %>')">
+<header class="intro-header inner-hero" style="background-image: url('<%= config.root %><%= page["header-img"] || config["header-img"] %>')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
@@ -21,6 +21,33 @@ layout: layout
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <%
+                var tagGroups = [
+                    { title: '职业与自我', tags: ['自我秩序', '职业选择', '家庭关系'] },
+                    { title: '商业与产品', tags: ['产品营销', '商业思考', '内容营销'] },
+                    { title: 'AI 与工作流', tags: ['AI思考'] },
+                    { title: '阅读与生活', tags: ['阅读与书影', '城市与生活', '播客'] }
+                ];
+                var tagMap = {};
+                site.tags.map(function(tag){
+                    tagMap[tag.name] = tag;
+                });
+            %>
+            <section class="tag-topic-nav">
+                <% tagGroups.forEach(function(group){ %>
+                    <div class="tag-topic-group">
+                        <h2><%= group.title %></h2>
+                        <div class="tags">
+                            <% group.tags.forEach(function(tagName){ %>
+                                <% if(tagMap[tagName]) { %>
+                                    <a href="#<%= tagName %>" title="<%= tagName %>" rel="<%= tagMap[tagName].length %>"><%= tagName %></a>
+                                <% } %>
+                            <% }) %>
+                        </div>
+                    </div>
+                <% }) %>
+            </section>
+
             <!-- 标签云 -->
             <div id='tag_cloud' class="tags">
                 <% site.tags.map(function(tag){  %>
