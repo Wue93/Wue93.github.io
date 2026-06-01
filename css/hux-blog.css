@@ -1184,6 +1184,20 @@ samp {
   position: relative;
   z-index: 1;
 }
+.intro-header.home-hero {
+  background-color: #020202;
+  background-image: none !important;
+  background-position: center;
+}
+.intro-header.home-hero::before {
+  background:
+    radial-gradient(circle at 50% 34%, rgba(255, 255, 255, 0.07) 0, rgba(255, 255, 255, 0.018) 126px, rgba(0, 0, 0, 0) 320px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.018) 0, rgba(255, 255, 255, 0.018) 1px, transparent 1px, transparent 88px);
+}
+.intro-header.inner-hero,
+.intro-header.post-hero {
+  background-position: center 26%;
+}
 .intro-header.style-text {
   background: none;
 }
@@ -1230,26 +1244,53 @@ samp {
 }
 .intro-header.inner-hero .site-heading,
 .intro-header.inner-hero .page-heading {
-  padding: 92px 0 72px;
+  padding: 102px 0 62px;
 }
 .intro-header.post-hero .post-heading {
-  padding: 86px 0 58px;
+  padding: 96px 0 48px;
 }
 @media only screen and (min-width: 768px) {
   .intro-header.inner-hero .site-heading,
   .intro-header.inner-hero .page-heading {
-    padding: 118px 0 98px;
+    padding: 148px 0 68px;
   }
   .intro-header.post-hero .post-heading {
-    padding: 112px 0 86px;
+    padding: 132px 0 66px;
   }
 }
 .intro-header .site-heading {
   padding: 95px 0 70px;
 }
+.intro-header.home-hero .site-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 112px 0 72px;
+}
+.intro-header.home-hero .home-hero-logo {
+  display: block;
+  flex: 0 0 auto;
+  width: 68px;
+  height: auto;
+  margin: 0 auto 24px;
+}
+.intro-header.home-hero .site-heading h1 {
+  margin: 0;
+  line-height: 1.05;
+}
+.intro-header.home-hero .site-heading .subheading {
+  margin: 16px auto 0;
+}
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading {
     padding: 150px 0;
+  }
+  .intro-header.home-hero .site-heading {
+    padding: 168px 0 112px;
+  }
+  .intro-header.home-hero .home-hero-logo {
+    width: 88px;
+    margin-bottom: 34px;
   }
 }
 .intro-header .site-heading,
@@ -1356,6 +1397,14 @@ samp {
 }
 .post-preview > a {
   color: #404040;
+}
+#Contents .post-preview {
+  margin-bottom: 34px;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+#Contents .post-preview:last-of-type {
+  margin-bottom: 0;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
