@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wue&#39;s blog">
+    <meta name="keyword"  content="PMM">
+    <link rel="shortcut icon" href="/img/shiwai.jpg">
+
+    <title>
+        
+          一双手，半个参谋：我如何让 Codex 嵌入工作流 - Stay Out Space
+        
+    </title>
+
+    <link rel="canonical" href="https://Wue93.github.io/2026/05/23/一双手半个参谋/">
+
+    <!-- Bootstrap Core CSS -->
+    
+<link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="../../../../css/hux-blog.min.css">
+
+
+    <!-- Pygments Highlight CSS -->
+    
+<link rel="stylesheet" href="../../../../css/highlight.css">
+
+
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script></script>
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="atom.xml" title="Stay Out Space" type="application/atom+xml">
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Stay Out Space</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://Wue93.github.io/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/background.jpg')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#职业选择" title="职业选择">职业选择</a>
+                        
+                    </div>
+                    <h1>一双手，半个参谋：我如何让 Codex 嵌入工作流</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by Wue on
+                        2026-05-23
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>最近几个月，我养成了一个新习惯。</p>
+<p>每天早上到工位，第一件事是打开飞书。现在，又新增了一个标准动作：打开 Codex。这个动作一开始也没有什么特别的，它不像换一台新电脑，也不像安装一个效率软件后信誓旦旦地说“我要重塑工作流”。它只是很自然地嵌入了我的一天：打开电脑，确认消息，扫一眼待办，然后打开 Codex。</p>
+<p><img src="2026-05-23-162457-1.jpg" alt=""></p>
+<p>如果不打开它，我当天的工作节奏反而会有点卡住。</p>
+<p>这种感觉很微妙。我逐渐发现，很多原本会消耗我注意力的细碎环节，现在有了一个可以承接的对象。它不像一个完整的同事，也不像一个纯粹的工具，更像是我多出来的一双手，再加半个参谋。</p>
+<h2 id="把细沙扬出去">把细沙扬出去</h2>
+<p>如果把我日常的工作任务做一个粗略分类，大概可以分成三类：执行类任务、判断类任务、协调类任务。</p>
+<p>这三类任务，对人的消耗是不一样的。执行类任务消耗的是时间和耐心；判断类任务消耗的是认知资源；协调类任务消耗的是上下文管理能力和情绪资源。而我现在使用 Agent 的原则，也基本围绕这三类展开。</p>
+<p><strong>第一类，是代替执行。</strong></p>
+<p>凡是重复的、规则明确的、不需要做关键判断的事，我会尽量交给 Codex。比如整理会议纪要、格式化数据、生成标准化摘要、润色一段内容、把一堆零散信息整理成结构化文档。这些事情过去不是不能做，而是很磨人。它们像工作里的细沙，不会单独构成什么大问题，但会一点点把人的注意力磨掉。大量的时间放在这些事情上，当然也会让人感觉没啥成就感。</p>
+<p>Codex 这一类 Agent 在这类任务上最大的价值，不只是速度快、质量稳定，更重要的是它不会烦躁。它不会随意在一个策划方案里丢失“人员分工”，也不会因为我反复调整数据分析口径而失去耐心，更不会因为一个表格改来改去，让我的耐心被反复消耗。</p>
+<p><img src="2026-05-23-162457-2.jpg" alt=""></p>
+<p>我现在时常会让 Codex 先把数据分析模板、使用说明、计算关系和联动公式都搭好，再交给不擅长数据分析的同事参考使用。它节省的不只是我的教学时间，也减少了后续反复校对的成本。</p>
+<p><strong>第二类，是辅助判断。</strong></p>
+<p>我会给 Codex 一个场景、一段背景信息，甚至是一堆还没有完全想清楚的输入，然后让它帮我展开几个选项。</p>
+<p>比如最近我们团队要设计一场活动的指标体系，目标是从 A 产品往 B 产品引流。之前没有现成的参考基准，我需要先找到一个大致区间。</p>
+<p>如果自己去搜索，可能要读很多文章和报告。但现在我可以先让 Codex 找出几份海外同类产品的参考资料，并整理出关键结论。随后，它再帮我拉出一份指标清单：过程、结果、转化等，它还会建议，有些维度是可以参考现有指标的，但有些维度应该从自己的业务实际出发自定义。接下来，我要做的就是在这张清单上快速做减法。</p>
+<p>这件事改变了我的判断方式。</p>
+<p>过去我们可能会陷入一种状态：脑子里知道要做判断，但材料还不够完整；知道需要结构，但结构还没有浮现。于是时间就耗在“启动”上。Agent 的作用，是帮我把混沌先摊开。它不替我决策，但它帮我穷尽可能；它不告诉我唯一正确答案，但它让我更快看见问题的边界。</p>
+<p><strong>第三类，是支撑协调。</strong></p>
+<p>跨部门沟通、信息拉齐、进度追踪、风险预判，这些事很难完全被 AI 替代。因为协调的本质是处理人、目标、资源、时间之间的张力，不仅仅是写文档或开会那么简单。</p>
+<p>但 Codex 可以让我在沟通之前准备得更充分。</p>
+<p>比如生成一份对齐文档，梳理各方需要确认的问题，提前列出可能的风险点和预案建议。AI 无法替我沟通，也无法替我判断某个同事话里的真实顾虑。但它可以帮我减少遗漏，让我在会议开始前，脑子里已经有一张比较完整的地图。</p>
+<p>所以我越来越觉得，不是所有工作都能被 AI 取代，至少不是以一种简单粗暴的方式被取代。更准确的说法可能是：很多工作会被重新拆解。其中一部分交给 Agent，一部分仍然留给人，而人的价值会越来越集中在判断、选择和承担后果上。</p>
+<h2 id="让流程顺下来">让流程顺下来</h2>
+<p>拿举办一场训练营活动来说，这件事串起了策划、内容输出、数据分析、复盘总结几个环节。以前我会把它理解为一个完整项目，现在我更倾向于把它看成一个可以被 Agent 分段支撑的工作流。</p>
+<p>策划阶段，我们目标不是简单地“办一场活动”，而是拿到可量化的业务结果。</p>
+<p>我把目标告诉 Codex：希望覆盖多少家目标客户，产出多少条有效线索，预期转化率大概是多少。它很快给出了一套指标体系，还附带了几个海外同类活动的研究链接作为参考。让我有点意外的是，那些链接并不是为了显得“信息量很大”而随手凑出来的，点开看了，也确实对指标设计有帮助。</p>
+<p>活动结束后，进入数据分析阶段。</p>
+<p>数据散在好几个地方：报名表、签到表、问卷反馈、BI 仪表盘。以前可能要花半天时间手动拉 Excel，匹配，对比，核算，检查重复项等等。</p>
+<p>这一次，我提前告诉 Codex：我需要一个多表联动的分析模板，能够自动关联各个环节、计算转化率。几分钟后，它就给了一个可用的 Excel 模板，带公式，也带透视表。这个表格可以直接给到团队里不太擅长数据分析的同事参考使用。</p>
+<p><img src="2026-05-23-162457-3.png" alt=""></p>
+<p>这不是一个多么惊天动地的成果，但它很实用，减少了很多沟通成本，也能把人从“清洗表格”的状态里解放出来，让人可以更快进入“看数据意味着什么”的状态（当然，前提也是看数据的人已经具备了一些业务分析的能力）。</p>
+<p>复盘阶段，它帮我生成了一份报告结构：数据回顾、亮点、问题、改进计划。这个框架不复杂，但恰好解决了另一个常见消耗：每次写复盘，都要先重新搭一遍骨架。现在只需要把素材填进去，再根据真实情况调整判断。</p>
+<p>最后是总结。活动结束后，往往需要输出一封对内简报，有时候还需要一篇对外宣传文。过去这类事情至少要花半天：先整理素材，再切换语气，再压缩表达。现在我把原始素材贴进去，让 Codex 分别生成两个版本，我再动手修改。也就几分钟就可以搞定。</p>
+<p>整场活动跑下来，我最大的感受除了省时间，更多的是我少了很多被琐事或检查产出物而打断节奏的时刻。</p>
+<p>这其实很重要。</p>
+<p>很多时候，工作效率低，并不是因为人真的慢，而是因为不断被迫在不同状态之间切换，很多人其实并不擅长这种高频的状态切换——刚想进入策略判断，就被催着要数据；刚整理完数据，又要切换到文案表达；刚写完文案，又要开一个进度会。人的注意力像被反复切开，最后每一块都不完整。</p>
+<p>Codex 可以帮我们做的，是让这些切换变得没那么粗暴。流程是顺的，脑子是清的，人的主体感也就保留得更多。</p>
+<h2 id="被垫低的门槛">被垫低的门槛</h2>
+<p>还有一件小事，让我有点意外。</p>
+<p>我有一个博客网站 <a target="_blank" rel="noopener" href="https://www.wuyi.space">https://www.wuyi.space</a>，之前是队友帮我用静态网站生成器搭的。主题、布局、样式这些东西，我以前很少改动。对上传文章、做排版这件事，我也一直觉得 Markdown 格式有点麻烦，所以维护得很低频。</p>
+<p>当然，也不是完全不能学。只是一想到要翻文档、改格式，就会觉得这件事不值得开始。</p>
+<p>前几周，队友突发奇想，让 Codex 帮我改博客。差不多十来分钟，就从我的公众号搬运了一篇文章到网站上，过程非常顺畅。</p>
+<p>后来，我说：想把黑白基础上的蓝色强调，换成一个更协调的颜色。Codex 分析了网站当前的颜色，直接给出一个建议色号。我确认没问题后，它就直接把全网站的强调色修改好了。全程不到四分钟。</p>
+<p>后来，又顺手让它在首页加一个“全部”列表。它继续执行，几分钟就搞定了，栏目button也没之前那么简陋了。</p>
+<p><img src="2026-05-23-162457-4.jpg" alt=""></p>
+<p>那一刻我惊喜：以后不用学什么前端，也能完成以前需要会写代码才能完成的事了。</p>
+<p>学写代码仍然是技能叙事：我掌握了一门新能力。现在，很多事情的边界被重新画了一下：有些事情过去被专业门槛挡在外面，现在门槛没有消失，但它被工具垫低了。</p>
+<p>我当然不会因此变成工程师，也依然不懂代码。但我获得了一种新的行动可能性。过去看到“不会”就停下，现在我会先问一句：这件事能不能被拆成我可以指挥、Agent 可以执行的部分？</p>
+<h2 id="有用的焦虑">有用的焦虑</h2>
+<p>很多人聊 AI，都会感到焦虑。但我越来越觉得，如果这种焦虑只停留在学习层面，那可能永远都找不到缓解的办法。</p>
+<p>学习焦虑是什么？是怕自己不懂新技术，没用过新工具，跟不上新趋势。今天大家都在聊一个模型，明天又出现一个新产品。界面变了，入口变了，功能变了，教程也很快过期。你当然可以不断学习，但如果只是追着工具跑，人会很累。</p>
+<p>另一种焦虑，可能更值得关注，叫“应用焦虑”。</p>
+<p>它不是焦虑自己有没有用过某个工具，而是焦虑自己有没有真正把 AI 融入工作流；不是焦虑自己知不知道一个新名词，而是焦虑自己是不是还在用旧方法做新事情。</p>
+<p>前者容易把人推向囤积：收藏教程、报名课程、转发文章。后者会把人推向实践：今天哪个环节可以交给 Agent？哪个判断可以让它先帮我展开？哪个流程可以被重新设计？</p>
+<p>当这种应用尝试，真的开始融入甚至是改变工作流，新的获得感会慢慢出现，并且逐渐替代原来的焦虑感。因为你会发现，AI 不是一个远处的宏大趋势，它已经可以具体地出现在一天的工作里：一份表格、一场活动、一个网页。</p>
+<p>它不是未来才会发生的事。它已经在改变今天。</p>
+<h2 id="重新理解“资深”">重新理解“资深”</h2>
+<p>AI 擅长做信息整合与内容输出，因此我们都认为大量知识型工作的执行部分会被替代，这个趋势已经开始了。</p>
+<p>但我不认为短期内，带有丰富上下文和业务认知的资深员工会被完全替代。原因也很简单：真实工作从来不是只处理信息，而是处理信息背后的语境。</p>
+<p>同样一份活动数据，什么叫好，什么叫不好，要不要继续投入，问题出在渠道、主题、销售跟进，还是客户本身意向不足，这些都不能只靠表格判断。</p>
+<p>同样一篇对外文案，哪些话能说，哪些话不能说，哪些表达虽然漂亮但不符合产品规划、品牌语气，哪些内容看似完整但其实没有业务价值，也需要经验来判断。</p>
+<p>过去可能是一个资深员工带五个初阶员工。现在可能会逐渐变成：一个资深员工带一个初阶员工，再加上 N 个 Agent 工具。</p>
+<p>那个“初阶”依然重要，因为有些东西需要人传人。一个人如何判断优先级，如何感受业务现场，如何在不确定中承担责任，这些很难只靠工具完成。</p>
+<p>而“资深”之所以还是资深，也不是因为会用工具。会用工具很快会变成基础能力。真正重要的是：知道什么时候该用工具，什么时候该自己拍板；知道什么信息是噪音，什么上下文必须保留；也知道一个看似漂亮的输出，到底有没有解决真实问题。</p>
+<p>所以，我不再只焦虑自己“会不会用”某个工具。而是关注自己有没有把它嵌进工作流，有没有减少重复的执行动作，释放精力去思考、判断与协调，最终有没有真的用出效果。</p>
+<p>工具是容易替换的，也是相对便宜的。</p>
+<p>工作流的升级不是。</p>
+
+
+                <hr>
+
+                
+
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2026/05/01/抢跑时代，你无法靠安全赢/" data-toggle="tooltip" data-placement="top" title="抢跑时代，你无法靠“安全”赢">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                
+
+                
+
+            </div>
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#职业选择" title="职业选择">职业选择</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted">
+                    Copyright &copy; Stay Out Space 2026 
+                    <br>
+                    Made with love by <a href="https://Wue93.github.io">Wue</a> 
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+<script src="../../../../js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="../../../../js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="../../../../js/hux-blog.min.js"></script>
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://Wue93.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="https://Wue93.github.io/img/shiwai.jpg" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>

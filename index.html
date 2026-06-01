@@ -1,0 +1,3342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wue&#39;s blog">
+    <meta name="keyword"  content="PMM">
+    <link rel="shortcut icon" href="/img/shiwai.jpg">
+
+    <title>
+        
+          Stay Out Space
+        
+    </title>
+
+    <link rel="canonical" href="https://Wue93.github.io/">
+
+    <!-- Bootstrap Core CSS -->
+    
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="css/hux-blog.min.css">
+
+
+    <!-- Pygments Highlight CSS -->
+    
+<link rel="stylesheet" href="css/highlight.css">
+
+
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script></script>
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="atom.xml" title="Stay Out Space" type="application/atom+xml">
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Stay Out Space</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/background.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Stay Out Space</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">新生活是你将前往的荒野</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        
+
+<!-- USE SIDEBAR -->
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
+            
+                <!-- Main Content -->
+
+<ul id="Tabs" class="nav nav-tabs">
+    
+    
+        <li class="active">
+            <a href="#all" data-toggle="tab">
+                全部
+            </a>
+        </li>
+    
+        <li class="">
+            <a href="#work" data-toggle="tab">
+                职业思考
+            </a>
+        </li>
+    
+        <li class="">
+            <a href="#product-service" data-toggle="tab">
+                产品服务
+            </a>
+        </li>
+    
+        <li class="">
+            <a href="#life" data-toggle="tab">
+                生活感悟
+            </a>
+        </li>
+    
+        <li class="">
+            <a href="#podcast" data-toggle="tab">
+                个人播客
+            </a>
+        </li>
+    
+</ul>
+
+<div id="Contents" class="tab-content">
+    
+        <div class="tab-pane fade in active" id="all">
+            
+        <div class="post-preview">
+            <a href="/2026/05/23/一双手半个参谋/">
+                <h2 class="post-title">
+                    一双手，半个参谋：我如何让 Codex 嵌入工作流
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    最近几个月，我养成了一个新习惯。
+每天早上到工位，第一件事是打开飞书。现在，又新增了一个标准动作：打开 Codex。这个动作一开始也没有什么特别的，它不像换一台新电脑，也不像安装一个效率软件后信誓旦旦地说“我要重塑工作流”。它只是很自然地嵌入了我的一天：打开电脑，确认消息，扫一眼待办，然后打开 Codex。
+
+如果不打开它，我当天的工作节奏反而会有点卡住。
+这种感觉很微妙。我逐渐发现，很多原......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2026-05-23
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2026/05/01/抢跑时代，你无法靠安全赢/">
+                <h2 class="post-title">
+                    抢跑时代，你无法靠“安全”赢
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+过去的 Q1，对我来说是一个充满变化和狂飙学习的 Q1。OpenClaw、Claude Code、Claude Cowork、Harness Engineering……一堆名字涌进来，业务随着趋势而变，追赶热点也成了常态。
+当然，不只是我在追，整个市场都在追，而且追得比以往任何时候都早。
+这让我回忆起杰弗里·摩尔那本《跨越鸿沟》。书里描绘的技术采纳曲线，把早期市场和主流市场之间画了一道深不......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2026-05-01
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2026/01/24/内容营销强壮手册小报童/">
+                <h2 class="post-title">
+                    「内容营销强壮手册」小报童
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+Hi，我是美仪～
+八年前，我坐在一家创业公司的小隔间里，每天的工作就是追热点、排版、想标题。曾以为这就是内容营销的全部。
+直到后来，我做了产品运营，发现用户增长离不开内容；做了SEM、SEO，发现流量获取离不开内容；开始做商业化运营后，更是深感——销售需要内容做弹药，客户成功需要内容做教材，品牌需要内容做基石。
+内容，成了我职业生涯中一个贯穿始终的东西。它不只是“写文章”这么简单，而是串联......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2026-01-24
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2026/01/03/从不得不到我选择/">
+                <h2 class="post-title">
+                    从“不得不”到“我选择”：一场关于工作的自我迁徙
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+从“不得不”到“我选择”
+过去几年，我一直在思考这几个问题：我到底想要做什么？眼下的工作是我喜欢的吗？我为什么还是没有把自己最喜欢的事情变成职业呢？阻碍我的到底是什么？
+如果我们去问身边的人为何工作，答案可能是——家庭、责任、热爱，不一而足。但若追问：“若薪资减半，你还会继续吗？”我想绝大多数人会摇头吧。所以，我们看似拥有选择，却往往在现实面前，将选择的权杖交给了金钱。
+那么，如果工作不再......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2026-01-03
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/12/20/2025年度书影总结/">
+                <h2 class="post-title">
+                    2025 年度书影总结
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    《理想的城市》
+再次思考城市这个话题 --2025.11.27 读后感
+
+在思考定居地时，我读到了这本《理想的城市》。当然，它并不会告诉我上海和杭州哪一个更理想，而更像一本散文式的城市理论变迁史。书中反复提及《美国大城市的死与生》，让我想起前些年读过的那些关于人与城市的书，和写过的文章《北京出租车大爷的谩骂里》《看不见的城市》。
+如今，这个问题又一次摆在我面前：人该如何选择一个适合自己的城市......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-12-20
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/11/16/我完整自洽/">
+                <h2 class="post-title">
+                    32岁，我完整自洽
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+32岁的开头，我在日记问了自己3个问题：
+
+如果生命只剩下1年，我会怎样度过？
+如果生命只剩下1个月，我会怎样度过？
+如果生命只剩下1天，我会怎样度过？
+
+当我写下这三个问题的答案，真正向往的生活自然就清晰了。于是我告诉自己，不要等到以后再去过想要的生活，而是从此刻就这样去生活。
+于是2025年，我和家人自驾游，和队友去了意大利古城，去看了那些书本上的画作，去见了很多老朋友，也时常去逛公园......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-11-16
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/09/21/我如何思考自由/">
+                <h2 class="post-title">
+                    2024 我如何思考自由
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+自由，意味着拥抱不确定性，意味着不知明天会怎样，它的影子是，焦虑与孤独。2024年，我如何思考自由，就如何生活。今天尝试把贯穿春夏秋冬的缥缈思绪，记为一篇与自由有关的年终总结。
+春天，渴望自由
+“还是加班到日落，没空吻到燃烧的云朵。”
+春天，四月份的那段时间，新的工作方向充满困难与未知，好像也难以明确新方向的价值。工作到底该怎么开展呢？和身边的人展开了很高频的讨论，加了不少班，互相纾解。后......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-09-21
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/08/23/我们可以想要一些不同的东西/">
+                <h2 class="post-title">
+                    我们可以想要一些不同的东西
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+2025年的2月春节，我发现社交网络上的“小姨”故事愈发丰富，她从一个年轻漂亮精致的爱给红包、礼物的完美化身，逐渐演变成了一种在大城市工作，但仍然保持着美丽精致，成为了一个独立老姑娘的精致版代名词。虽然它有被消费主义扩大的效应，各种店铺的小姨风穿搭卖得火爆。但仍然得承认其中多多少少承载着年轻女孩对于成长后的模样的一种脸谱化想象。
+过去，可以看到人们对于老姑娘有多么苛刻。就像玛丽·科克在《老......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-08-23
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/03/07/春节自驾游我看到了父母与现代性的距离/">
+                <h2 class="post-title">
+                    春节自驾游：我看到了父母与现代性的距离
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    2025 年 1 月 26 日，我从上海高铁出发，老弟从杭州开车出发，在嘉兴接上老妈老爸。在嘉兴南站等了大概 50 分钟，终于上了老弟的车，开始蛇年春节的南方自驾游。这是我们一家四口，第一次整整齐齐在春节出游远方，老弟负责开车，我负责行程攻略。
+老坟
+路途中，在老家待了半年的老妈在黑色羽绒服的领口里，围着一个花花绿绿的丝巾，向我们讲述街坊亲戚的家长里短。
+她说着，分居两地的谁家媳妇儿回了老家......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-03-07
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/02/11/我在2024的春夏秋冬里/">
+                <h2 class="post-title">
+                    我在2024的春夏秋冬里
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    自由，意味着拥抱不确定性，意味着不知明天会怎样，它的影子是，焦虑与孤独。2024 年，我如何思考自由，就如何生活。今天尝试把贯穿春夏秋冬的缥缈思绪，记为一篇与自由有关的年终总结。
+春天，渴望自由
+
+还是加班到日落，没空吻到燃烧的云朵。
+
+春天，四月份的那段时间，新的工作方向充满困难与未知，好像也难以明确新方向的价值。工作到底该怎么开展呢？和身边的人展开了很高频的讨论，加了不少班，互相纾解。后......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-02-11
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/02/02/在MBA课堂上看见生活与自我的轮廓/">
+                <h2 class="post-title">
+                    在MBA课堂上看见生活与自我的轮廓
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    在发展心理学的视角下，人的一生可以划分为好几个阶段，每个阶段都有不同的核心任务，如果上一个阶段的核心任务没有完成，可能就会延续到下一个阶段。那我感觉，读 MBA 这件事儿，就好像在18岁求学时期没能完成就读理想院校，或顺利读研的阶段性目标，于是这个未竟的任务就延续到了近30岁的职场阶段。然而，这时候成本就高出了不少，仅仅就我所在的上海地区而言，几个名校的 MBA 项目的费用就已经高达四五十万......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-02-02
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/12/22/2024下半年读的书/">
+                <h2 class="post-title">
+                    2024下半年读的书
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+如果你也是一个二三十岁的女性，在思考自己想要什么样的生活而现实有哪些冲突，你会开始发觉生活中有那么多不适与矛盾，那么你大概率会走上学习女性主义的道路。
+如果恰好你还是一个有阅读习惯的人，那么这几年，你大概率会遇到这些书：
+
+蕾切尔·卡斯克“一个知识女性的思考”三部曲
+安妮·埃尔诺的“自我民族志”
+埃莱娜·费兰特书写女性友谊与成长的几部小说——那不勒斯四部曲
+德博拉·利维的“女性成长三部曲”......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-12-22
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/09/20/过假期我去书店休整自己/">
+                <h2 class="post-title">
+                    过假期,我去书店休整自己
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+去内山书局
+9月15日，中秋假日的第一天，台风将至的日子。
+在小红书上搜索中秋假期里上海的分享会和展览活动，找到一个关于《我们从未中产过》的圆桌在多伦美术馆。刚好就在内山书局的附近，便准备去内山打发下午的时间。
+内山书局大部分的书都没有拆封，并且对我胃口的也没那么多。于是就挑了一本已经拆封的《我的爱情观》来看。这本书很轻松，有些说法过于简要，以至于给人有刻板印象的理解，2小时就读完了。这个......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-09-20
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/08/11/最近想赞美闲暇/">
+                <h2 class="post-title">
+                    最近想赞美闲暇
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+最近的生活，常有惊喜。
+因为学校放暑假了，所以我终于有完整的周末时光可以自由安排，可以睡到自然醒，想去哪里就去哪里。我必须得好好珍惜这样的时刻！因此，每个周末我都选择出行，去书店、去公园，去感受活力与欲望。
+在内山书局偶遇胡安焉
+2024年8月10日，一个接近40度的周六。
+推开内山书局的大门，一进来就意外地遇到了一张分享会海报。原来这个下午胡安焉在这里举办《生活在低处》新书分享会。前段时......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-08-11
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/07/09/忙碌的陷阱与最重要的事/">
+                <h2 class="post-title">
+                    忙碌的陷阱与最重要的事
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+不知道从什么时候开始，我们已经很难把人生当作三段论的：受教育-工作-退休。因为工作变得越来越不稳定，寿命却在明显延长。与此同时，新的技术与行业的出现，让我们的技能遇到挑战，有些技能变得越来越不重要，人们得持续不断地学习新的技能，这样才能保持自己在就业市场上的竞争力。而且，在晚婚晚育的趋势下，很明显我们国家的养老金计划将难以为继，养老重担的大头还是压在我们自己和小家庭上。
+所以，我们不得不去......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-07-09
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/06/14/海外技术产品营销是怎么做的/">
+                <h2 class="post-title">
+                    海外技术产品营销是怎么做的
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    前些年在创业公司的时候，工作上缺少有经验的产品营销的带领，只能自己摸索。然后在广泛阅读的过程中，我逐步意识到，国内的 B2B 产品营销方式，距离国外还有很大的差距，既不规范，也没有形成广泛共识。可能一部分大厂和外企内部有较为完整的方法论框架，但是这些咱从外部也不太能获取到。
+因此我决定将视野放向海外成熟市场，学习成熟的实践经验。同时尽量在有限的条件下，发挥自己的想象力，做点行之有效的事儿。
+......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-06-14
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/06/10/2024上半年读的几本书和电影/">
+                <h2 class="post-title">
+                    2024上半年读的几本书和电影
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+年光与物随流水，度过2024年的一半。
+工作上，有一些重点转变，出了几趟差，愈发深刻地感受到复杂环境中的身不由己，以及效率至上的大企业如何对人产生异化的作用。
+生活上，去了一趟川西，看看原野与雪山；回了几次科大本部上课，而初识了石榴花；参加了高中姐妹的婚礼，见了不少老朋友。
+写作上，开设了《产品营销强壮手册》这个小报童专栏，收获了一点点付费读者；还开始在少数派上记录生活。
+当然，也看了一些......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-06-10
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/05/27/产品营销强壮手册/">
+                <h2 class="post-title">
+                    「产品营销强壮手册」小报童
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+「产品营销强壮手册」是什么？
+面向产品营销人的强壮手册
+这里有实战经验，思考总结和掏心窝子的话
+还有热乎乎的书籍精读笔记
+希望成为你前行途中的电子队友
+你可以收获什么？
+关于产品营销的思考与记录，有部分内容已经分享在这个公众号里。但在小报童，我将更新那些自己知识手册里未曾对外分享过的内容。因此，你可以收获我过去5年的产品营销经验总结与独家思考。
+
+权益1·初阶入门 X 5篇：5篇认知构建，......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-05-27
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/04/26/大厂一周年/">
+                <h2 class="post-title">
+                    我来大厂一周年：无法松弛的齿轮
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+转眼，加入B大厂一周年了。刚加入的时候，有人道喜——毕竟在增长不易的当下，可以算是加入了“中国最好的互联网公司”。有人担忧——要兼顾工作与学业，实在需要保重身体。
+我们很容易忽视了身体的过劳，《百岁人生》中认为人拥有两类资产，一类是有形资产，比如金钱、房产等，另一类是无形资产，包含了你的身体与精神健康、再教育等。身体能量是你同样需要管理的资产，它像你的金钱一样重要。
+在忙着挣钱的时候，加班......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-04-26
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/03/03/30岁自问/">
+                <h2 class="post-title">
+                    30岁自问：你前往荒野了吗
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+今天早上，看到朋友分享了一则视频 ↑ ，30岁的周彤回忆并对话了26岁时给自己打的一通电话。令我略有触动。
+于是，我对过去几年的年终总结进行了一番回溯，试图对比一下30岁和26岁的生活，看看自己现在能否回答当初提的问题，解决曾经的疑惑。
+相关文章
+
+2019，26岁年终总结《新生活，是你将前往的荒野》
+2020，27岁年终总结《在一块碎片上固定自己》
+2021，28岁年终总结《2021读完......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-03-03
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/02/17/回乡过年/">
+                <h2 class="post-title">
+                    回乡过年，30岁未婚长女的一场精神战役
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+你的春节，还好吗？是原地过节，还是返回老家？
+回乡过年——对一个30岁未婚的乡镇家庭长女来说，就是一场注定不会轻松的精神战役。在这短短一周里，我看到了很多东西，看到了自己、看到了成人、看到了孩子，看到了代际之间命运的重复，也看到了个体的无力和时代的烙印。
+今天是2024年2月17日，大年初八的下午，我坐在库布里克书店，回想刚刚过去的春节，像是看完了一部漫长的电影。
+看自己：持久的心理战
+在......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-02-17
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/12/30/30岁/">
+                <h2 class="post-title">
+                    30岁，我独自来到上海生活
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+2023年，最大的变动便是，由于要读MBA和新的工作机会，我搬到了上海。
+这个城市对我而言，夹杂着几种不同的记忆，它是城郊的工业区，也是他者的旅途，此刻也意味着一种相对的自由。
+城郊工业区与边缘童年
+2000年前后，家人在上海郊区，类似松江区青浦区一类的村郊工厂上班，记忆里的早期一家四口是住在一个屋子里的，两张床分别靠着两边的墙放，弟弟还是读幼儿园的年纪。那时候，外地人在公立小学读书，每年......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-12-30
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/12/19/华为销售法/">
+                <h2 class="post-title">
+                    《华为销售法》阅读笔记
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+不管是在市场部、产品部，还是运营团队，懂得 ToB 销售，才能更好地合作。除了《销售加速公式》等几本经典作品外，我觉得《华为销售法》也值得一读。这本书不仅仅分享了华为的销售打法，还涉及到了范畴更广的市场策略、战略洞察、行业分析等相关的内容。无论是作为营销中的一环，还是作为营销团队的老大，都需要这样从全局的视角来思考B2B营销这件事儿。尤其对于已经有了不少经验的营销人来说，这本书有帮助自己温......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-12-19
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/12/06/跳槽圣经/">
+                <h2 class="post-title">
+                    跳槽圣经：关于机会选择和自我认识
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    1.阅读概述
+度过了职场早期的3-5年，作为一个逐渐成熟的职场人，我们应该逐步找到自己的专长和兴趣，并且了解自己的性格，因此这些决定着职业的幸福感。最近的1-2年，我也曾反复思考自己长期的职业发展路径，路径规划已经有了，也明确自己擅长什么+还缺点什么，因此当下的每一次跳槽或选择都要慎重慎重再慎重。在最近的一次跳槽后，我阅读了《跳槽圣经》这本书。这本书提供了一些关于机会选择和自我认识的方法，过......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-12-06
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/11/05/2023读的几本书和碎碎念/">
+                <h2 class="post-title">
+                    2023读的几本书和碎碎念
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+1.《低生育陷阱》
+山田昌弘在这本书中分析日本近30年来低生育率的原因和对策的失败，不一定全面，但对于东亚社会的经济压力、典型民族性格和主流阶级话语算是做出了一些总结：
+
+进入现代风险社会，严格的人生和职业路径规划，以及风险规避意识，让日本人面对生育这个几乎与不受控制的高风险划等号的事情，不得不慎重起来。
+在人情社会中，日本人始终抱持着对体面的执着，当生育可能有损自己的体面时，就成为了令人......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-11-05
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/06/17/28岁那年/">
+                <h2 class="post-title">
+                    28岁那年，我如何体悟工作？
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+2021年的夏天，我刚加入前司几个月，大概长达2个月的周末都在参加公司组织的领导力训练营。当时我觉得虽然整个培训过程有不少理论与实践存在不小的 gap，但还是对职场中的我有些触动。在那期间，我回顾了2019到2020两年在初创型公司的管理经验，又思考当前所在的发展期创业公司的团队体验，感触良多，因此写下了一些文字。
+如今（20230617）结合旧时体悟，对这篇28岁时的日记做出一些补充，并......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-06-17
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/05/12/MBA备考心路/">
+                <h2 class="post-title">
+                    MBA 备考心路｜那些深夜伏案的日子
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    因为不知道自己能不能录取，所以在2022的年终总结里，我提到“2022最大的成就感，来源于完成了一项耗时挺久的计划，并且对结果不那么患得患失”，但并未言明这个计划是什么。现在终于可以跟大家分享录取的喜悦了：
+
+关于读研究生这件事情，算起来在心里已经扎下了3年：
+
+2020年，学了半年的传播学，慎重思考后选择放弃读这个专业；
+2021年，因为膝盖的意外做手术、拄拐，还加入了新公司，所以选择先养......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-05-12
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/05/01/聊聊杭州/">
+                <h2 class="post-title">
+                    聊聊杭州2年多：有张有弛 有转折
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+带着“我要去这里定居”的初心来到杭州。在进一步“打开自己”后，发现目前仍然无法安居某个固定的地方。这种状态倒也算不上是“野心”，也许只能算是一种“好奇心”，想看看自己还可以去到哪里。并不是一定一定追求跑出多远，而是趁着自己还有劲儿，继续走走看看。
+带着“我还可以走得更远”的心情离开杭州。虽然不能确定下一个目的地能否顺利达到，但至少先在上海体验着吧。再次回到这个我出生、童年成长的地方，这个父......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-05-01
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/02/10/生活的减法游戏/">
+                <h2 class="post-title">
+                    生活的减法游戏
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+对于人的欲望，不少哲学家都有过探讨。比如，叔本华说人生就是一个钟摆。当欲望得不到满足时，会感到痛苦，于是我们会为了满足欲望而付出努力，而当欲望满足、目标达成后，又觉得 just so so，很快会感到无聊。因此人生就是一个在痛苦和无聊之间不停摇摆的过程。
+我大概是5-6年前在一本书看到了这个“钟摆理论”，自此我开始认真思考欲望这个东西。在《2022 我在思考些什么？》中，我简短地总结了一下......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-02-10
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/02/09/一份对工作倦怠感的诊断书/">
+                <h2 class="post-title">
+                    一份对“工作倦怠感”的诊断书
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+当你从事一份工作数年，倦怠感可能就会袭来，而这种倦怠感来源于什么？是能够被消除的吗？该如何理解自己的感受？倦怠感，是该换工作的信号吗？
+前段时间我持续思考有关倦怠感的这些问题，观察身边的现象，也找寻书中的分析。这篇文章正是给“工作倦怠感”做出的“病因”诊断书，从内生和外源两个角度展开。
+内生
+1、如何认识自己的工作？
+人们正在从事的工作，可以从三个层次来认识：
+
+天职（Vocation......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-02-09
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/02/09/产品定价/">
+                <h2 class="post-title">
+                    产品定价：走近战略定价金字塔
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+对于 Product Marketing 而言，Pricing 是不必可少的一环，不过跟同行交流下来，国内的 Product Marketing 在不同的公司中职能内容可能都不太一样，因此涉及定价工作的不多。而产品经理怎么做定价的各类小文章一搜倒是一大把。过去一段时间，我针对「产品定价」做了一番专题学习，也正在工作中逐步实践。今日进行一番总结，希望可以跟大家一起走近战略定价金字塔。
+小提醒......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-02-09
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/01/02/我在思考些什么？/">
+                <h2 class="post-title">
+                    2022 我在思考些什么？
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+如果你也是一个关心公共性问题的人，那么2022年大概也会像我一样有这样的感受：“人人坐享小小的幸福，嘴里嚷着小小的痛苦——当赤裸裸的痛苦端到他面前，他的安乐遂显得丑陋，痛苦显得轻浮。”
+太多魔幻的事情发生，于是2022最常出现的情绪就是愤怒，并且认识到在一个把忍耐当成美德的社会里，人们的忍耐限度是多么高，但忍耐不是美德，对不公感到生气才是美德，对自由与理性的坚持才是美德。
+当然，2022也......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-01-02
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/08/13/Podcast-4/">
+                <h2 class="post-title">
+                    Vol.4 了解女性主义，从这4个词开始
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    ​
+
+
+偶尔会与朋友聊起一些女性主义观点，而那些观点的表述，常常引起疑问。于是我便需要对概念做出解释，最好再举出一些例子来佐证，最终这种对话常常以推荐书籍结尾。当然，对方大概率不会真的记下书目名字，不一定会真的去阅读。而我若是再去追踪、强推，也会有点强人所难，自讨没趣。
+渐渐地，我意识到自己及我所熟悉的一些朋友所学习的女性主义更多的是一种舶来品，从沃斯通克拉夫特、波伏娃、伍尔夫、上野千鹤子等......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-08-13
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/07/31/日常生活的神游/">
+                <h2 class="post-title">
+                    日常生活的神游
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    这篇文章，只是一些日常生活的神游，一些进入过脑海的东西，以及一些想要跑出来的东西。
+
+巨兽与人的境况
+在一家巨型书店买了《巨兽：工厂与现代世界的形成》这本研究巨型工厂历史的书。弗里曼从百年前的英国到如今的中国，盘点起世界各地巨型工厂的兴衰，也直叙了这些“巨兽”所带来的物质景观与意识形态的影响。看这本书的过程里，我脑海中浮现了儿时居住的沪郊工业区与曾途经的“眼镜之都”、“纽扣之乡”等工业集约地......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-07-31
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/06/18/Podcast-3/">
+                <h2 class="post-title">
+                    Vol.3 Me, How to Nourish My Spirit
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    ​
+
+
+产生连接，寻找力量。本期节目与你用英文聊聊：
+
+我是谁？
+我的精神养分来自哪里？
+我为什么要录英文播客？
+
+【本期推荐】
+
+Seahorse Planet 海马星球
+Universal Residents 宇宙乘客
+After School 放学以后
+
+...
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-06-18
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/06/08/打造内容营销战略闭环/">
+                <h2 class="post-title">
+                    四个方法，打造B2B内容营销战略闭环
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+B2B营销是一个复杂的过程，客户旅程漫长，而内容是这个旅程的核心。它需要满足诸多利益相关者的需求，不同目标和职责的人，需要特定的信息与价值证明。
+对于B2B企业来说，要触达每一个利益相关者，也就意味着要应对不断变化的团队、工具和渠道。通常在一个B2B企业中，是不同的团队在不同的阶段中彼此分工，推动潜在客户通过销售周期的每个阶段，这个过程是否丝滑，一个相当大的影响因素就是B2B营销人员是......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-06-08
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/05/21/产品市场应该在产品部还是市场部/">
+                <h2 class="post-title">
+                    产品市场应该在产品部还是市场部
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    《创新者的窘境》里说到，一个机构的能力主要表现在两个方面：一方面是它的流程，也就是人们将劳动力、资源、原材料、信息、现金和技术投入转化为更高价值的产出的方法；另一方面是它的价值观，这些价值观正是机构管理人员和普通员工在做出优先决策时所遵循的原则。
+通常在一个创业公司，是没有什么固定的流程的，如果管理者没有作出要求，那么市场团队通常会以最快达成 KPI 为准绳地展开工作。
+当一个市场团队的核心......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-05-21
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/05/08/我的母亲/">
+                <h2 class="post-title">
+                    我的母亲
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                     
+
+         
+        我的母亲（左一）和她的姐妹们
+    
+
+今年的母亲节，没有为母亲准备什么礼物，但想第一次写下与母亲有关的一些思绪。
+上午起床后，我边拖地边听着「放学以后」最新一期的《看见母亲和她们的传奇，成为我们有可能的自己》，听到一半不禁哽咽，接着写完了本文。
+母亲与父权制的家庭 (母亲如何被父亲瞧不起)
+这么多年来，父亲似乎已经习惯了在不满、质疑母亲的观点时，......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-05-08
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/05/07/看不见的城市/">
+                <h2 class="post-title">
+                    看不见的城市
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+分享一本值得再读的书，和一些读后的小念头。
+轻盈的城市
+曾经我们以为上海是个城堡般的地方，物产丰富，井然有序的守卫把守着每道城墙，连绵的霓虹灯镶嵌天空，流光溢彩。人们潮水般地涌向这里，每一个新居民，都给这座城堡捐赠一座新的路灯，于是城堡一天比一天光明，照得人们面泛金光，看不清这底下究竟换了多少副面孔。
+而现在上海成了卡尔维诺笔下奥塔维亚一样的蛛网之城。被大麻绳所编织的网兜着，悬在两座陡......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-05-07
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/04/23/PMM电子书分享/">
+                <h2 class="post-title">
+                    The Product Marketing Manager 电子书分享
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+虽然国内已经有不少朋友讨论 Product Marketing Manager 的岗位职责和工作技能，不过专门讲这个细分岗位的书籍，目前还没有出现，如果想要深入这一专业领域，不妨横向看一些有关产品、营销、市场的书，当然直接看一些英文原版书也是一种很好的学习方式。
+  
+之前读完了 Lucas Weber 的 The Product Marketing Manager：Responsib......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-04-23
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/04/03/精英的傲慢/">
+                <h2 class="post-title">
+                    在迈克尔·桑德尔笔下，看见精英的傲慢
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+经常听人提起迈克尔·桑德尔，以及他的新书《精英的傲慢》，于是看了看。前段时间，又看了牛津中国论坛主办的项飙与桑德尔的对谈，正是围绕他的这本书展开的交流。虽然聊的依然是那些他们常提及的话题，表达的依然是他们反复倡导的观点，但是依然觉得能够触动自己，引发更多关于人们的际遇与公共生活的思考。
+具体内容可以戳这两篇单读的记录与翻译：
+《项飙 × 迈克尔·桑德尔：越努力越幸运是一种假象》
+《项飙......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-04-03
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/03/07/产品市场经理的职业发展路径是什么/">
+                <h2 class="post-title">
+                    产品市场经理的职业发展路径是什么?
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+最近在持续进行产品市场经理/产品营销经理（Product Marketing Manager，简称PMM）的招聘工作，求职者中有产品经理，也有产品运营，更有市场营销。与求职者交流的过程中，被问到最多的三个问题是：
+
+PMM 与产品经理的区别是什么？
+PMM 的职业发展路径是什么？
+PMM 的核心竞争力是什么？
+
+因此我分别进行了一些思考与总结，今天跟大家谈谈第二个问题——PMM 的职业......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-03-07
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/03/04/产品市场经理的核心竞争力是什么/">
+                <h2 class="post-title">
+                    产品市场经理的核心竞争力是什么?
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    最近在持续进行产品市场经理/产品营销经理（Product Marketing Manager，简称PMM）的招聘工作，与求职者交流的过程中，被问到最多的三个问题是：
+
+PMM 与产品经理的区别是什么？
+PMM 的职业发展路径是什么？
+PMM 的核心竞争力是什么？
+
+因此我分别进行了一些思考与总结，今天先跟大家谈谈第三个问题——PMM 的核心竞争力是什么？
+国外一些资深的产品营销人士也有过相关......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-03-04
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/02/17/对抗被占有所统治的生活/">
+                <h2 class="post-title">
+                    对抗被“占有”所统治的生活
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+离实践越远，感受越模糊。即使在文字中感到深刻的震撼，也不及实践的刀刃划过肌肤的痛楚。
+数年未归乡，在今年春节的返乡之行中，我产生了诸多新的观察与感受。假期中读完了费洛姆的《存在的艺术》，因此更有一番先人智慧与自我生活的交错体验。假期里我跟弟弟简短地提起了这本书与我的感受，但我想他或许并没有完全理解，故书写之。
+费洛姆认为，人的生存方式有两种，一种是以占有的多寡来衡量幸福，判断人生的价值......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-02-17
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/01/12/Podcast-2/">
+                <h2 class="post-title">
+                    Vol.2 从个体感受到星火力量，我们如何谈论女性？
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    ​
+
+
+作为一名普通女性，我们会经历怎样的觉醒过程？是什么契机让我们开始产生更多关于生活的思考，开始发现个体与社会之间的张力？
+性别意识对普通女性来说，意味着什么？当某些关键词在当前的社会语境（尤其是社交媒体）中被污名化，我们如何发出自己的声音？这些问题，都让我和Nicole有着不少思考，阅读与交流是我们力所能及寻找自洽与建立安全感的方式，也希望有更多人与我们产生连接，寻找星火力量。本期节目......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-01-12
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/12/29/2021读完60本书后/">
+                <h2 class="post-title">
+                    2021读完60本书后，我在想些什么
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+
+“话语对于隐秘的思想没有好处，每当人们说出什么的时候，那东西立即就会稍稍走样，稍稍被歪曲，稍稍显得愚蠢——是的，就连这一点也极好，也极令我欢喜，我也极表同意，因为在某一个人视作珍宝和智慧的东西，在另一个人听来却往往是很愚蠢的。”   ——《悉达多》
+
+当悉达多决定告别沙门之路，走入城市的时候他视世俗生活为游戏，投身其中但轻蔑对待。谁知后来日渐沉迷，逐生痛苦，终究还是走上了抛弃与重新追......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-12-29
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/12/11/如何创建产品营销框架/">
+                <h2 class="post-title">
+                    如何创建产品营销框架？
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+转眼Q4就要结束了，今年的指标完成得怎么样？各个公司应该都已经开始张罗着年终总结，并制定新年的市场营销规划了吧。
+对于B2B企业来说，这个时候如果采取传统的营销战略框架，那么通常会确定一个明确的商业目标或结果指标。比如“到2022年底达到3万个付费用户”或“增加****万总营收”。
+然后，根据这个目标，拆分出关键绩效指标。例如“增加X%的MQL”，“减少Y%的流失率”或“增加Z家某类客......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-12-11
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/12/01/PMM产品市场经理生存攻略/">
+                <h2 class="post-title">
+                    PMM产品市场经理生存攻略 （附求职指南）
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+前段时间听了前Facebook全球产品营销主管 Carolyn 关于PMM工作的分享，Carolyn 2001年到美国，2004年开始从事高科技PMM（Product Marketing Manager）的工作，有着10多年的丰富经验。结合她的分享与自己的经验+理解，对PMM的生存现状进行了一番总结，本文将与大家探讨探讨，希望能够让你了解这几个问题：
+
+硅谷PMM通常如何工作？
+PMM......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-12-01
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/11/30/白皮书制作指南/">
+                <h2 class="post-title">
+                    白皮书制作指南：一本白皮书就是一个项目
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+在B2B营销中，内容营销的地位一直被放得很高，资深的从业者，通常都很值钱。因为在面对企业客户的过程中，想要树立品牌影响力，生产出贴合业务的内容，需要内容营销或产品营销（PMM）有一定的商业逻辑思维和对需求的洞察力，这些都不是一两个月能掌握的。做内容营销，需要长期主义者，而不是投机者。
+在内容营销中，白皮书是一个令人又爱又恨的存在，因为制作白皮书，不仅需要内容创作能力，还需要强悍的框架思......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-11-30
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/11/03/PMM（产品市场）的三角进击法/">
+                <h2 class="post-title">
+                    PMM（产品市场）的三角进击法
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+随着国内B2B、SaaS 公司的发展，to B产品营销的职能越来越细分，除了大型公司以外，更多B-C轮的公司开始设置PMM（产品市场）岗位。这是一个不同于产品运营和市场营销的岗位，伴随着市场的高度细分才逐渐活跃在人们眼前。
+那么PMM（产品市场）到底是做什么的呢？人们常说PMM是连接产品、市场、用户的桥梁，而我现在认为PMM的工作就是在挖掘一条让产品价值流动起来的河流。这条河流，从产品......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-11-03
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/11/02/四分之一人生阶段/">
+                <h2 class="post-title">
+                    四分之一人生阶段：如何理解“意义感缺失”
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+It’s nine o’clock,
+I’m getting tired,
+I’m sick of all my records,
+And the clothes I bought today,
+Am I cracking up,
+Or just getting older?  ——《Just Getting Older》
+
+近几年，面对困扰和痛苦的时候，我逐渐养成了一个习惯——先了解这个......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-11-02
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/09/20/Podcast-1/">
+                <h2 class="post-title">
+                    Vol.1 旅行，是大型表演也是反结构的“仪式过程”
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    ​
+
+
+阅读和旅行，都是一种让我们扩展认知边界的方式。2020年的国庆假期看到了极光般神奇的海边落日，还记得那天听到「不合时宜」的主播孟常分享了《遮蔽的天空》结尾的一句话：“人这一生可以看多少次日落呢？或许就20次吧，然而人们觉得一切都可以任意挥霍。”令我记忆至今。
+
+旅行意味着什么？它是否已经被过度粉饰，成为一种大型的公众表演？作为一种生活的仪式感，它又是怎样满足着我们的需要？这些思考，让......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-09-20
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/08/08/跟着这5本好书，思考产品商业化/">
+                <h2 class="post-title">
+                    「PMM书单」跟着这5本好书，思考产品商业化
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+在 to B 公司，产品市场经理会有两种情况，一种是在产品部门，一种是在市场部门。从本质上说，做的事情都是一样的，那就是**产品商业化**。但是不论在什么公司，不同部门之间或多或少都会有一些 gap，这给产品市场经理从全局上推动商业化动作都带来了一定挑战。
+当产品市场经理在产品部门时，优势是能够从需求调研、产品设计之始就了解产品功能的背景与目标，也能够对技术有更多直观的了解，在进行产品......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-08-08
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/07/18/奶茶与新消费/">
+                <h2 class="post-title">
+                    奶茶与新消费：速朽的世界，如何重组自己的精神？
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    半个月前，奈雪的茶正式登陆港股，虽然“新式茶饮第一股”上市首日就令人大跌眼镜，开盘即破发，收盘时跌幅超过13%，但这依然不妨碍这一天成为新式茶饮赛道乃至新消费战场的一个独特日子。
+「新式茶饮」是一种区别于传统冲泡式奶茶的中式茶饮，其通常采用新鲜食材，注重顾客体验与品牌文化，同时积极拥抱新技术，在门店运营、产品迭代与空间设计上不断推陈出新。
+「新式茶饮」作为新消费浪潮的领头军，嚣声可谓最盛。前......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-07-18
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/06/14/任凭这个暴力的世界击败自己/">
+                <h2 class="post-title">
+                    任凭这个暴力的世界击败自己
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+《回归故里》
+[法]迪迪埃·埃里蓬
+
+就像迪迪埃·埃里蓬回顾自己是如何成为了现在的自己时，发现自己在性向这一条线索以外，忽视了阶级这个根源一样，我过去总认为自己对社会学产生兴趣的线索是对传播学的学习，而如今越来越清晰地认识到，其实是对于自身以及所处环境的困惑与好奇。
+其中，最典型的子题就有“了解自己与原生家庭”。通过这些书就可以看出：
+  
+见自己，见天地，见众生。从社科学习中，我逐渐......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-06-14
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/04/09/跟着这5本经典1/">
+                <h2 class="post-title">
+                    「PMM书单」跟着这5本经典，做好「产品市场经理」
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+不止一次听B2B营销前辈们提到「产品市场经理」有多难招，目前国内B2B公司的产品市场经理的缺口巨大。产品市场为什么这么稀缺？最大的原因莫过于，这是一个复合型的岗位，前辈Max老师就曾说过产品市场是产品、销售、市场之间的桥梁，这要求从业者的综合素质极高。
+近2年在To B圈愈发热门的产品市场经理（抑或产品营销经理）的主要职责已经有不少讨论可以快速查到，本文不再赘述，而是想分享一些关于做产......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-04-09
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/03/26/运营团队知识库构建宝典/">
+                <h2 class="post-title">
+                    运营团队知识库构建宝典
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+作为一个资深的运营，当你开始挑起大梁，成为运营部门的负责人，该怎么建立一个有能动性的优秀团队？该怎么把自己的运营经验，复制留存，形成方法论？
+抑或，当你新加入一家公司/接手一个团队，该怎么让你的团队精益求精，不管手下的同事怎么流动，你始终都能把控好节奏，让团队保持稳定，保证工作质量？
+当然也有可能，你只是对目前所在团队的工作氛围、整体素质感到不满，而公司规模没有大到能够建立自己的培训机......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-03-26
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/02/26/二月剧变/">
+                <h2 class="post-title">
+                    二月剧变
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    对于近一个月发生的剧变与在医院度过的春节，太多感受与思绪难以通过语言表达。就像里尔克说的：一切事物都不是像人们要我们相信的那样可理解而又说得出的；大多数的事件是不可信传的，它们完全在一个语言从未达到过的空间。而尽可能地记录当下，仿佛是一种对于经历的责任感，敦促我书写。
+  
+与风险“共生”
+当人经历过彻夜难眠的伤痛时，或许才能真的体悟到生命的本源，就像我现在觉得，所有对于身外之物的追寻终归于......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-02-26
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/01/02/在一块碎片上固定自己/">
+                <h2 class="post-title">
+                    在一块碎片上固定自己
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    2020，是孤独的一年。
+
+卡尔维诺说，重负之下人们
+会奋不顾身扑向某种轻
+成为碎片。在把自己撕成更小
+碎片的快慰中认识自我
+我们的力量只够在一块
+碎片上固定自己
+折枝。写作。频繁做梦——
+围绕不幸构成短暂的暖流
+感觉自己在孤岛上。
+岛的四周是
+很深的拒绝或很深的厌倦
+才能形成的那种蔚蓝
+——《孤岛的蔚蓝》陈先发
+选自《横琴岛九章》
+
+  
+我的氧气已经支撑不到明天了
+
+关于坚持
+过去我认为......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-01-02
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2020/09/23/盲目斜杠，是一场自嗨/">
+                <h2 class="post-title">
+                    盲目斜杠，是一场自嗨
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    9月9日，一则快手正在内测播客app——皮艇的消息引起了不少人的注意，中文播客界关于发展与期待的声音正逐渐增多。
+一周前，第一财经YiMagazine在《中文播客，正在蓬勃生长》一文中也提到，在部分年轻听众中间，“做一档播客”像前两年的“拍一个Vlog”一样成了时髦事，这导致了中文播客在2020年出现了一轮小爆发。
+甚至有些人认为目前的中文播客就像早期的微信公众号，即将成为一个新的风口。
+当......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2020-09-23
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2020/08/24/网易云音乐，一门宗教的生意/">
+                <h2 class="post-title">
+                    网易云音乐，一门宗教的生意
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+凝视“网抑云”
+最近，网易云音乐不仅与环球音乐集团达成战略合作，与阿里88VIP宣布战略合作，还成功举办了TFBOYS“日光旅行”线上演唱会。一时间，关于“网抑云”的嘲讽声与叫好声，此消彼长。
+  
+视线若往回探一些，就会看到，一直以来都有两种声音围绕着网易云音乐。
+持否定态度的一方，总是揪着版权问题，对网易云音乐进行质疑。曾有人在否定网易云音乐的模式时表示，就像阿里等于电商，腾讯等于......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2020-08-24
+            </p>
+        </div>
+        <hr>
+    
+        </div>
+    
+        <div class="tab-pane fade " id="work">
+            
+        <div class="post-preview">
+            <a href="/2026/05/23/一双手半个参谋/">
+                <h2 class="post-title">
+                    一双手，半个参谋：我如何让 Codex 嵌入工作流
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    最近几个月，我养成了一个新习惯。
+每天早上到工位，第一件事是打开飞书。现在，又新增了一个标准动作：打开 Codex。这个动作一开始也没有什么特别的，它不像换一台新电脑，也不像安装一个效率软件后信誓旦旦地说“我要重塑工作流”。它只是很自然地嵌入了我的一天：打开电脑，确认消息，扫一眼待办，然后打开 Codex。
+
+如果不打开它，我当天的工作节奏反而会有点卡住。
+这种感觉很微妙。我逐渐发现，很多原......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2026-05-23
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2026/05/01/抢跑时代，你无法靠安全赢/">
+                <h2 class="post-title">
+                    抢跑时代，你无法靠“安全”赢
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+过去的 Q1，对我来说是一个充满变化和狂飙学习的 Q1。OpenClaw、Claude Code、Claude Cowork、Harness Engineering……一堆名字涌进来，业务随着趋势而变，追赶热点也成了常态。
+当然，不只是我在追，整个市场都在追，而且追得比以往任何时候都早。
+这让我回忆起杰弗里·摩尔那本《跨越鸿沟》。书里描绘的技术采纳曲线，把早期市场和主流市场之间画了一道深不......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2026-05-01
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2026/01/03/从不得不到我选择/">
+                <h2 class="post-title">
+                    从“不得不”到“我选择”：一场关于工作的自我迁徙
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+从“不得不”到“我选择”
+过去几年，我一直在思考这几个问题：我到底想要做什么？眼下的工作是我喜欢的吗？我为什么还是没有把自己最喜欢的事情变成职业呢？阻碍我的到底是什么？
+如果我们去问身边的人为何工作，答案可能是——家庭、责任、热爱，不一而足。但若追问：“若薪资减半，你还会继续吗？”我想绝大多数人会摇头吧。所以，我们看似拥有选择，却往往在现实面前，将选择的权杖交给了金钱。
+那么，如果工作不再......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2026-01-03
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/06/14/海外技术产品营销是怎么做的/">
+                <h2 class="post-title">
+                    海外技术产品营销是怎么做的
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    前些年在创业公司的时候，工作上缺少有经验的产品营销的带领，只能自己摸索。然后在广泛阅读的过程中，我逐步意识到，国内的 B2B 产品营销方式，距离国外还有很大的差距，既不规范，也没有形成广泛共识。可能一部分大厂和外企内部有较为完整的方法论框架，但是这些咱从外部也不太能获取到。
+因此我决定将视野放向海外成熟市场，学习成熟的实践经验。同时尽量在有限的条件下，发挥自己的想象力，做点行之有效的事儿。
+......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-06-14
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/12/19/华为销售法/">
+                <h2 class="post-title">
+                    《华为销售法》阅读笔记
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+不管是在市场部、产品部，还是运营团队，懂得 ToB 销售，才能更好地合作。除了《销售加速公式》等几本经典作品外，我觉得《华为销售法》也值得一读。这本书不仅仅分享了华为的销售打法，还涉及到了范畴更广的市场策略、战略洞察、行业分析等相关的内容。无论是作为营销中的一环，还是作为营销团队的老大，都需要这样从全局的视角来思考B2B营销这件事儿。尤其对于已经有了不少经验的营销人来说，这本书有帮助自己温......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-12-19
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/12/06/跳槽圣经/">
+                <h2 class="post-title">
+                    跳槽圣经：关于机会选择和自我认识
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    1.阅读概述
+度过了职场早期的3-5年，作为一个逐渐成熟的职场人，我们应该逐步找到自己的专长和兴趣，并且了解自己的性格，因此这些决定着职业的幸福感。最近的1-2年，我也曾反复思考自己长期的职业发展路径，路径规划已经有了，也明确自己擅长什么+还缺点什么，因此当下的每一次跳槽或选择都要慎重慎重再慎重。在最近的一次跳槽后，我阅读了《跳槽圣经》这本书。这本书提供了一些关于机会选择和自我认识的方法，过......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-12-06
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/06/17/28岁那年/">
+                <h2 class="post-title">
+                    28岁那年，我如何体悟工作？
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+2021年的夏天，我刚加入前司几个月，大概长达2个月的周末都在参加公司组织的领导力训练营。当时我觉得虽然整个培训过程有不少理论与实践存在不小的 gap，但还是对职场中的我有些触动。在那期间，我回顾了2019到2020两年在初创型公司的管理经验，又思考当前所在的发展期创业公司的团队体验，感触良多，因此写下了一些文字。
+如今（20230617）结合旧时体悟，对这篇28岁时的日记做出一些补充，并......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-06-17
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/02/09/产品定价/">
+                <h2 class="post-title">
+                    产品定价：走近战略定价金字塔
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+对于 Product Marketing 而言，Pricing 是不必可少的一环，不过跟同行交流下来，国内的 Product Marketing 在不同的公司中职能内容可能都不太一样，因此涉及定价工作的不多。而产品经理怎么做定价的各类小文章一搜倒是一大把。过去一段时间，我针对「产品定价」做了一番专题学习，也正在工作中逐步实践。今日进行一番总结，希望可以跟大家一起走近战略定价金字塔。
+小提醒......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-02-09
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/06/08/打造内容营销战略闭环/">
+                <h2 class="post-title">
+                    四个方法，打造B2B内容营销战略闭环
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+B2B营销是一个复杂的过程，客户旅程漫长，而内容是这个旅程的核心。它需要满足诸多利益相关者的需求，不同目标和职责的人，需要特定的信息与价值证明。
+对于B2B企业来说，要触达每一个利益相关者，也就意味着要应对不断变化的团队、工具和渠道。通常在一个B2B企业中，是不同的团队在不同的阶段中彼此分工，推动潜在客户通过销售周期的每个阶段，这个过程是否丝滑，一个相当大的影响因素就是B2B营销人员是......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-06-08
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/05/21/产品市场应该在产品部还是市场部/">
+                <h2 class="post-title">
+                    产品市场应该在产品部还是市场部
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    《创新者的窘境》里说到，一个机构的能力主要表现在两个方面：一方面是它的流程，也就是人们将劳动力、资源、原材料、信息、现金和技术投入转化为更高价值的产出的方法；另一方面是它的价值观，这些价值观正是机构管理人员和普通员工在做出优先决策时所遵循的原则。
+通常在一个创业公司，是没有什么固定的流程的，如果管理者没有作出要求，那么市场团队通常会以最快达成 KPI 为准绳地展开工作。
+当一个市场团队的核心......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-05-21
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/04/23/PMM电子书分享/">
+                <h2 class="post-title">
+                    The Product Marketing Manager 电子书分享
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+虽然国内已经有不少朋友讨论 Product Marketing Manager 的岗位职责和工作技能，不过专门讲这个细分岗位的书籍，目前还没有出现，如果想要深入这一专业领域，不妨横向看一些有关产品、营销、市场的书，当然直接看一些英文原版书也是一种很好的学习方式。
+  
+之前读完了 Lucas Weber 的 The Product Marketing Manager：Responsib......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-04-23
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/03/07/产品市场经理的职业发展路径是什么/">
+                <h2 class="post-title">
+                    产品市场经理的职业发展路径是什么?
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+最近在持续进行产品市场经理/产品营销经理（Product Marketing Manager，简称PMM）的招聘工作，求职者中有产品经理，也有产品运营，更有市场营销。与求职者交流的过程中，被问到最多的三个问题是：
+
+PMM 与产品经理的区别是什么？
+PMM 的职业发展路径是什么？
+PMM 的核心竞争力是什么？
+
+因此我分别进行了一些思考与总结，今天跟大家谈谈第二个问题——PMM 的职业......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-03-07
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/03/04/产品市场经理的核心竞争力是什么/">
+                <h2 class="post-title">
+                    产品市场经理的核心竞争力是什么?
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    最近在持续进行产品市场经理/产品营销经理（Product Marketing Manager，简称PMM）的招聘工作，与求职者交流的过程中，被问到最多的三个问题是：
+
+PMM 与产品经理的区别是什么？
+PMM 的职业发展路径是什么？
+PMM 的核心竞争力是什么？
+
+因此我分别进行了一些思考与总结，今天先跟大家谈谈第三个问题——PMM 的核心竞争力是什么？
+国外一些资深的产品营销人士也有过相关......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-03-04
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/12/11/如何创建产品营销框架/">
+                <h2 class="post-title">
+                    如何创建产品营销框架？
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+转眼Q4就要结束了，今年的指标完成得怎么样？各个公司应该都已经开始张罗着年终总结，并制定新年的市场营销规划了吧。
+对于B2B企业来说，这个时候如果采取传统的营销战略框架，那么通常会确定一个明确的商业目标或结果指标。比如“到2022年底达到3万个付费用户”或“增加****万总营收”。
+然后，根据这个目标，拆分出关键绩效指标。例如“增加X%的MQL”，“减少Y%的流失率”或“增加Z家某类客......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-12-11
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/12/01/PMM产品市场经理生存攻略/">
+                <h2 class="post-title">
+                    PMM产品市场经理生存攻略 （附求职指南）
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+前段时间听了前Facebook全球产品营销主管 Carolyn 关于PMM工作的分享，Carolyn 2001年到美国，2004年开始从事高科技PMM（Product Marketing Manager）的工作，有着10多年的丰富经验。结合她的分享与自己的经验+理解，对PMM的生存现状进行了一番总结，本文将与大家探讨探讨，希望能够让你了解这几个问题：
+
+硅谷PMM通常如何工作？
+PMM......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-12-01
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/11/30/白皮书制作指南/">
+                <h2 class="post-title">
+                    白皮书制作指南：一本白皮书就是一个项目
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+在B2B营销中，内容营销的地位一直被放得很高，资深的从业者，通常都很值钱。因为在面对企业客户的过程中，想要树立品牌影响力，生产出贴合业务的内容，需要内容营销或产品营销（PMM）有一定的商业逻辑思维和对需求的洞察力，这些都不是一两个月能掌握的。做内容营销，需要长期主义者，而不是投机者。
+在内容营销中，白皮书是一个令人又爱又恨的存在，因为制作白皮书，不仅需要内容创作能力，还需要强悍的框架思......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-11-30
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/11/03/PMM（产品市场）的三角进击法/">
+                <h2 class="post-title">
+                    PMM（产品市场）的三角进击法
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+随着国内B2B、SaaS 公司的发展，to B产品营销的职能越来越细分，除了大型公司以外，更多B-C轮的公司开始设置PMM（产品市场）岗位。这是一个不同于产品运营和市场营销的岗位，伴随着市场的高度细分才逐渐活跃在人们眼前。
+那么PMM（产品市场）到底是做什么的呢？人们常说PMM是连接产品、市场、用户的桥梁，而我现在认为PMM的工作就是在挖掘一条让产品价值流动起来的河流。这条河流，从产品......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-11-03
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/08/08/跟着这5本好书，思考产品商业化/">
+                <h2 class="post-title">
+                    「PMM书单」跟着这5本好书，思考产品商业化
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+在 to B 公司，产品市场经理会有两种情况，一种是在产品部门，一种是在市场部门。从本质上说，做的事情都是一样的，那就是**产品商业化**。但是不论在什么公司，不同部门之间或多或少都会有一些 gap，这给产品市场经理从全局上推动商业化动作都带来了一定挑战。
+当产品市场经理在产品部门时，优势是能够从需求调研、产品设计之始就了解产品功能的背景与目标，也能够对技术有更多直观的了解，在进行产品......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-08-08
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/07/18/奶茶与新消费/">
+                <h2 class="post-title">
+                    奶茶与新消费：速朽的世界，如何重组自己的精神？
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    半个月前，奈雪的茶正式登陆港股，虽然“新式茶饮第一股”上市首日就令人大跌眼镜，开盘即破发，收盘时跌幅超过13%，但这依然不妨碍这一天成为新式茶饮赛道乃至新消费战场的一个独特日子。
+「新式茶饮」是一种区别于传统冲泡式奶茶的中式茶饮，其通常采用新鲜食材，注重顾客体验与品牌文化，同时积极拥抱新技术，在门店运营、产品迭代与空间设计上不断推陈出新。
+「新式茶饮」作为新消费浪潮的领头军，嚣声可谓最盛。前......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-07-18
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/04/09/跟着这5本经典1/">
+                <h2 class="post-title">
+                    「PMM书单」跟着这5本经典，做好「产品市场经理」
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+不止一次听B2B营销前辈们提到「产品市场经理」有多难招，目前国内B2B公司的产品市场经理的缺口巨大。产品市场为什么这么稀缺？最大的原因莫过于，这是一个复合型的岗位，前辈Max老师就曾说过产品市场是产品、销售、市场之间的桥梁，这要求从业者的综合素质极高。
+近2年在To B圈愈发热门的产品市场经理（抑或产品营销经理）的主要职责已经有不少讨论可以快速查到，本文不再赘述，而是想分享一些关于做产......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-04-09
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/03/26/运营团队知识库构建宝典/">
+                <h2 class="post-title">
+                    运营团队知识库构建宝典
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+作为一个资深的运营，当你开始挑起大梁，成为运营部门的负责人，该怎么建立一个有能动性的优秀团队？该怎么把自己的运营经验，复制留存，形成方法论？
+抑或，当你新加入一家公司/接手一个团队，该怎么让你的团队精益求精，不管手下的同事怎么流动，你始终都能把控好节奏，让团队保持稳定，保证工作质量？
+当然也有可能，你只是对目前所在团队的工作氛围、整体素质感到不满，而公司规模没有大到能够建立自己的培训机......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-03-26
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2020/09/23/盲目斜杠，是一场自嗨/">
+                <h2 class="post-title">
+                    盲目斜杠，是一场自嗨
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    9月9日，一则快手正在内测播客app——皮艇的消息引起了不少人的注意，中文播客界关于发展与期待的声音正逐渐增多。
+一周前，第一财经YiMagazine在《中文播客，正在蓬勃生长》一文中也提到，在部分年轻听众中间，“做一档播客”像前两年的“拍一个Vlog”一样成了时髦事，这导致了中文播客在2020年出现了一轮小爆发。
+甚至有些人认为目前的中文播客就像早期的微信公众号，即将成为一个新的风口。
+当......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2020-09-23
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2020/08/24/网易云音乐，一门宗教的生意/">
+                <h2 class="post-title">
+                    网易云音乐，一门宗教的生意
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+凝视“网抑云”
+最近，网易云音乐不仅与环球音乐集团达成战略合作，与阿里88VIP宣布战略合作，还成功举办了TFBOYS“日光旅行”线上演唱会。一时间，关于“网抑云”的嘲讽声与叫好声，此消彼长。
+  
+视线若往回探一些，就会看到，一直以来都有两种声音围绕着网易云音乐。
+持否定态度的一方，总是揪着版权问题，对网易云音乐进行质疑。曾有人在否定网易云音乐的模式时表示，就像阿里等于电商，腾讯等于......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2020-08-24
+            </p>
+        </div>
+        <hr>
+    
+        </div>
+    
+        <div class="tab-pane fade " id="product-service">
+            
+        <div class="post-preview">
+            <a href="/2026/01/24/内容营销强壮手册小报童/">
+                <h2 class="post-title">
+                    「内容营销强壮手册」小报童
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+Hi，我是美仪～
+八年前，我坐在一家创业公司的小隔间里，每天的工作就是追热点、排版、想标题。曾以为这就是内容营销的全部。
+直到后来，我做了产品运营，发现用户增长离不开内容；做了SEM、SEO，发现流量获取离不开内容；开始做商业化运营后，更是深感——销售需要内容做弹药，客户成功需要内容做教材，品牌需要内容做基石。
+内容，成了我职业生涯中一个贯穿始终的东西。它不只是“写文章”这么简单，而是串联......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2026-01-24
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/05/27/产品营销强壮手册/">
+                <h2 class="post-title">
+                    「产品营销强壮手册」小报童
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+「产品营销强壮手册」是什么？
+面向产品营销人的强壮手册
+这里有实战经验，思考总结和掏心窝子的话
+还有热乎乎的书籍精读笔记
+希望成为你前行途中的电子队友
+你可以收获什么？
+关于产品营销的思考与记录，有部分内容已经分享在这个公众号里。但在小报童，我将更新那些自己知识手册里未曾对外分享过的内容。因此，你可以收获我过去5年的产品营销经验总结与独家思考。
+
+权益1·初阶入门 X 5篇：5篇认知构建，......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-05-27
+            </p>
+        </div>
+        <hr>
+    
+        </div>
+    
+        <div class="tab-pane fade " id="life">
+            
+        <div class="post-preview">
+            <a href="/2025/12/20/2025年度书影总结/">
+                <h2 class="post-title">
+                    2025 年度书影总结
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    《理想的城市》
+再次思考城市这个话题 --2025.11.27 读后感
+
+在思考定居地时，我读到了这本《理想的城市》。当然，它并不会告诉我上海和杭州哪一个更理想，而更像一本散文式的城市理论变迁史。书中反复提及《美国大城市的死与生》，让我想起前些年读过的那些关于人与城市的书，和写过的文章《北京出租车大爷的谩骂里》《看不见的城市》。
+如今，这个问题又一次摆在我面前：人该如何选择一个适合自己的城市......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-12-20
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/11/16/我完整自洽/">
+                <h2 class="post-title">
+                    32岁，我完整自洽
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+32岁的开头，我在日记问了自己3个问题：
+
+如果生命只剩下1年，我会怎样度过？
+如果生命只剩下1个月，我会怎样度过？
+如果生命只剩下1天，我会怎样度过？
+
+当我写下这三个问题的答案，真正向往的生活自然就清晰了。于是我告诉自己，不要等到以后再去过想要的生活，而是从此刻就这样去生活。
+于是2025年，我和家人自驾游，和队友去了意大利古城，去看了那些书本上的画作，去见了很多老朋友，也时常去逛公园......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-11-16
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/09/21/我如何思考自由/">
+                <h2 class="post-title">
+                    2024 我如何思考自由
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+自由，意味着拥抱不确定性，意味着不知明天会怎样，它的影子是，焦虑与孤独。2024年，我如何思考自由，就如何生活。今天尝试把贯穿春夏秋冬的缥缈思绪，记为一篇与自由有关的年终总结。
+春天，渴望自由
+“还是加班到日落，没空吻到燃烧的云朵。”
+春天，四月份的那段时间，新的工作方向充满困难与未知，好像也难以明确新方向的价值。工作到底该怎么开展呢？和身边的人展开了很高频的讨论，加了不少班，互相纾解。后......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-09-21
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/08/23/我们可以想要一些不同的东西/">
+                <h2 class="post-title">
+                    我们可以想要一些不同的东西
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+2025年的2月春节，我发现社交网络上的“小姨”故事愈发丰富，她从一个年轻漂亮精致的爱给红包、礼物的完美化身，逐渐演变成了一种在大城市工作，但仍然保持着美丽精致，成为了一个独立老姑娘的精致版代名词。虽然它有被消费主义扩大的效应，各种店铺的小姨风穿搭卖得火爆。但仍然得承认其中多多少少承载着年轻女孩对于成长后的模样的一种脸谱化想象。
+过去，可以看到人们对于老姑娘有多么苛刻。就像玛丽·科克在《老......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-08-23
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/03/07/春节自驾游我看到了父母与现代性的距离/">
+                <h2 class="post-title">
+                    春节自驾游：我看到了父母与现代性的距离
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    2025 年 1 月 26 日，我从上海高铁出发，老弟从杭州开车出发，在嘉兴接上老妈老爸。在嘉兴南站等了大概 50 分钟，终于上了老弟的车，开始蛇年春节的南方自驾游。这是我们一家四口，第一次整整齐齐在春节出游远方，老弟负责开车，我负责行程攻略。
+老坟
+路途中，在老家待了半年的老妈在黑色羽绒服的领口里，围着一个花花绿绿的丝巾，向我们讲述街坊亲戚的家长里短。
+她说着，分居两地的谁家媳妇儿回了老家......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-03-07
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/02/11/我在2024的春夏秋冬里/">
+                <h2 class="post-title">
+                    我在2024的春夏秋冬里
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    自由，意味着拥抱不确定性，意味着不知明天会怎样，它的影子是，焦虑与孤独。2024 年，我如何思考自由，就如何生活。今天尝试把贯穿春夏秋冬的缥缈思绪，记为一篇与自由有关的年终总结。
+春天，渴望自由
+
+还是加班到日落，没空吻到燃烧的云朵。
+
+春天，四月份的那段时间，新的工作方向充满困难与未知，好像也难以明确新方向的价值。工作到底该怎么开展呢？和身边的人展开了很高频的讨论，加了不少班，互相纾解。后......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-02-11
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2025/02/02/在MBA课堂上看见生活与自我的轮廓/">
+                <h2 class="post-title">
+                    在MBA课堂上看见生活与自我的轮廓
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    在发展心理学的视角下，人的一生可以划分为好几个阶段，每个阶段都有不同的核心任务，如果上一个阶段的核心任务没有完成，可能就会延续到下一个阶段。那我感觉，读 MBA 这件事儿，就好像在18岁求学时期没能完成就读理想院校，或顺利读研的阶段性目标，于是这个未竟的任务就延续到了近30岁的职场阶段。然而，这时候成本就高出了不少，仅仅就我所在的上海地区而言，几个名校的 MBA 项目的费用就已经高达四五十万......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2025-02-02
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/12/22/2024下半年读的书/">
+                <h2 class="post-title">
+                    2024下半年读的书
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+如果你也是一个二三十岁的女性，在思考自己想要什么样的生活而现实有哪些冲突，你会开始发觉生活中有那么多不适与矛盾，那么你大概率会走上学习女性主义的道路。
+如果恰好你还是一个有阅读习惯的人，那么这几年，你大概率会遇到这些书：
+
+蕾切尔·卡斯克“一个知识女性的思考”三部曲
+安妮·埃尔诺的“自我民族志”
+埃莱娜·费兰特书写女性友谊与成长的几部小说——那不勒斯四部曲
+德博拉·利维的“女性成长三部曲”......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-12-22
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/09/20/过假期我去书店休整自己/">
+                <h2 class="post-title">
+                    过假期,我去书店休整自己
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+去内山书局
+9月15日，中秋假日的第一天，台风将至的日子。
+在小红书上搜索中秋假期里上海的分享会和展览活动，找到一个关于《我们从未中产过》的圆桌在多伦美术馆。刚好就在内山书局的附近，便准备去内山打发下午的时间。
+内山书局大部分的书都没有拆封，并且对我胃口的也没那么多。于是就挑了一本已经拆封的《我的爱情观》来看。这本书很轻松，有些说法过于简要，以至于给人有刻板印象的理解，2小时就读完了。这个......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-09-20
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/08/11/最近想赞美闲暇/">
+                <h2 class="post-title">
+                    最近想赞美闲暇
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+最近的生活，常有惊喜。
+因为学校放暑假了，所以我终于有完整的周末时光可以自由安排，可以睡到自然醒，想去哪里就去哪里。我必须得好好珍惜这样的时刻！因此，每个周末我都选择出行，去书店、去公园，去感受活力与欲望。
+在内山书局偶遇胡安焉
+2024年8月10日，一个接近40度的周六。
+推开内山书局的大门，一进来就意外地遇到了一张分享会海报。原来这个下午胡安焉在这里举办《生活在低处》新书分享会。前段时......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-08-11
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/07/09/忙碌的陷阱与最重要的事/">
+                <h2 class="post-title">
+                    忙碌的陷阱与最重要的事
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+不知道从什么时候开始，我们已经很难把人生当作三段论的：受教育-工作-退休。因为工作变得越来越不稳定，寿命却在明显延长。与此同时，新的技术与行业的出现，让我们的技能遇到挑战，有些技能变得越来越不重要，人们得持续不断地学习新的技能，这样才能保持自己在就业市场上的竞争力。而且，在晚婚晚育的趋势下，很明显我们国家的养老金计划将难以为继，养老重担的大头还是压在我们自己和小家庭上。
+所以，我们不得不去......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-07-09
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/06/10/2024上半年读的几本书和电影/">
+                <h2 class="post-title">
+                    2024上半年读的几本书和电影
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+年光与物随流水，度过2024年的一半。
+工作上，有一些重点转变，出了几趟差，愈发深刻地感受到复杂环境中的身不由己，以及效率至上的大企业如何对人产生异化的作用。
+生活上，去了一趟川西，看看原野与雪山；回了几次科大本部上课，而初识了石榴花；参加了高中姐妹的婚礼，见了不少老朋友。
+写作上，开设了《产品营销强壮手册》这个小报童专栏，收获了一点点付费读者；还开始在少数派上记录生活。
+当然，也看了一些......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-06-10
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/04/26/大厂一周年/">
+                <h2 class="post-title">
+                    我来大厂一周年：无法松弛的齿轮
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+转眼，加入B大厂一周年了。刚加入的时候，有人道喜——毕竟在增长不易的当下，可以算是加入了“中国最好的互联网公司”。有人担忧——要兼顾工作与学业，实在需要保重身体。
+我们很容易忽视了身体的过劳，《百岁人生》中认为人拥有两类资产，一类是有形资产，比如金钱、房产等，另一类是无形资产，包含了你的身体与精神健康、再教育等。身体能量是你同样需要管理的资产，它像你的金钱一样重要。
+在忙着挣钱的时候，加班......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-04-26
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/03/03/30岁自问/">
+                <h2 class="post-title">
+                    30岁自问：你前往荒野了吗
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+今天早上，看到朋友分享了一则视频 ↑ ，30岁的周彤回忆并对话了26岁时给自己打的一通电话。令我略有触动。
+于是，我对过去几年的年终总结进行了一番回溯，试图对比一下30岁和26岁的生活，看看自己现在能否回答当初提的问题，解决曾经的疑惑。
+相关文章
+
+2019，26岁年终总结《新生活，是你将前往的荒野》
+2020，27岁年终总结《在一块碎片上固定自己》
+2021，28岁年终总结《2021读完......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-03-03
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2024/02/17/回乡过年/">
+                <h2 class="post-title">
+                    回乡过年，30岁未婚长女的一场精神战役
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+你的春节，还好吗？是原地过节，还是返回老家？
+回乡过年——对一个30岁未婚的乡镇家庭长女来说，就是一场注定不会轻松的精神战役。在这短短一周里，我看到了很多东西，看到了自己、看到了成人、看到了孩子，看到了代际之间命运的重复，也看到了个体的无力和时代的烙印。
+今天是2024年2月17日，大年初八的下午，我坐在库布里克书店，回想刚刚过去的春节，像是看完了一部漫长的电影。
+看自己：持久的心理战
+在......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2024-02-17
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/12/30/30岁/">
+                <h2 class="post-title">
+                    30岁，我独自来到上海生活
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+2023年，最大的变动便是，由于要读MBA和新的工作机会，我搬到了上海。
+这个城市对我而言，夹杂着几种不同的记忆，它是城郊的工业区，也是他者的旅途，此刻也意味着一种相对的自由。
+城郊工业区与边缘童年
+2000年前后，家人在上海郊区，类似松江区青浦区一类的村郊工厂上班，记忆里的早期一家四口是住在一个屋子里的，两张床分别靠着两边的墙放，弟弟还是读幼儿园的年纪。那时候，外地人在公立小学读书，每年......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-12-30
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/11/05/2023读的几本书和碎碎念/">
+                <h2 class="post-title">
+                    2023读的几本书和碎碎念
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+1.《低生育陷阱》
+山田昌弘在这本书中分析日本近30年来低生育率的原因和对策的失败，不一定全面，但对于东亚社会的经济压力、典型民族性格和主流阶级话语算是做出了一些总结：
+
+进入现代风险社会，严格的人生和职业路径规划，以及风险规避意识，让日本人面对生育这个几乎与不受控制的高风险划等号的事情，不得不慎重起来。
+在人情社会中，日本人始终抱持着对体面的执着，当生育可能有损自己的体面时，就成为了令人......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-11-05
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/05/12/MBA备考心路/">
+                <h2 class="post-title">
+                    MBA 备考心路｜那些深夜伏案的日子
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    因为不知道自己能不能录取，所以在2022的年终总结里，我提到“2022最大的成就感，来源于完成了一项耗时挺久的计划，并且对结果不那么患得患失”，但并未言明这个计划是什么。现在终于可以跟大家分享录取的喜悦了：
+
+关于读研究生这件事情，算起来在心里已经扎下了3年：
+
+2020年，学了半年的传播学，慎重思考后选择放弃读这个专业；
+2021年，因为膝盖的意外做手术、拄拐，还加入了新公司，所以选择先养......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-05-12
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/05/01/聊聊杭州/">
+                <h2 class="post-title">
+                    聊聊杭州2年多：有张有弛 有转折
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+带着“我要去这里定居”的初心来到杭州。在进一步“打开自己”后，发现目前仍然无法安居某个固定的地方。这种状态倒也算不上是“野心”，也许只能算是一种“好奇心”，想看看自己还可以去到哪里。并不是一定一定追求跑出多远，而是趁着自己还有劲儿，继续走走看看。
+带着“我还可以走得更远”的心情离开杭州。虽然不能确定下一个目的地能否顺利达到，但至少先在上海体验着吧。再次回到这个我出生、童年成长的地方，这个父......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-05-01
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/02/10/生活的减法游戏/">
+                <h2 class="post-title">
+                    生活的减法游戏
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+对于人的欲望，不少哲学家都有过探讨。比如，叔本华说人生就是一个钟摆。当欲望得不到满足时，会感到痛苦，于是我们会为了满足欲望而付出努力，而当欲望满足、目标达成后，又觉得 just so so，很快会感到无聊。因此人生就是一个在痛苦和无聊之间不停摇摆的过程。
+我大概是5-6年前在一本书看到了这个“钟摆理论”，自此我开始认真思考欲望这个东西。在《2022 我在思考些什么？》中，我简短地总结了一下......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-02-10
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/02/09/一份对工作倦怠感的诊断书/">
+                <h2 class="post-title">
+                    一份对“工作倦怠感”的诊断书
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+当你从事一份工作数年，倦怠感可能就会袭来，而这种倦怠感来源于什么？是能够被消除的吗？该如何理解自己的感受？倦怠感，是该换工作的信号吗？
+前段时间我持续思考有关倦怠感的这些问题，观察身边的现象，也找寻书中的分析。这篇文章正是给“工作倦怠感”做出的“病因”诊断书，从内生和外源两个角度展开。
+内生
+1、如何认识自己的工作？
+人们正在从事的工作，可以从三个层次来认识：
+
+天职（Vocation......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-02-09
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2023/01/02/我在思考些什么？/">
+                <h2 class="post-title">
+                    2022 我在思考些什么？
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+如果你也是一个关心公共性问题的人，那么2022年大概也会像我一样有这样的感受：“人人坐享小小的幸福，嘴里嚷着小小的痛苦——当赤裸裸的痛苦端到他面前，他的安乐遂显得丑陋，痛苦显得轻浮。”
+太多魔幻的事情发生，于是2022最常出现的情绪就是愤怒，并且认识到在一个把忍耐当成美德的社会里，人们的忍耐限度是多么高，但忍耐不是美德，对不公感到生气才是美德，对自由与理性的坚持才是美德。
+当然，2022也......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2023-01-02
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/07/31/日常生活的神游/">
+                <h2 class="post-title">
+                    日常生活的神游
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    这篇文章，只是一些日常生活的神游，一些进入过脑海的东西，以及一些想要跑出来的东西。
+
+巨兽与人的境况
+在一家巨型书店买了《巨兽：工厂与现代世界的形成》这本研究巨型工厂历史的书。弗里曼从百年前的英国到如今的中国，盘点起世界各地巨型工厂的兴衰，也直叙了这些“巨兽”所带来的物质景观与意识形态的影响。看这本书的过程里，我脑海中浮现了儿时居住的沪郊工业区与曾途经的“眼镜之都”、“纽扣之乡”等工业集约地......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-07-31
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/05/08/我的母亲/">
+                <h2 class="post-title">
+                    我的母亲
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                     
+
+         
+        我的母亲（左一）和她的姐妹们
+    
+
+今年的母亲节，没有为母亲准备什么礼物，但想第一次写下与母亲有关的一些思绪。
+上午起床后，我边拖地边听着「放学以后」最新一期的《看见母亲和她们的传奇，成为我们有可能的自己》，听到一半不禁哽咽，接着写完了本文。
+母亲与父权制的家庭 (母亲如何被父亲瞧不起)
+这么多年来，父亲似乎已经习惯了在不满、质疑母亲的观点时，......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-05-08
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/05/07/看不见的城市/">
+                <h2 class="post-title">
+                    看不见的城市
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+分享一本值得再读的书，和一些读后的小念头。
+轻盈的城市
+曾经我们以为上海是个城堡般的地方，物产丰富，井然有序的守卫把守着每道城墙，连绵的霓虹灯镶嵌天空，流光溢彩。人们潮水般地涌向这里，每一个新居民，都给这座城堡捐赠一座新的路灯，于是城堡一天比一天光明，照得人们面泛金光，看不清这底下究竟换了多少副面孔。
+而现在上海成了卡尔维诺笔下奥塔维亚一样的蛛网之城。被大麻绳所编织的网兜着，悬在两座陡......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-05-07
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/04/03/精英的傲慢/">
+                <h2 class="post-title">
+                    在迈克尔·桑德尔笔下，看见精英的傲慢
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+经常听人提起迈克尔·桑德尔，以及他的新书《精英的傲慢》，于是看了看。前段时间，又看了牛津中国论坛主办的项飙与桑德尔的对谈，正是围绕他的这本书展开的交流。虽然聊的依然是那些他们常提及的话题，表达的依然是他们反复倡导的观点，但是依然觉得能够触动自己，引发更多关于人们的际遇与公共生活的思考。
+具体内容可以戳这两篇单读的记录与翻译：
+《项飙 × 迈克尔·桑德尔：越努力越幸运是一种假象》
+《项飙......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-04-03
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/02/17/对抗被占有所统治的生活/">
+                <h2 class="post-title">
+                    对抗被“占有”所统治的生活
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+离实践越远，感受越模糊。即使在文字中感到深刻的震撼，也不及实践的刀刃划过肌肤的痛楚。
+数年未归乡，在今年春节的返乡之行中，我产生了诸多新的观察与感受。假期中读完了费洛姆的《存在的艺术》，因此更有一番先人智慧与自我生活的交错体验。假期里我跟弟弟简短地提起了这本书与我的感受，但我想他或许并没有完全理解，故书写之。
+费洛姆认为，人的生存方式有两种，一种是以占有的多寡来衡量幸福，判断人生的价值......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-02-17
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/12/29/2021读完60本书后/">
+                <h2 class="post-title">
+                    2021读完60本书后，我在想些什么
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+
+“话语对于隐秘的思想没有好处，每当人们说出什么的时候，那东西立即就会稍稍走样，稍稍被歪曲，稍稍显得愚蠢——是的，就连这一点也极好，也极令我欢喜，我也极表同意，因为在某一个人视作珍宝和智慧的东西，在另一个人听来却往往是很愚蠢的。”   ——《悉达多》
+
+当悉达多决定告别沙门之路，走入城市的时候他视世俗生活为游戏，投身其中但轻蔑对待。谁知后来日渐沉迷，逐生痛苦，终究还是走上了抛弃与重新追......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-12-29
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/11/02/四分之一人生阶段/">
+                <h2 class="post-title">
+                    四分之一人生阶段：如何理解“意义感缺失”
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    
+It’s nine o’clock,
+I’m getting tired,
+I’m sick of all my records,
+And the clothes I bought today,
+Am I cracking up,
+Or just getting older?  ——《Just Getting Older》
+
+近几年，面对困扰和痛苦的时候，我逐渐养成了一个习惯——先了解这个......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-11-02
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/06/14/任凭这个暴力的世界击败自己/">
+                <h2 class="post-title">
+                    任凭这个暴力的世界击败自己
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                      
+《回归故里》
+[法]迪迪埃·埃里蓬
+
+就像迪迪埃·埃里蓬回顾自己是如何成为了现在的自己时，发现自己在性向这一条线索以外，忽视了阶级这个根源一样，我过去总认为自己对社会学产生兴趣的线索是对传播学的学习，而如今越来越清晰地认识到，其实是对于自身以及所处环境的困惑与好奇。
+其中，最典型的子题就有“了解自己与原生家庭”。通过这些书就可以看出：
+  
+见自己，见天地，见众生。从社科学习中，我逐渐......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-06-14
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/02/26/二月剧变/">
+                <h2 class="post-title">
+                    二月剧变
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    对于近一个月发生的剧变与在医院度过的春节，太多感受与思绪难以通过语言表达。就像里尔克说的：一切事物都不是像人们要我们相信的那样可理解而又说得出的；大多数的事件是不可信传的，它们完全在一个语言从未达到过的空间。而尽可能地记录当下，仿佛是一种对于经历的责任感，敦促我书写。
+  
+与风险“共生”
+当人经历过彻夜难眠的伤痛时，或许才能真的体悟到生命的本源，就像我现在觉得，所有对于身外之物的追寻终归于......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-02-26
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/01/02/在一块碎片上固定自己/">
+                <h2 class="post-title">
+                    在一块碎片上固定自己
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    2020，是孤独的一年。
+
+卡尔维诺说，重负之下人们
+会奋不顾身扑向某种轻
+成为碎片。在把自己撕成更小
+碎片的快慰中认识自我
+我们的力量只够在一块
+碎片上固定自己
+折枝。写作。频繁做梦——
+围绕不幸构成短暂的暖流
+感觉自己在孤岛上。
+岛的四周是
+很深的拒绝或很深的厌倦
+才能形成的那种蔚蓝
+——《孤岛的蔚蓝》陈先发
+选自《横琴岛九章》
+
+  
+我的氧气已经支撑不到明天了
+
+关于坚持
+过去我认为......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-01-02
+            </p>
+        </div>
+        <hr>
+    
+        </div>
+    
+        <div class="tab-pane fade " id="podcast">
+            
+        <div class="post-preview">
+            <a href="/2022/08/13/Podcast-4/">
+                <h2 class="post-title">
+                    Vol.4 了解女性主义，从这4个词开始
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    ​
+
+
+偶尔会与朋友聊起一些女性主义观点，而那些观点的表述，常常引起疑问。于是我便需要对概念做出解释，最好再举出一些例子来佐证，最终这种对话常常以推荐书籍结尾。当然，对方大概率不会真的记下书目名字，不一定会真的去阅读。而我若是再去追踪、强推，也会有点强人所难，自讨没趣。
+渐渐地，我意识到自己及我所熟悉的一些朋友所学习的女性主义更多的是一种舶来品，从沃斯通克拉夫特、波伏娃、伍尔夫、上野千鹤子等......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-08-13
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/06/18/Podcast-3/">
+                <h2 class="post-title">
+                    Vol.3 Me, How to Nourish My Spirit
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    ​
+
+
+产生连接，寻找力量。本期节目与你用英文聊聊：
+
+我是谁？
+我的精神养分来自哪里？
+我为什么要录英文播客？
+
+【本期推荐】
+
+Seahorse Planet 海马星球
+Universal Residents 宇宙乘客
+After School 放学以后
+
+...
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-06-18
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2022/01/12/Podcast-2/">
+                <h2 class="post-title">
+                    Vol.2 从个体感受到星火力量，我们如何谈论女性？
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    ​
+
+
+作为一名普通女性，我们会经历怎样的觉醒过程？是什么契机让我们开始产生更多关于生活的思考，开始发现个体与社会之间的张力？
+性别意识对普通女性来说，意味着什么？当某些关键词在当前的社会语境（尤其是社交媒体）中被污名化，我们如何发出自己的声音？这些问题，都让我和Nicole有着不少思考，阅读与交流是我们力所能及寻找自洽与建立安全感的方式，也希望有更多人与我们产生连接，寻找星火力量。本期节目......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2022-01-12
+            </p>
+        </div>
+        <hr>
+    
+        <div class="post-preview">
+            <a href="/2021/09/20/Podcast-1/">
+                <h2 class="post-title">
+                    Vol.1 旅行，是大型表演也是反结构的“仪式过程”
+                </h2>
+                <h3 class="post-subtitle">
+                    
+                </h3>
+                <div class="post-content-preview">
+                    ​
+
+
+阅读和旅行，都是一种让我们扩展认知边界的方式。2020年的国庆假期看到了极光般神奇的海边落日，还记得那天听到「不合时宜」的主播孟常分享了《遮蔽的天空》结尾的一句话：“人这一生可以看多少次日落呢？或许就20次吧，然而人们觉得一切都可以任意挥霍。”令我记忆至今。
+
+旅行意味着什么？它是否已经被过度粉饰，成为一种大型的公众表演？作为一种生活的仪式感，它又是怎样满足着我们的需要？这些思考，让......
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by Wue on
+                2021-09-20
+            </p>
+        </div>
+        <hr>
+    
+        </div>
+    
+</div>
+
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    
+</ul>
+
+
+                <!-- 如果开启评论功能 -->
+                
+
+            </div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                            
+                            <a href="/tags/#阅读与书影" title="阅读与书影" rel="12">阅读与书影</a>
+                            
+                        
+                            
+                            <a href="/tags/#自我秩序" title="自我秩序" rel="33">自我秩序</a>
+                            
+                        
+                            
+                            <a href="/tags/#职业选择" title="职业选择" rel="14">职业选择</a>
+                            
+                        
+                            
+                            <a href="/tags/#城市与生活" title="城市与生活" rel="8">城市与生活</a>
+                            
+                        
+                            
+                            <a href="/tags/#产品营销" title="产品营销" rel="13">产品营销</a>
+                            
+                        
+                            
+                            <a href="/tags/#商业思考" title="商业思考" rel="13">商业思考</a>
+                            
+                        
+                            
+                            <a href="/tags/#播客" title="播客" rel="4">播客</a>
+                            
+                        
+                            
+                            <a href="/tags/#内容营销" title="内容营销" rel="4">内容营销</a>
+                            
+                        
+                            
+                            <a href="/tags/#家庭关系" title="家庭关系" rel="3">家庭关系</a>
+                            
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        <style type="text/css">
+                            .pointer{
+                            cursor: pointer;
+                            }
+                        </style>
+                        
+                        
+                            <img src="/img/avatar.jpg" />
+                        
+
+                        
+                            <p>吴仪, PMM, 读书人。 公众号/播客: 事外</p>
+                        
+
+                        <!-- SNS Links -->
+                        <ul class="list-inline">
+                            
+                                <script type="text/javascript">
+                                    function  showImg(){
+                                    document.getElementById("wxImg").style.display='block';
+                                    }
+                                    function hideImg(){
+                                    document.getElementById("wxImg").style.display='none';
+                                    }
+                                </script>
+                                <li>  
+                                    <a href="javascript:void(0)" onMouseOut="hideImg()"  onmouseover="showImg()">
+                                        <span class="fa-stack fa-lg">
+                                            <img src="/img/wechat.svg" height="30" alt="wechat" style="cursor:pointer;" >
+                                        </span>
+                                    </a>
+                                </li>
+                                <div id="wxImg" style="display:none;position:absolute;">
+                                    <img src="/img/wechat-qr.jpg" >
+                                </div>
+                            
+
+                            
+                                <li>
+                                    <a target="_blank" href="https://www.zhihu.com/people/yi-mi-ba-zhen-yi">
+                                        <span class="fa-stack fa-lg">
+                                            <img src="/img/zhihu.svg" height="30" alt="zhihu" style="cursor:pointer;" >
+                                        </span>
+                                    </a>
+                                </li>
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+                                <li>
+                                    <a target="_blank"  href="https://sspai.com/u/cug3t3us/posts" >  
+                                        <span class="fa-stack fa-lg">
+                                            <img src="/img/sspai.svg" height="30" alt="少数派" style="cursor:pointer;">
+                                        </span>
+                                    </a>
+                                </li>
+                            
+
+                            
+                                <li>
+                                    <a target="_blank"  href="http://www.woshipm.com/u/763699" >  
+                                        <span class="fa-stack fa-lg">
+                                            <img src="/img/pm.svg" height="30" alt="人人都是产品经理" style="cursor:pointer;" >
+                                        </span>
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </section>
+                
+                <!-- Friends Blog -->
+                
+            </div>
+        
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted">
+                    Copyright &copy; Stay Out Space 2026 
+                    <br>
+                    Made with love by <a href="https://Wue93.github.io">Wue</a> 
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+<script src="js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="js/hux-blog.min.js"></script>
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://Wue93.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="https://Wue93.github.io/img/shiwai.jpg" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
