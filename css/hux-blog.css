@@ -48,6 +48,66 @@
 .sidebar-container .short-about .list-inline > li {
   padding-left: 0px;
 }
+.sidebar-container .product-services {
+  margin-bottom: 28px;
+}
+.sidebar-container .product-services h5 {
+  padding-bottom: 0.65em;
+}
+.sidebar-container .service-card {
+  display: block;
+  margin-bottom: 12px;
+  padding: 16px 16px 15px;
+  border: 1px solid #dde6e3;
+  border-radius: 8px;
+  background: #fbfcfc;
+  box-shadow: 0 6px 18px rgba(64, 64, 64, 0.06);
+  color: #5d6764 !important;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.sidebar-container .service-card:hover,
+.sidebar-container .service-card:active {
+  border-color: #3F6B63;
+  box-shadow: 0 10px 24px rgba(63, 107, 99, 0.16);
+  color: #3F6B63 !important;
+  transform: translateY(-1px);
+}
+.sidebar-container .service-card-primary {
+  background: #f5f8f7;
+}
+.sidebar-container .service-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(63, 107, 99, 0.1);
+  color: #3F6B63;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.sidebar-container .service-card strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #404040;
+  font-size: 15px;
+  line-height: 1.35;
+}
+.sidebar-container .service-copy,
+.sidebar-container .service-action {
+  display: block;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.sidebar-container .service-copy {
+  color: #7f8a86;
+}
+.sidebar-container .service-action {
+  margin-top: 10px;
+  color: #3F6B63;
+  font-weight: 700;
+}
 .catalog-container {
   padding: 0px;
 }
