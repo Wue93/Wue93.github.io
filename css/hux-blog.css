@@ -1378,10 +1378,15 @@ samp {
 #Tabs {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 10px;
   border-bottom: 0;
   margin: 0 0 24px;
   padding: 4px 0 6px;
+}
+#Tabs::before,
+#Tabs::after {
+  content: none;
 }
 #Tabs > li {
   float: none;
