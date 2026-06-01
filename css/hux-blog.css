@@ -1403,6 +1403,15 @@ samp {
   padding-bottom: 0;
   border-bottom: 0;
 }
+#Contents .tab-pane > .post-preview:first-child {
+  margin-top: 0;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
+#Contents .tab-pane > .post-preview:first-child > a > .post-title {
+  margin-top: 12px;
+}
 #Contents .post-preview:last-of-type {
   margin-bottom: 0;
 }
@@ -1536,7 +1545,7 @@ samp {
   justify-content: flex-start;
   gap: 10px;
   border-bottom: 0;
-  margin: 0 0 24px;
+  margin: 0 0 12px;
   padding: 4px 0 6px;
 }
 #Tabs::before,
@@ -1569,13 +1578,19 @@ samp {
 #Tabs > li.active > a:focus {
   background: #3F6B63;
   border-color: #3F6B63;
-  box-shadow: 0 6px 16px rgba(63, 107, 99, 0.16);
+  box-shadow: none;
   color: #fff;
+}
+#Contents,
+#Contents .tab-pane,
+#Contents .post-preview:first-child {
+  border-top: 0 !important;
+  box-shadow: none !important;
 }
 @media only screen and (max-width: 500px) {
   #Tabs {
     gap: 8px;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
   }
   #Tabs > li > a {
     font-size: 13px;
