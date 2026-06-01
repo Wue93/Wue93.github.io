@@ -1412,9 +1412,73 @@ samp {
 .post-content-preview:hover {
   color: #3F6B63;
 }
+.related-posts {
+  margin: 48px 0 10px;
+}
+.related-posts h5 {
+  margin: 0 0 14px;
+  color: #808080;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+.related-post-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.related-post-item {
+  display: block;
+  padding: 14px 16px;
+  border: 1px solid #edf1f0;
+  border-radius: 8px;
+  background: #fbfcfc;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.related-post-item:hover,
+.related-post-item:focus {
+  border-color: #3F6B63;
+  background: #f7faf9;
+  text-decoration: none;
+}
+.related-post-title,
+.related-post-meta {
+  display: block;
+}
+.related-post-title {
+  color: #404040;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.related-post-meta {
+  margin-top: 5px;
+  color: #a3a3a3;
+  font-size: 12px;
+  line-height: 1.4;
+}
 @media only screen and (min-width: 768px) {
   .post-content-preview {
     font-size: 14px;
+  }
+  .related-post-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.home-intro {
+  margin: 0 0 22px;
+  padding: 0 0 18px;
+  border-bottom: 1px solid #edf1f0;
+}
+.home-intro p {
+  margin: 0;
+  color: #5d6764;
+  font-size: 15px;
+  line-height: 1.7;
+}
+@media only screen and (min-width: 768px) {
+  .home-intro p {
+    font-size: 16px;
   }
 }
 #Tabs {
@@ -1649,6 +1713,42 @@ img::-moz-selection {
 }
 #tag_cloud {
   margin: 20px 0 15px 0;
+}
+.tag-topic-nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin: 22px 0 26px;
+}
+.tag-topic-group {
+  padding: 16px 18px 12px;
+  border: 1px solid #edf1f0;
+  border-radius: 8px;
+  background: #fbfcfc;
+}
+.tag-topic-group h2 {
+  margin: 0 0 10px;
+  color: #404040;
+  font-size: 15px;
+  line-height: 1.35;
+}
+.tag-topic-group .tags {
+  margin-bottom: 0;
+}
+.tag-topic-group .tags a {
+  border-color: #dfe7e4;
+  color: #5d6764;
+}
+.tag-topic-group .tags a:hover,
+.tag-topic-group .tags a:active {
+  border-color: #3F6B63;
+  background: #f4f7f6;
+  color: #3F6B63;
+}
+@media only screen and (min-width: 768px) {
+  .tag-topic-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 #tag_cloud a,
 #tag_cloud .tag {
