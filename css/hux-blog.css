@@ -1755,12 +1755,12 @@ img::-moz-selection {
   transition-property: all;
   transition-duration: 0.4s;
   transition-timing-function: ease;
-  font-size: 14px;
+  font-size: 12px;
   border: none;
-  line-height: 28px;
-  margin: 0 2px;
-  margin-bottom: 8px;
-  background: #f3f5f5;
+  line-height: 23px;
+  margin: 0 3px 7px 0;
+  padding: 0 9px;
+  background: #7FA296;
 }
 #tag_cloud a:hover,
 #tag_cloud .tag:hover,
@@ -1768,7 +1768,7 @@ img::-moz-selection {
 #tag_cloud .tag:active,
 #tag_cloud a.focus,
 #tag_cloud .tag.focus {
-  background-color: #3F6B63 !important;
+  background-color: #2F5E55 !important;
 }
 #tag_cloud a.focus,
 #tag_cloud .tag.focus {
@@ -1794,6 +1794,16 @@ img::-moz-selection {
 }
 .tag-comments {
   font-size: 12px;
+}
+.archive-post-link {
+  color: #3F6B63;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.archive-post-link:hover,
+.archive-post-link:focus {
+  color: #2F5E55;
+  text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
   .tag-comments {

@@ -453,8 +453,8 @@ c.行业生产力：人效高的行业，人均收入高，如金融。</p>
     if($('#tag_cloud').length !== 0){
         async("https://Wue93.github.io/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
+                size: {start: 12, end: 15, unit: 'px'},
+                color: {start: '#7FA296', end: '#2F5E55'},
             };
             $('#tag_cloud a').tagcloud();
         })

@@ -182,15 +182,15 @@
                         <div class="tags">
                             
                                 
-                                    <a href="#产品营销" title="产品营销" rel="13">产品营销</a>
+                                    <a href="#产品营销" title="产品营销" rel="14">产品营销</a>
                                 
                             
                                 
-                                    <a href="#商业思考" title="商业思考" rel="13">商业思考</a>
+                                    <a href="#商业思考" title="商业思考" rel="14">商业思考</a>
                                 
                             
                                 
-                                    <a href="#内容营销" title="内容营销" rel="4">内容营销</a>
+                                    <a href="#内容营销" title="内容营销" rel="5">内容营销</a>
                                 
                             
                         </div>
@@ -239,13 +239,13 @@
                 
                     <a href="#城市与生活" title="城市与生活" rel="8">城市与生活</a>
                 
-                    <a href="#产品营销" title="产品营销" rel="13">产品营销</a>
+                    <a href="#产品营销" title="产品营销" rel="14">产品营销</a>
                 
-                    <a href="#商业思考" title="商业思考" rel="13">商业思考</a>
+                    <a href="#商业思考" title="商业思考" rel="14">商业思考</a>
                 
                     <a href="#播客" title="播客" rel="4">播客</a>
                 
-                    <a href="#内容营销" title="内容营销" rel="4">内容营销</a>
+                    <a href="#内容营销" title="内容营销" rel="5">内容营销</a>
                 
                     <a href="#家庭关系" title="家庭关系" rel="3">家庭关系</a>
                 
@@ -1489,6 +1489,21 @@
                 </div>
                 <hr>
                 
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2025/04/01/客户培育业绩疲软时B2B企业的长情之道/">
+                        <h2 class="post-title">
+                            客户培育：业绩疲软时，B2B 企业的“长情”之道
+                        </h2>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
             </div>
             
             <div class="one-tag-list">
@@ -1691,6 +1706,21 @@
                 </div>
                 <hr>
                 
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2025/04/01/客户培育业绩疲软时B2B企业的长情之道/">
+                        <h2 class="post-title">
+                            客户培育：业绩疲软时，B2B 企业的“长情”之道
+                        </h2>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
             </div>
             
             <div class="one-tag-list">
@@ -1818,6 +1848,21 @@
                      <a href="/2021/11/30/白皮书制作指南/">
                         <h2 class="post-title">
                             白皮书制作指南：一本白皮书就是一个项目
+                        </h2>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2025/04/01/客户培育业绩疲软时B2B企业的长情之道/">
+                        <h2 class="post-title">
+                            客户培育：业绩疲软时，B2B 企业的“长情”之道
                         </h2>
                         
                     </a>
@@ -1973,8 +2018,8 @@
     if($('#tag_cloud').length !== 0){
         async("https://Wue93.github.io/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
+                size: {start: 12, end: 15, unit: 'px'},
+                color: {start: '#7FA296', end: '#2F5E55'},
             };
             $('#tag_cloud a').tagcloud();
         })
