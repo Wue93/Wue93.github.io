@@ -8,8 +8,16 @@ layout: layout
 
 <!-- Post Header -->
 <style type="text/css">
+    <%
+    function resolveHeaderImage(image) {
+        var headerImage = image || config["header-img"];
+        if (!headerImage) return "";
+        if (/^(https?:|\/\/|\/)/.test(headerImage)) return headerImage;
+        return config.root + headerImage;
+    }
+    %>
     header.intro-header{
-        background-image: url('<%= page["header-img"] || config.root + config["header-img"] %>')
+        background-image: url('<%= resolveHeaderImage(page["header-img"]) %>')
     }
 </style>
 <header class="intro-header post-hero" >

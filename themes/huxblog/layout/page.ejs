@@ -2,8 +2,16 @@
 layout: layout
 ---
 <!-- Page Header -->
-<% var isHomeHero = page.path === 'index.html'; %>
-<header class="intro-header <%= isHomeHero ? 'home-hero' : 'inner-hero' %>" style="background-image: url('<%= config.root %><%= page["header-img"] || config["header-img"] %>')">
+<%
+var isHomeHero = page.path === 'index.html';
+function resolveHeaderImage(image) {
+    var headerImage = image || config["header-img"];
+    if (!headerImage) return "";
+    if (/^(https?:|\/\/|\/)/.test(headerImage)) return headerImage;
+    return config.root + headerImage;
+}
+%>
+<header class="intro-header <%= isHomeHero ? 'home-hero' : 'inner-hero' %>" style="background-image: url('<%= resolveHeaderImage(page["header-img"]) %>')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">

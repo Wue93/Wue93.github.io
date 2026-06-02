@@ -711,6 +711,10 @@ pre.highlight {
 .search-icon-close {
   font-size: 16px;
 }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 body {
   /* Hux learn from
      *     TypeIsBeautiful,
@@ -1175,10 +1179,15 @@ samp {
 .intro-header::before {
   content: "";
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   inset: 0;
   background:
     radial-gradient(circle at 50% 28%, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 112px, rgba(4, 10, 9, 0.18) 280px, rgba(0, 0, 0, 0.32) 100%),
     repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.018) 0, rgba(255, 255, 255, 0.018) 1px, transparent 1px, transparent 88px);
+  pointer-events: none;
 }
 .intro-header .container {
   position: relative;
@@ -1262,6 +1271,12 @@ samp {
   padding: 95px 0 70px;
 }
 .intro-header.home-hero .site-heading {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-flex-direction: column;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1426,6 +1441,9 @@ samp {
   margin-top: 30px;
   margin-bottom: 8px;
 }
+.post-preview > a > .post-title::before {
+  content: none;
+}
 .post-preview > a > .post-subtitle {
   font-size: 15px;
   line-height: 1.3;
@@ -1543,9 +1561,8 @@ samp {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 10px;
   border-bottom: 0;
-  margin: 0 0 12px;
+  margin: 0 -10px 12px 0;
   padding: 4px 0 6px;
 }
 #Tabs::before,
@@ -1554,7 +1571,7 @@ samp {
 }
 #Tabs > li {
   float: none;
-  margin-bottom: 0;
+  margin: 0 10px 10px 0;
 }
 #Tabs > li > a {
   border: 1px solid #dde6e3;
@@ -1589,8 +1606,12 @@ samp {
 }
 @media only screen and (max-width: 500px) {
   #Tabs {
-    gap: 8px;
+    margin-right: -8px;
     margin-bottom: 12px;
+  }
+  #Tabs > li {
+    margin-right: 8px;
+    margin-bottom: 8px;
   }
   #Tabs > li > a {
     font-size: 13px;
