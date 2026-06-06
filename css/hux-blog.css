@@ -1869,9 +1869,16 @@ img::-moz-selection {
   color: #2F5E55;
   text-decoration: underline;
 }
+.tag-post-list .post-preview > a > .post-title {
+  font-size: 16px;
+  margin-top: 22px;
+}
 @media only screen and (min-width: 768px) {
   .tag-comments {
     font-size: 14px;
+  }
+  .tag-post-list .post-preview > a > .post-title {
+    font-size: 20px;
   }
 }
 .t:first-child {
