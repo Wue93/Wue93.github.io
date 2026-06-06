@@ -52,7 +52,7 @@ disqus_username: false
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: 
-  "吴仪, 读书人。公众号/播客: 事外。这里分享我关于技术商业、AI 工作流、产品营销与个体生活的长期写作。"
+  "吴仪，长期书写技术商业、AI 工作流、产品营销与个体生活。公众号 / 播客：事外。"
 sidebar-avatar: img/avatar.jpg      
 # use absolute URL, seeing it's used in both `/` and `/about/`
 

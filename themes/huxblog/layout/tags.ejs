@@ -32,15 +32,21 @@ layout: layout
                 site.tags.map(function(tag){
                     tagMap[tag.name] = tag;
                 });
+                var sortTagsByPostCount = function(a, b) {
+                    return b.length - a.length || a.name.localeCompare(b.name);
+                };
+                var sortedTags = site.tags.map(function(tag){
+                    return tag;
+                }).sort(sortTagsByPostCount);
             %>
             <section class="tag-topic-nav">
                 <% tagGroups.forEach(function(group){ %>
                     <div class="tag-topic-group">
                         <h2><%= group.title %></h2>
                         <div class="tags">
-                            <% group.tags.forEach(function(tagName){ %>
-                                <% if(tagMap[tagName]) { %>
-                                    <a href="#<%= tagName %>" title="<%= tagName %>" rel="<%= tagMap[tagName].length %>"><%= tagName %></a>
+                            <% group.tags.map(function(tagName){ return tagMap[tagName]; }).filter(function(tag){ return tag; }).sort(sortTagsByPostCount).forEach(function(tag){ %>
+                                <% if(tag) { %>
+                                    <a href="#<%= tag.name %>" title="<%= tag.name %>" rel="<%= tag.length %>"><%= tag.name %></a>
                                 <% } %>
                             <% }) %>
                         </div>
@@ -50,40 +56,42 @@ layout: layout
 
             <!-- 标签云 -->
             <div id='tag_cloud' class="tags">
-                <% site.tags.map(function(tag){  %>
+                <% sortedTags.map(function(tag){  %>
                     <a href="#<%= tag.name %>" title="<%= tag.name %>" rel="<%= tag.length %>"><%= tag.name %></a>
                 <% }) %>
             </div>
 
             <!-- 标签列表 -->
 
-            <% site.tags.map(function(tag){  %>
-            <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="<%= tag.name %>">
-                    <span class="tag-text"><%= tag.name %></span>
-                </span>
-                <% tag.posts.map(function(post){  %>
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <div class="post-preview">
-                     <a href="<%- config.root %><%- post.path %>">
-                        <h2 class="post-title">
-                            <%- post.title || "Untitled" %>
-                        </h2>
-                        <% if (post.subtitle && post.subtitle.length) { %>
-                            <h3 class="post-subtitle">
-                                <%- post.subtitle %>
-                            </h3>
-                        <% } %>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            <div class="tag-post-list">
+                <% sortedTags.map(function(tag){  %>
+                <div class="one-tag-list">
+                    <span class="fa fa-tag listing-seperator" id="<%= tag.name %>">
+                        <span class="tag-text"><%= tag.name %></span>
+                    </span>
+                    <% tag.posts.map(function(post){  %>
+                      <!-- <li class="listing-item">
+                      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                      </li> -->
+                     <div class="post-preview">
+                         <a href="<%- config.root %><%- post.path %>">
+                            <h2 class="post-title">
+                                <%- post.title || "Untitled" %>
+                            </h2>
+                            <% if (post.subtitle && post.subtitle.length) { %>
+                                <h3 class="post-subtitle">
+                                    <%- post.subtitle %>
+                                </h3>
+                            <% } %>
+                        </a>
+                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                    </div>
+                    <hr>
+                    <% }) %>
                 </div>
-                <hr>
                 <% }) %>
             </div>
-            <% }) %>
 
 
         </div>

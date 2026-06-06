@@ -48,6 +48,29 @@
 .sidebar-container .short-about .list-inline > li {
   padding-left: 0px;
 }
+.sidebar-container .sidebar-about {
+  margin-bottom: 28px;
+}
+.sidebar-container .short-about .about-button {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border: 1px solid #dfe7e4;
+  border-radius: 999px;
+  color: #3F6B63 !important;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.sidebar-container .short-about .about-button:hover,
+.sidebar-container .short-about .about-button:active {
+  border-color: #3F6B63;
+  background: #f4f7f6;
+  color: #2F5E55 !important;
+  text-decoration: none;
+}
 .sidebar-container .product-services {
   margin-bottom: 28px;
 }
@@ -1890,9 +1913,16 @@ img::-moz-selection {
   color: #2F5E55;
   text-decoration: underline;
 }
+.tag-post-list .post-preview > a > .post-title {
+  font-size: 16px;
+  margin-top: 22px;
+}
 @media only screen and (min-width: 768px) {
   .tag-comments {
     font-size: 14px;
+  }
+  .tag-post-list .post-preview > a > .post-title {
+    font-size: 20px;
   }
 }
 .t:first-child {
