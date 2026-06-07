@@ -1,0 +1,88 @@
+---
+layout: layout
+---
+
+<!-- Page Header -->
+<header class="intro-header inner-hero" style="background-image: url('<%= config.root %><%= page["header-img"] || config["header-img"] %>')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1><%= page.title || config.title %></h1>
+                    <span class="subheading"><%= page.description || config.subtitle || "" %></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<%
+    var bookData = site.data.books || {};
+    var years = (bookData.years || []).map(function(year){
+        return year;
+    }).sort(function(a, b){
+        return b.year - a.year;
+    });
+    var navYears = years;
+    function resolveBookCover(cover) {
+        if (!cover) return "";
+        if (/^(https?:|\/\/|\/)/.test(cover)) return cover;
+        return config.root + cover;
+    }
+%>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+            <section class="books-page">
+                <% if(bookData.preview) { %>
+                    <div class="books-preview-note">版式预览：当前书目和封面为示例数据</div>
+                <% } %>
+
+                <% if(bookData.intro) { %>
+                    <p class="books-intro"><%= bookData.intro %></p>
+                <% } %>
+
+                <nav class="books-year-nav" aria-label="年度书单导航">
+                    <% navYears.forEach(function(yearGroup){ %>
+                        <a href="#books-<%= yearGroup.year %>"><%= yearGroup.year %></a>
+                    <% }) %>
+                </nav>
+
+                <% years.forEach(function(yearGroup){ %>
+                    <section class="book-year-section" id="books-<%= yearGroup.year %>">
+                        <div class="book-year-heading">
+                            <h2><%= yearGroup.year %></h2>
+                            <% if(yearGroup.note) { %>
+                                <p><%= yearGroup.note %></p>
+                            <% } %>
+                        </div>
+
+                        <div class="book-grid">
+                            <% (yearGroup.books || []).forEach(function(book){ %>
+                                <article class="book-card">
+                                    <% if(book.cover) { %>
+                                        <img class="book-cover" src="<%= resolveBookCover(book.cover) %>" alt="《<%= book.title %>》封面">
+                                    <% } else { %>
+                                        <div class="book-cover book-cover-fallback" style="--book-color: <%= book.color || '#7FA296' %>;">
+                                            <span class="book-cover-title"><%= book.title %></span>
+                                        </div>
+                                    <% } %>
+                                    <h3>
+                                        <% if(book.link) { %>
+                                            <a href="<%= book.link %>" target="_blank" rel="noopener"><%= book.title %></a>
+                                        <% } else { %>
+                                            <%= book.title %>
+                                        <% } %>
+                                    </h3>
+                                    <p><%= book.author %></p>
+                                </article>
+                            <% }) %>
+                        </div>
+                    </section>
+                <% }) %>
+            </section>
+        </div>
+    </div>
+</div>

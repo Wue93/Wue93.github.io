@@ -1,0 +1,1370 @@
+years:
+  - year: 2025
+    count: 23
+    books:
+      - title: 全球书店步行
+        author: 汪耀华 主编
+        link: 'https://book.douban.com/subject/37169916/'
+        cover: /img/books/37169916.jpg
+        douban_id: '37169916'
+      - title: 活山
+        author: (英) 娜恩·谢泼德
+        link: 'https://book.douban.com/subject/37651089/'
+        cover: /img/books/37651089.jpg
+        douban_id: '37651089'
+      - title: 如何阅读一棵树
+        author: '[英]特里斯坦·古利'
+        link: 'https://book.douban.com/subject/37129165/'
+        cover: /img/books/37129165.jpg
+        douban_id: '37129165'
+      - title: 理想的城市
+        author: '[英] 利奥·霍利斯'
+        link: 'https://book.douban.com/subject/36787506/'
+        cover: /img/books/36787506.jpg
+        douban_id: '36787506'
+      - title: 西班牙的灵魂
+        author: '[美] 约翰·克罗'
+        link: 'https://book.douban.com/subject/35506049/'
+        cover: /img/books/35506049.jpg
+        douban_id: '35506049'
+      - title: 婚姻与爱情
+        author: '[英] 伯特兰·罗素'
+        link: 'https://book.douban.com/subject/36718623/'
+        cover: /img/books/36718623.jpg
+        douban_id: '36718623'
+      - title: 西班牙旅行笔记
+        author: 林达
+        link: 'https://book.douban.com/subject/25719513/'
+        cover: /img/books/25719513.jpg
+        douban_id: '25719513'
+      - title: 艺术的转向
+        author: '[法] 勒内·基拉尔'
+        link: 'https://book.douban.com/subject/37486932/'
+        cover: /img/books/37486932.jpg
+        douban_id: '37486932'
+      - title: 欲望的先知
+        author: '[法] 勒内·基拉尔 著'
+        link: 'https://book.douban.com/subject/36967783/'
+        cover: /img/books/36967783.jpg
+        douban_id: '36967783'
+      - title: 弗吉尼亚·伍尔夫传
+        author: '[英] 林德尔·戈登'
+        link: 'https://book.douban.com/subject/36207913/'
+        cover: /img/books/36207913.jpg
+        douban_id: '36207913'
+      - title: 成为波伏瓦
+        author: '[英] 凯特·柯克帕特里克'
+        link: 'https://book.douban.com/subject/35317169/'
+        cover: /img/books/35317169.jpg
+        douban_id: '35317169'
+      - title: 悠悠岁月
+        author: '[法] 安妮·埃尔诺'
+        link: 'https://book.douban.com/subject/35273140/'
+        cover: /img/books/35273140.jpg
+        douban_id: '35273140'
+      - title: 世界悬而未决，但也无关紧要
+        author: 巴哑哑
+        link: 'https://book.douban.com/subject/37118989/'
+        cover: /img/books/37118989.jpg
+        douban_id: '37118989'
+      - title: 我用中文做了场梦
+        author: '[意] 亚历（Alessandro Ceschi）'
+        link: 'https://book.douban.com/subject/36897362/'
+        cover: /img/books/36897362.jpg
+        douban_id: '36897362'
+      - title: 摄影小史
+        author: '[德 ]瓦尔特·本雅明'
+        link: 'https://book.douban.com/subject/36089533/'
+        cover: /img/books/36089533.jpg
+        douban_id: '36089533'
+      - title: 沉思录
+        author: '[古罗马]玛克斯•奥勒留'
+        link: 'https://book.douban.com/subject/10429639/'
+        cover: /img/books/10429639.jpg
+        douban_id: '10429639'
+      - title: 看那些灯光，亲爱的
+        author: '[法]安妮·埃尔诺'
+        link: 'https://book.douban.com/subject/36514762/'
+        cover: /img/books/36514762.jpg
+        douban_id: '36514762'
+      - title: 写作是一把刀
+        author: '[法]安妮·埃尔诺'
+        link: 'https://book.douban.com/subject/36402321/'
+        cover: /img/books/36402321.jpg
+        douban_id: '36402321'
+      - title: 东京八平米
+        author: '[日]吉井忍'
+        link: 'https://book.douban.com/subject/36096287/'
+        cover: /img/books/36096287.jpg
+        douban_id: '36096287'
+      - title: 老女孩
+        author: '[法]玛丽·科克'
+        link: 'https://book.douban.com/subject/37132581/'
+        cover: /img/books/37132581.jpg
+        douban_id: '37132581'
+      - title: 我走不出我的黑夜
+        author: '[法]安妮·埃尔诺'
+        link: 'https://book.douban.com/subject/36501250/'
+        cover: /img/books/36501250.jpg
+        douban_id: '36501250'
+      - title: 岁月的力量
+        author: '[法] 西蒙娜·德·波伏瓦'
+        link: 'https://book.douban.com/subject/36574415/'
+        cover: /img/books/36574415.jpg
+        douban_id: '36574415'
+      - title: 女性主义城市
+        author: '[加拿大] 莱斯莉·克恩 著'
+        link: 'https://book.douban.com/subject/36953607/'
+        cover: /img/books/36953607.jpg
+        douban_id: '36953607'
+  - year: 2024
+    count: 29
+    books:
+      - title: 最后死亡的是心脏
+        author: '[加]玛格丽特·阿特伍德'
+        link: 'https://book.douban.com/subject/30362708/'
+        cover: /img/books/30362708.jpg
+        douban_id: '30362708'
+      - title: 隐墙
+        author: '[奥地利] 玛尔伦·豪斯霍费尔'
+        link: 'https://book.douban.com/subject/36698238/'
+        cover: /img/books/36698238.jpg
+        douban_id: '36698238'
+      - title: 公开的秘密
+        author: '[加] 艾丽丝·门罗'
+        link: 'https://book.douban.com/subject/36229500/'
+        cover: /img/books/36229500.jpg
+        douban_id: '36229500'
+      - title: 四千周
+        author: '[英] 奥利弗·伯克曼（Oliver Burkeman）'
+        link: 'https://book.douban.com/subject/36093214/'
+        cover: /img/books/36093214.jpg
+        douban_id: '36093214'
+      - title: 日常的深处
+        author: 王小伟
+        link: 'https://book.douban.com/subject/36622125/'
+        cover: /img/books/36622125.jpg
+        douban_id: '36622125'
+      - title: 过一种女性主义的生活
+        author: '[英]萨拉·艾哈迈德'
+        link: 'https://book.douban.com/subject/36494081/'
+        cover: /img/books/36494081.jpg
+        douban_id: '36494081'
+      - title: 时代的精神状况
+        author: '[德] 卡尔·雅斯贝斯'
+        link: 'https://book.douban.com/subject/23774527/'
+        cover: /img/books/23774527.jpg
+        douban_id: '23774527'
+      - title: 商品帝国
+        author: '[德] 弗兰克·特伦特曼'
+        link: 'https://book.douban.com/subject/35947063/'
+        cover: /img/books/35947063.jpg
+        douban_id: '35947063'
+      - title: 濒临狂野的心
+        author: '[巴西] 克拉丽丝·李斯佩克朵'
+        link: 'https://book.douban.com/subject/33451936/'
+        cover: /img/books/33451936.jpg
+        douban_id: '33451936'
+      - title: 我不想知道的事
+        author: '[英]德博拉·利维'
+        link: 'https://book.douban.com/subject/36402011/'
+        cover: /img/books/36402011.jpg
+        douban_id: '36402011'
+      - title: 自己的房子
+        author: '[英]德博拉·利维'
+        link: 'https://book.douban.com/subject/36443489/'
+        cover: /img/books/36443489.jpg
+        douban_id: '36443489'
+      - title: 生活的代价
+        author: '[英]德博拉·利维'
+        link: 'https://book.douban.com/subject/36402128/'
+        cover: /img/books/36402128.jpg
+        douban_id: '36402128'
+      - title: 生活在低处
+        author: 胡安焉
+        link: 'https://book.douban.com/subject/36957858/'
+        cover: /img/books/36957858.jpg
+        douban_id: '36957858'
+      - title: 丹麦一年
+        author: '[英] 海伦•拉塞尔'
+        link: 'https://book.douban.com/subject/30436197/'
+        cover: /img/books/30436197.jpg
+        douban_id: '30436197'
+      - title: 做二休五
+        author: 大原扁理
+        link: 'https://book.douban.com/subject/30413046/'
+        cover: /img/books/30413046.jpg
+        douban_id: '30413046'
+      - title: 及格家宣言
+        author: '[美]雷·本内特'
+        link: 'https://book.douban.com/subject/35149254/'
+        cover: /img/books/35149254.jpg
+        douban_id: '35149254'
+      - title: 猫鱼
+        author: 陈冲
+        link: 'https://book.douban.com/subject/36659710/'
+        cover: /img/books/36659710.jpg
+        douban_id: '36659710'
+      - title: 炸裂志
+        author: 陈年喜
+        link: 'https://book.douban.com/subject/36623376/'
+        cover: /img/books/36623376.jpg
+        douban_id: '36623376'
+      - title: 物质生活
+        author: '[法] 玛格丽特·杜拉斯'
+        link: 'https://book.douban.com/subject/2147647/'
+        cover: /img/books/2147647.jpg
+        douban_id: '2147647'
+      - title: 俗女日常
+        author: 江鹅
+        link: 'https://book.douban.com/subject/36505525/'
+        cover: /img/books/36505525.jpg
+        douban_id: '36505525'
+      - title: 无尽与有限
+        author: 荞麦
+        link: 'https://book.douban.com/subject/37038075/'
+        cover: /img/books/37038075.jpg
+        douban_id: '37038075'
+      - title: 一个男人的位置
+        author: '[法]安妮·埃尔诺'
+        link: 'https://book.douban.com/subject/36112202/'
+        cover: /img/books/36112202.jpg
+        douban_id: '36112202'
+      - title: 荒原狼
+        author: '[德]赫尔曼·黑塞'
+        link: 'https://book.douban.com/subject/4908883/'
+        cover: /img/books/4908883.jpg
+        douban_id: '4908883'
+      - title: 异见时刻
+        author: '[美] 伊琳·卡蒙'
+        link: 'https://book.douban.com/subject/30258976/'
+        cover: /img/books/30258976.jpg
+        douban_id: '30258976'
+      - title: 我不相信神话
+        author: '[意] 奥莉娅娜·法拉奇'
+        link: 'https://book.douban.com/subject/36352659/'
+        cover: /img/books/36352659.jpg
+        douban_id: '36352659'
+      - title: 涅朵奇卡
+        author: 陀思妥耶夫斯基
+        link: 'https://book.douban.com/subject/36504167/'
+        cover: /img/books/36504167.jpg
+        douban_id: '36504167'
+      - title: 格差社会
+        author: (日) 橘木俊诏
+        link: 'https://book.douban.com/subject/30269565/'
+        cover: /img/books/30269565.jpg
+        douban_id: '30269565'
+      - title: 自由主义为何失败
+        author: '[美]帕特里克·德尼恩'
+        link: 'https://book.douban.com/subject/37090532/'
+        cover: /img/books/37090532.jpg
+        douban_id: '37090532'
+      - title: 广场与高塔
+        author: 尼尔·弗格森 Niall Ferguson
+        link: 'https://book.douban.com/subject/34840609/'
+        cover: /img/books/34840609.jpg
+        douban_id: '34840609'
+  - year: 2023
+    count: 18
+    books:
+      - title: 每周工作4小时
+        author: '[美] 蒂莫西·费里斯'
+        link: 'https://book.douban.com/subject/27065607/'
+        douban_id: '27065607'
+        cover: /img/books/27065607.jpg
+      - title: 重来123
+        author: '[美] 贾森·弗里德'
+        link: 'https://book.douban.com/subject/5320866/'
+        douban_id: '5320866'
+        cover: /img/books/5320866.jpg
+      - title: 哲学的慰藉
+        author: (英)阿兰·德波顿
+        link: 'https://book.douban.com/subject/4323275/'
+        douban_id: '4323275'
+        cover: /img/books/4323275.jpg
+      - title: 区分（上/下）
+        author: 艾尔肯·米吉提
+        link: 'https://book.douban.com/subject/20483755/'
+        douban_id: '20483755'
+        cover: /img/books/20483755.jpg
+      - title: 工作的迷思
+        author: '[英] 阿兰·德波顿'
+        link: 'https://book.douban.com/subject/35542573/'
+        douban_id: '35542573'
+        cover: /img/books/35542573.jpg
+      - title: 论不服从
+        author: '[美] 艾里希·弗洛姆'
+        link: 'https://book.douban.com/subject/27063276/'
+        douban_id: '27063276'
+        cover: /img/books/27063276.jpg
+      - title: 百岁人生：长寿时代的生活和工作
+        author: '[英] 琳达·格拉顿（Lynda Gratton）'
+        link: 'https://book.douban.com/subject/30245089/'
+        douban_id: '30245089'
+        cover: /img/books/30245089.jpg
+      - title: 微小的总和
+        author: '[美] 伊丽莎白·科里德-霍尔基特'
+        link: 'https://book.douban.com/subject/36184508/'
+        douban_id: '36184508'
+        cover: /img/books/36184508.jpg
+      - title: 逃避自由
+        author: '[美] 艾里希·弗洛姆'
+        link: 'https://book.douban.com/subject/26418475/'
+        douban_id: '26418475'
+        cover: /img/books/26418475.jpg
+      - title: 斯通纳
+        author: '[美] 约翰·威廉斯'
+        link: 'https://book.douban.com/subject/26425831/'
+        douban_id: '26425831'
+        cover: /img/books/26425831.jpg
+      - title: 瓦尔登湖
+        author: '[美] 梭罗'
+        link: 'https://book.douban.com/subject/1865089/'
+        douban_id: '1865089'
+        cover: /img/books/1865089.jpg
+      - title: 成年人的谎言生活
+        author: '[意大利] 埃莱娜·费兰特'
+        link: 'https://book.douban.com/subject/35467795/'
+        douban_id: '35467795'
+        cover: /img/books/35467795.jpg
+      - title: 始于极限
+        author: '[日] 上野千鹤子'
+        link: 'https://book.douban.com/subject/35966120/'
+        douban_id: '35966120'
+        cover: /img/books/35966120.jpg
+      - title: 爱的艺术
+        author: '[美] 艾·弗洛姆'
+        link: 'https://book.douban.com/subject/3026879/'
+        douban_id: '3026879'
+        cover: /img/books/3026879.jpg
+      - title: 资本主义的未来
+        author: '[英] 保罗·科利尔'
+        link: 'https://book.douban.com/subject/35099263/'
+        douban_id: '35099263'
+        cover: /img/books/35099263.jpg
+      - title: 华为销售法 To B
+        author: 李江
+        link: 'https://book.douban.com/subject/35563233/'
+        douban_id: '35563233'
+        cover: /img/books/35563233.jpg
+      - title: 跳槽圣经
+        author: '[日] 北野唯我'
+        link: 'https://book.douban.com/subject/34616782/'
+        douban_id: '34616782'
+        cover: /img/books/34616782.jpg
+      - title: 一个广告人的自白
+        author: '[美] 大卫·奥格威'
+        link: 'https://book.douban.com/subject/1031526/'
+        douban_id: '1031526'
+        cover: /img/books/1031526.jpg
+  - year: 2022
+    count: 3
+    books:
+      - title: 如何抑制女性写作
+        author: 乔安娜·拉斯
+        link: 'https://book.douban.com/subject/35229199/'
+        douban_id: '35229199'
+        cover: /img/books/35229199.jpg
+      - title: 每周工作4小时
+        author: '[美] 蒂莫西·费里斯'
+        link: 'https://book.douban.com/subject/27065607/'
+        douban_id: '27065607'
+        cover: /img/books/27065607.jpg
+      - title: 精益创业
+        author: '[美] 埃里克·莱斯'
+        link: 'https://book.douban.com/subject/10945606/'
+        douban_id: '10945606'
+        cover: /img/books/10945606.jpg
+  - year: 2021
+    count: 60
+    books:
+      - title: 如何阅读一本书
+        author: '[美] 莫提默·J. 艾德勒'
+        link: 'https://book.douban.com/subject/1013208/'
+        douban_id: '1013208'
+        cover: /img/books/1013208.jpg
+      - title: 决策与判断
+        author: '[美] 斯科特·普劳斯'
+        link: 'https://book.douban.com/subject/1193621/'
+        douban_id: '1193621'
+        cover: /img/books/1193621.jpg
+      - title: 价值
+        author: 张磊
+        link: 'https://book.douban.com/subject/35188914/'
+        douban_id: '35188914'
+        cover: /img/books/35188914.jpg
+      - title: SaaS创业路线图
+        author: 吴昊
+        link: 'https://book.douban.com/subject/35079444/'
+        douban_id: '35079444'
+        cover: /img/books/35079444.jpg
+      - title: 用户体验要素
+        author: '[美] 杰西·詹姆斯·加勒特（Jesse James Garrett） 著'
+        link: 'https://book.douban.com/subject/33403542/'
+        douban_id: '33403542'
+        cover: /img/books/33403542.jpg
+      - title: 跨越鸿沟
+        author: '[美] 杰弗里·摩尔(Geoffrey A. Moore)'
+        link: 'https://book.douban.com/subject/3320425/'
+        douban_id: '3320425'
+        cover: /img/books/3320425.jpg
+      - title: B2B品牌管理
+        author: (美)菲利普·科特勒
+        link: 'https://book.douban.com/subject/2990291/'
+        douban_id: '2990291'
+        cover: /img/books/2990291.jpg
+      - title: 一只特立独行的猪
+        author: 王小波
+        link: 'https://book.douban.com/subject/1767945/'
+        douban_id: '1767945'
+        cover: /img/books/1767945.jpg
+      - title: 非暴力沟通
+        author: '[美] 马歇尔·卢森堡'
+        link: 'https://book.douban.com/subject/3533221/'
+        douban_id: '3533221'
+        cover: /img/books/3533221.jpg
+      - title: 亲密关系
+        author: '[美] 罗兰·米勒'
+        link: 'https://book.douban.com/subject/26585065/'
+        douban_id: '26585065'
+        cover: /img/books/26585065.jpg
+      - title: 硅谷蓝图
+        author: 〔美〕雅各·范德库伊
+        link: 'https://book.douban.com/subject/33407572/'
+        douban_id: '33407572'
+        cover: /img/books/33407572.jpg
+      - title: 这就是OKR：让谷歌、亚马逊实现爆炸性增长的工作法
+        author: 【美】约翰·杜尔（John Doerr）
+        link: 'https://book.douban.com/subject/30396635/'
+        douban_id: '30396635'
+        cover: /img/books/30396635.jpg
+      - title: OKR：源于英特尔和谷歌的目标管理利器
+        author: （美） 保罗R.尼文（Paul R. Niven）
+        link: 'https://book.douban.com/subject/27084312/'
+        douban_id: '27084312'
+        cover: /img/books/27084312.jpg
+      - title: 营销管理
+        author: '[美] 菲利普·科特勒'
+        link: 'https://book.douban.com/subject/36082426/'
+        douban_id: '36082426'
+        cover: /img/books/36082426.jpg
+      - title: 销售加速公式
+        author: '[美] 马克·罗伯格(Mark Roberge)'
+        link: 'https://book.douban.com/subject/35466335/'
+        douban_id: '35466335'
+        cover: /img/books/35466335.jpg
+      - title: 华尔街日报是如何讲故事的
+        author: '[美] 威廉·E.布隆代尔'
+        link: 'https://book.douban.com/subject/1472946/'
+        douban_id: '1472946'
+        cover: /img/books/1472946.jpg
+      - title: 何为良好生活
+        author: 陈嘉映
+        link: 'https://book.douban.com/subject/26363926/'
+        douban_id: '26363926'
+        cover: /img/books/26363926.jpg
+      - title: 数据化管理
+        author: 黄成明
+        link: 'https://book.douban.com/subject/25909355/'
+        douban_id: '25909355'
+        cover: /img/books/25909355.jpg
+      - title: 秒赞
+        author: 林桂枝
+        link: 'https://book.douban.com/subject/35345323/'
+        douban_id: '35345323'
+        cover: /img/books/35345323.jpg
+      - title: 稀缺
+        author: '[美] 塞德希尔·穆来纳森'
+        link: 'https://book.douban.com/subject/36110828/'
+        douban_id: '36110828'
+        cover: /img/books/36110828.jpg
+      - title: 体验设计｜创意就为改变世界
+        author: 电通体验设计工作室（Experience Design Stuio）
+        link: 'https://book.douban.com/subject/26452775/'
+        douban_id: '26452775'
+        cover: /img/books/26452775.jpg
+      - title: 竞争性销售
+        author: （美）兰迪·蔡斯（Landy Chase）
+        link: 'https://book.douban.com/subject/6087504/'
+        douban_id: '6087504'
+        cover: /img/books/6087504.jpg
+      - title: 竞争战略
+        author: '[美] 迈克尔·波特'
+        link: 'https://book.douban.com/subject/25905229/'
+        douban_id: '25905229'
+        cover: /img/books/25905229.jpg
+      - title: 像社会学家一样思考
+        author: '[美] 理查德·谢弗'
+        link: 'https://book.douban.com/subject/27662716/'
+        douban_id: '27662716'
+        cover: /img/books/27662716.jpg
+      - title: 岂不怀归
+        author: 田丰
+        link: 'https://book.douban.com/subject/35134022/'
+        douban_id: '35134022'
+        cover: /img/books/35134022.jpg
+      - title: 沙沙生长
+        author: 郭小寒
+        link: 'https://book.douban.com/subject/35195597/'
+        douban_id: '35195597'
+        cover: /img/books/35195597.jpg
+      - title: 父权制与资本主义
+        author: '[日] 上野千鹤子'
+        link: 'https://book.douban.com/subject/34896921/'
+        douban_id: '34896921'
+        cover: /img/books/34896921.jpg
+      - title: 学做工
+        author: '[英] 保罗·威利斯'
+        link: 'https://book.douban.com/subject/21370327/'
+        douban_id: '21370327'
+        cover: /img/books/21370327.jpg
+      - title: 我的二本学生
+        author: 黄灯
+        link: 'https://book.douban.com/subject/35050614/'
+        douban_id: '35050614'
+        cover: /img/books/35050614.jpg
+      - title: 产业互联网
+        author: 汤道生
+        link: 'https://book.douban.com/subject/35232648/'
+        douban_id: '35232648'
+        cover: /img/books/35232648.jpg
+      - title: 新零售
+        author: 刘润
+        link: 'https://book.douban.com/subject/30300335/'
+        douban_id: '30300335'
+        cover: /img/books/30300335.jpg
+      - title: 当代中国社会分层
+        author: 李强
+        link: 'https://book.douban.com/subject/30424945/'
+        douban_id: '30424945'
+        cover: /img/books/30424945.jpg
+      - title: 供应链管理
+        author: '[美] 苏尼尔·乔普拉（Sunil Chopra）'
+        link: 'https://book.douban.com/subject/35585529/'
+        douban_id: '35585529'
+        cover: /img/books/35585529.jpg
+      - title: 回归故里
+        author: '[法] 迪迪埃·埃里蓬'
+        link: 'https://book.douban.com/subject/34942789/'
+        douban_id: '34942789'
+        cover: /img/books/34942789.jpg
+      - title: 智慧营销：营销部门数字化转型指南
+        author: （美）阿黛尔·斯威特伍德（Adele Sweetwood）
+        link: 'https://book.douban.com/subject/30408727/'
+        douban_id: '30408727'
+        cover: /img/books/30408727.jpg
+      - title: 新解决方案销售
+        author: Keith M. Eades
+        link: 'https://book.douban.com/subject/26694830/'
+        douban_id: '26694830'
+        cover: /img/books/26694830.jpg
+      - title: 商业模式新生代
+        author: '[瑞士] 亚历山大·奥斯特瓦德'
+        link: 'https://book.douban.com/subject/26904600/'
+        douban_id: '26904600'
+        cover: /img/books/26904600.jpg
+      - title: 从零开始打造商业化产品
+        author: 杨新雷
+        link: 'https://book.douban.com/subject/35031610/'
+        douban_id: '35031610'
+        cover: /img/books/35031610.jpg
+      - title: 产品经理必懂的技术那点事儿
+        author: 唐韧
+        link: 'https://book.douban.com/subject/26928398/'
+        douban_id: '26928398'
+        cover: /img/books/26928398.jpg
+      - title: 数据产品经理必修课：从零经验到令人惊艳
+        author: 李鑫
+        link: 'https://book.douban.com/subject/30185228/'
+        douban_id: '30185228'
+        cover: /img/books/30185228.jpg
+      - title: 用户体验设计：本质、策略与经验
+        author: '[美] Robert Hoekman Jr.'
+        link: 'https://book.douban.com/subject/27183454/'
+        douban_id: '27183454'
+        cover: /img/books/27183454.jpg
+      - title: 优秀网站设计：打造有吸引力的网站
+        author: 林奇 (Patrick J.Lynch)
+        link: 'https://book.douban.com/subject/20172623/'
+        douban_id: '20172623'
+        cover: /img/books/20172623.jpg
+      - title: 乡土中国
+        author: 费孝通
+        link: 'https://book.douban.com/subject/1795079/'
+        douban_id: '1795079'
+        cover: /img/books/1795079.jpg
+      - title: 走向新建筑
+        author: 勒·柯布西耶
+        link: 'https://book.douban.com/subject/1052178/'
+        douban_id: '1052178'
+        cover: /img/books/1052178.jpg
+      - title: 高效能人士的七个习惯
+        author: '[美] 史蒂芬·柯维'
+        link: 'https://book.douban.com/subject/5325618/'
+        douban_id: '5325618'
+        cover: /img/books/5325618.jpg
+      - title: 向上管理
+        author: 梅洛迪·怀尔丁
+        link: 'https://book.douban.com/subject/37508924/'
+        douban_id: '37508924'
+        cover: /img/books/37508924.jpg
+      - title: 东京风格
+        author: '[日] 都筑响一'
+        link: 'https://book.douban.com/subject/33301294/'
+        douban_id: '33301294'
+        cover: /img/books/33301294.jpg
+      - title: 管理的常识
+        author: 陈春花
+        link: 'https://book.douban.com/subject/26901342/'
+        douban_id: '26901342'
+        cover: /img/books/26901342.jpg
+      - title: 低欲望社会
+        author: '[日] 大前研一'
+        link: 'https://book.douban.com/subject/30296200/'
+        douban_id: '30296200'
+        cover: /img/books/30296200.jpg
+      - title: 爱情笔记
+        author: '[英] 阿兰·德波顿'
+        link: 'https://book.douban.com/subject/26286235/'
+        douban_id: '26286235'
+        cover: /img/books/26286235.jpg
+      - title: 景观社会
+        author: '[法] 居伊·德波'
+        link: 'https://book.douban.com/subject/26865819/'
+        douban_id: '26865819'
+        cover: /img/books/26865819.jpg
+      - title: 孤独六讲
+        author: 蒋勋
+        link: 'https://book.douban.com/subject/35044390/'
+        douban_id: '35044390'
+        cover: /img/books/35044390.jpg
+      - title: 现代性
+        author: 汪民安
+        link: 'https://book.douban.com/subject/34894027/'
+        douban_id: '34894027'
+        cover: /img/books/34894027.jpg
+      - title: 现代性的五个侧面
+        author: '[法] 安托瓦纳·贡巴尼翁'
+        link: 'https://book.douban.com/subject/25832805/'
+        douban_id: '25832805'
+        cover: /img/books/25832805.jpg
+      - title: The product marketing manager
+        author: Lucas Weber
+        link: 'https://book.douban.com/subject/30341374/'
+        douban_id: '30341374'
+        cover: /img/books/30341374.jpg
+      - title: 奈飞文化手册
+        author: '[美] 帕蒂·麦考德'
+        link: 'https://book.douban.com/subject/30356081/'
+        douban_id: '30356081'
+        cover: /img/books/30356081.jpg
+      - title: 我们时代的精神状况
+        author: '[德] 海因里希·盖瑟尔伯格'
+        link: 'https://book.douban.com/subject/30262175/'
+        douban_id: '30262175'
+        cover: /img/books/30262175.jpg
+      - title: 六论自发性
+        author: '[美] 詹姆斯·C. 斯科特'
+        link: 'https://book.douban.com/subject/30441554/'
+        douban_id: '30441554'
+        cover: /img/books/30441554.jpg
+      - title: 巨兽
+        author: 西川
+        link: 'https://book.douban.com/subject/36603504/'
+        douban_id: '36603504'
+        cover: /img/books/36603504.jpg
+      - title: 悉达多
+        author: '[德] 赫尔曼·黑塞'
+        link: 'https://book.douban.com/subject/26980487/'
+        douban_id: '26980487'
+        cover: /img/books/26980487.jpg
+  - year: 2020
+    count: 46
+    books:
+      - title: 参与感
+        author: 黎万强
+        link: 'https://book.douban.com/subject/25942507/'
+        douban_id: '25942507'
+        cover: /img/books/25942507.jpg
+      - title: 富爸爸穷爸爸
+        author: （美）罗伯特·T·清崎
+        link: 'https://book.douban.com/subject/1033778/'
+        douban_id: '1033778'
+        cover: /img/books/1033778.jpg
+      - title: 原则
+        author: '[美] 瑞·达利欧'
+        link: 'https://book.douban.com/subject/27608239/'
+        douban_id: '27608239'
+        cover: /img/books/27608239.jpg
+      - title: 思考快与慢
+        author: '[美] 丹尼尔·卡尼曼'
+        link: 'https://book.douban.com/subject/10785583/'
+        douban_id: '10785583'
+        cover: /img/books/10785583.jpg
+      - title: 精益创业
+        author: '[美] 埃里克·莱斯'
+        link: 'https://book.douban.com/subject/10945606/'
+        douban_id: '10945606'
+        cover: /img/books/10945606.jpg
+      - title: 运营不累
+        author: 淘宝大学
+        link: 'https://book.douban.com/subject/25943457/'
+        douban_id: '25943457'
+        cover: /img/books/25943457.jpg
+      - title: 品牌赋能
+        author: 信任
+        link: 'https://book.douban.com/subject/33449873/'
+        douban_id: '33449873'
+        cover: /img/books/33449873.jpg
+      - title: 品牌思维：世界一线品牌的7大不败奥秘
+        author: （德）沃尔夫冈•谢弗（Wolfgang chaefer）
+        link: 'https://book.douban.com/subject/27154449/'
+        douban_id: '27154449'
+        cover: /img/books/27154449.jpg
+      - title: 产品思维
+        author: 刘飞
+        link: 'https://book.douban.com/subject/33456375/'
+        douban_id: '33456375'
+        cover: /img/books/33456375.jpg
+      - title: 金字塔原理
+        author: '[美] 芭芭拉·明托'
+        link: 'https://book.douban.com/subject/33391219/'
+        douban_id: '33391219'
+        cover: /img/books/33391219.jpg
+      - title: 文创品牌的秘密
+        author: 沈婷
+        link: 'https://book.douban.com/subject/27060363/'
+        douban_id: '27060363'
+        cover: /img/books/27060363.jpg
+      - title: 亲密关系
+        author: '[美] 罗兰·米勒'
+        link: 'https://book.douban.com/subject/26585065/'
+        douban_id: '26585065'
+        cover: /img/books/26585065.jpg
+      - title: 俞军产品方法论
+        author: 俞军
+        link: 'https://book.douban.com/subject/34907971/'
+        douban_id: '34907971'
+        cover: /img/books/34907971.jpg
+      - title: 营销革命
+        author: '[美] 菲利普·科特勒（Philip Kotler）'
+        link: 'https://book.douban.com/subject/27609916/'
+        douban_id: '27609916'
+        cover: /img/books/27609916.jpg
+      - title: 产品逻辑之美
+        author: 潘一鸣 编著
+        link: 'https://book.douban.com/subject/34762042/'
+        douban_id: '34762042'
+        cover: /img/books/34762042.jpg
+      - title: PMBOK
+        author: 项目管理协会 (Project Management institute)
+        link: 'https://book.douban.com/subject/24697645/'
+        douban_id: '24697645'
+        cover: /img/books/24697645.jpg
+      - title: 激荡十年，水大鱼大
+        author: 吴晓波
+        link: 'https://book.douban.com/subject/27179563/'
+        douban_id: '27179563'
+        cover: /img/books/27179563.jpg
+      - title: 必然
+        author: '[美] 凯文·凯利'
+        link: 'https://book.douban.com/subject/26658379/'
+        douban_id: '26658379'
+        cover: /img/books/26658379.jpg
+      - title: 单向度的人
+        author: (美)赫伯特·马尔库塞
+        link: 'https://book.douban.com/subject/1787729/'
+        douban_id: '1787729'
+        cover: /img/books/1787729.jpg
+      - title: 女性主义
+        author: 李银河
+        link: 'https://book.douban.com/subject/30276984/'
+        douban_id: '30276984'
+        cover: /img/books/30276984.jpg
+      - title: 私人生活的变革
+        author: 阎云翔
+        link: 'https://book.douban.com/subject/26952345/'
+        douban_id: '26952345'
+        cover: /img/books/26952345.jpg
+      - title: 娱乐至死
+        author: '[美] 尼尔·波兹曼'
+        link: 'https://book.douban.com/subject/26319730/'
+        douban_id: '26319730'
+        cover: /img/books/26319730.jpg
+      - title: 日本新中产阶级
+        author: '[美] 傅高义'
+        link: 'https://book.douban.com/subject/26909585/'
+        douban_id: '26909585'
+        cover: /img/books/26909585.jpg
+      - title: 中国国家治理的制度逻辑
+        author: 周雪光
+        link: 'https://book.douban.com/subject/26901114/'
+        douban_id: '26901114'
+        cover: /img/books/26901114.jpg
+      - title: 扫地出门：美国城市的贫穷与暴利
+        author: '[美] 马修·德斯蒙德'
+        link: 'https://book.douban.com/subject/27156017/'
+        douban_id: '27156017'
+        cover: /img/books/27156017.jpg
+      - title: 单身女性的时代
+        author: '[美] 丽贝卡·特雷斯特'
+        link: 'https://book.douban.com/subject/35901332/'
+        douban_id: '35901332'
+        cover: /img/books/35901332.jpg
+      - title: 大象的政治：分层社会中的奋斗
+        author: （美）塞缪尔·P·亨延顿
+        link: 'https://book.douban.com/subject/3163104/'
+        douban_id: '3163104'
+        cover: /img/books/3163104.jpg
+      - title: 想象的共同体
+        author: '[美] 本尼迪克特·安德森'
+        link: 'https://book.douban.com/subject/26810557/'
+        douban_id: '26810557'
+        cover: /img/books/26810557.jpg
+      - title: 文凭社会
+        author: '[美] 兰德尔·柯林斯'
+        link: 'https://book.douban.com/subject/30143236/'
+        douban_id: '30143236'
+        cover: /img/books/30143236.jpg
+      - title: 社会学的邀请
+        author: '[美] 乔恩·威特'
+        link: 'https://book.douban.com/subject/25764449/'
+        douban_id: '25764449'
+        cover: /img/books/25764449.jpg
+      - title: 把自己作为方法
+        author: 项飙
+        link: 'https://book.douban.com/subject/35092383/'
+        douban_id: '35092383'
+        cover: /img/books/35092383.jpg
+      - title: 风险社会
+        author: '[德] 乌尔里希·贝克'
+        link: 'https://book.douban.com/subject/27136548/'
+        douban_id: '27136548'
+        cover: /img/books/27136548.jpg
+      - title: 日常生活的自我呈现
+        author: （美）欧文·戈夫曼
+        link: 'https://book.douban.com/subject/3062632/'
+        douban_id: '3062632'
+        cover: /img/books/3062632.jpg
+      - title: 中国人行动的逻辑
+        author: 翟学伟
+        link: 'https://book.douban.com/subject/27169691/'
+        douban_id: '27169691'
+        cover: /img/books/27169691.jpg
+      - title: 欲望的演化：人类的择偶策略
+        author: '[美] 戴维·巴斯'
+        link: 'https://book.douban.com/subject/35153840/'
+        douban_id: '35153840'
+        cover: /img/books/35153840.jpg
+      - title: 景观社会
+        author: '[法] 居伊·德波'
+        link: 'https://book.douban.com/subject/26865819/'
+        douban_id: '26865819'
+        cover: /img/books/26865819.jpg
+      - title: 嬗变的大都市：关于城市的一些观念
+        author: '[美] 维托尔德·雷布琴斯基'
+        link: 'https://book.douban.com/subject/26705442/'
+        douban_id: '26705442'
+        cover: /img/books/26705442.jpg
+      - title: 传播学教程
+        author: 郭庆光
+        link: 'https://book.douban.com/subject/6101583/'
+        douban_id: '6101583'
+        cover: /img/books/6101583.jpg
+      - title: 新闻学概论
+        author: 李良荣
+        link: 'https://book.douban.com/subject/36494720/'
+        douban_id: '36494720'
+        cover: /img/books/36494720.jpg
+      - title: 新闻采访与写作
+        author: 中国人民大学新闻学院
+        link: 'https://book.douban.com/subject/30457560/'
+        douban_id: '30457560'
+        cover: /img/books/30457560.jpg
+      - title: 广告学概论
+        author: 《广告学概论》编写组
+        link: 'https://book.douban.com/subject/31343182/'
+        douban_id: '31343182'
+        cover: /img/books/31343182.jpg
+      - title: 网络传播概论
+        author: 彭兰
+        link: 'https://book.douban.com/subject/27153710/'
+        douban_id: '27153710'
+        cover: /img/books/27153710.jpg
+      - title: 广告策划与创意
+        author: 蒋旭峰 杜骏飞
+        link: 'https://book.douban.com/subject/1943825/'
+        douban_id: '1943825'
+        cover: /img/books/1943825.jpg
+      - title: 动物庄园
+        author: 乔治•奥威尔 (George Orwell)
+        link: 'https://book.douban.com/subject/3808982/'
+        douban_id: '3808982'
+        cover: /img/books/3808982.jpg
+      - title: 查令十字街84号
+        author: '[美] 海莲·汉芙'
+        link: 'https://book.douban.com/subject/26768309/'
+        douban_id: '26768309'
+        cover: /img/books/26768309.jpg
+      - title: 当我们谈论爱情时我们在谈论什么
+        author: '[美] 雷蒙德·卡佛'
+        link: 'https://book.douban.com/subject/4010969/'
+        douban_id: '4010969'
+        cover: /img/books/4010969.jpg
+  - year: 2019
+    count: 52
+    books:
+      - title: 下一站，天国
+        author: '[日] 是枝裕和'
+        link: 'https://book.douban.com/subject/27068271/'
+        douban_id: '27068271'
+        cover: /img/books/27068271.jpg
+      - title: 枯枝败叶
+        author: '[哥伦比亚] 加西亚·马尔克斯'
+        link: 'https://book.douban.com/subject/20392525/'
+        douban_id: '20392525'
+        cover: /img/books/20392525.jpg
+      - title: 阅读是一座随身携带的避难所
+        author: '[英] 毛姆'
+        link: 'https://book.douban.com/subject/27024398/'
+        douban_id: '27024398'
+        cover: /img/books/27024398.jpg
+      - title: 明天也是小春日和
+        author: '[日] 津端英子'
+        link: 'https://book.douban.com/subject/26733854/'
+        douban_id: '26733854'
+        cover: /img/books/26733854.jpg
+      - title: 火车快开
+        author: 李娟
+        link: 'https://book.douban.com/subject/36127786/'
+        douban_id: '36127786'
+        cover: /img/books/36127786.jpg
+      - title: 一个叫欧维的男人决定去死
+        author: '[瑞典] 弗雷德里克·巴克曼'
+        link: 'https://book.douban.com/subject/26672693/'
+        douban_id: '26672693'
+        cover: /img/books/26672693.jpg
+      - title: 西班牙主题变奏
+        author: '[英] 毛姆'
+        link: 'https://book.douban.com/subject/4256223/'
+        douban_id: '4256223'
+        cover: /img/books/4256223.jpg
+      - title: 下午茶时间到
+        author: 林江 主编
+        link: 'https://book.douban.com/subject/27125072/'
+        douban_id: '27125072'
+        cover: /img/books/27125072.jpg
+      - title: 把生命浪费在美好的事物上
+        author: 吴晓波
+        link: 'https://book.douban.com/subject/26390229/'
+        douban_id: '26390229'
+        cover: /img/books/26390229.jpg
+      - title: 独立小店
+        author: '[日] 堀部笃史'
+        link: 'https://book.douban.com/subject/30136933/'
+        douban_id: '30136933'
+        cover: /img/books/30136933.jpg
+      - title: 芥川龙之介
+        author: '[日] 芥川龙之介'
+        link: 'https://book.douban.com/subject/1457542/'
+        douban_id: '1457542'
+        cover: /img/books/1457542.jpg
+      - title: 生活就是和喜欢的一切在一起
+        author: 闫月
+        link: 'https://book.douban.com/subject/26750421/'
+        douban_id: '26750421'
+        cover: /img/books/26750421.jpg
+      - title: 我想要始终不渝地生活
+        author: 【日】松浦弥太郎
+        link: 'https://book.douban.com/subject/30231352/'
+        douban_id: '30231352'
+        cover: /img/books/30231352.jpg
+      - title: 且听风吟
+        author: '[日] 村上春树'
+        link: 'https://book.douban.com/subject/1039752/'
+        douban_id: '1039752'
+        cover: /img/books/1039752.jpg
+      - title: 我们
+        author: '[俄] 叶甫盖尼·扎米亚京'
+        link: 'https://book.douban.com/subject/26879595/'
+        douban_id: '26879595'
+        cover: /img/books/26879595.jpg
+      - title: '1984'
+        author: '[英] 乔治·奥威尔'
+        link: 'https://book.douban.com/subject/4820710/'
+        douban_id: '4820710'
+        cover: /img/books/4820710.jpg
+      - title: 美丽新世界
+        author: 【英】奥尔德斯·赫胥黎
+        link: 'https://book.douban.com/subject/27002046/'
+        douban_id: '27002046'
+        cover: /img/books/27002046.jpg
+      - title: 刀锋
+        author: '[英] 威廉•萨默塞特•毛姆'
+        link: 'https://book.douban.com/subject/35404991/'
+        douban_id: '35404991'
+        cover: /img/books/35404991.jpg
+      - title: 八月的星期天
+        author: '[法] 帕特里克·莫迪亚诺'
+        link: 'https://book.douban.com/subject/26184384/'
+        douban_id: '26184384'
+        cover: /img/books/26184384.jpg
+      - title: 拍电影时我在想的事
+        author: '[日] 是枝裕和'
+        link: 'https://book.douban.com/subject/30304849/'
+        douban_id: '30304849'
+        cover: /img/books/30304849.jpg
+      - title: 我的精神家园
+        author: 王小波
+        link: 'https://book.douban.com/subject/27156834/'
+        douban_id: '27156834'
+        cover: /img/books/27156834.jpg
+      - title: 爱你就像爱生命
+        author: 王小波
+        link: 'https://book.douban.com/subject/3071717/'
+        douban_id: '3071717'
+        cover: /img/books/3071717.jpg
+      - title: 沉默的大多数
+        author: 王小波
+        link: 'https://book.douban.com/subject/27013716/'
+        douban_id: '27013716'
+        cover: /img/books/27013716.jpg
+      - title: 在莫奈花园的下午
+        author: 原田舞叶
+        link: 'https://book.douban.com/subject/26956487/'
+        douban_id: '26956487'
+        cover: /img/books/26956487.jpg
+      - title: 莎士比亚书店
+        author: '[美] 西尔维亚·毕奇'
+        link: 'https://book.douban.com/subject/25807918/'
+        douban_id: '25807918'
+        cover: /img/books/25807918.jpg
+      - title: 格调：社会等级与生活品味
+        author: '[美] 保罗·福塞尔'
+        link: 'https://book.douban.com/subject/6858527/'
+        douban_id: '6858527'
+        cover: /img/books/6858527.jpg
+      - title: 中国中间阶级文化品位与地位恐慌
+        author: 许荣
+        link: 'https://book.douban.com/subject/2053102/'
+        douban_id: '2053102'
+        cover: /img/books/2053102.jpg
+      - title: 一个孤独漫步者的遐想
+        author: '[法] 让-雅克·卢梭'
+        link: 'https://book.douban.com/subject/26905777/'
+        douban_id: '26905777'
+        cover: /img/books/26905777.jpg
+      - title: 作为意志与表象的世界
+        author: 叔本华
+        link: 'https://book.douban.com/subject/10826978/'
+        douban_id: '10826978'
+        cover: /img/books/10826978.jpg
+      - title: 芒果街上的小屋
+        author: '[美国] 桑德拉·希斯内罗丝'
+        link: 'https://book.douban.com/subject/1794620/'
+        douban_id: '1794620'
+        cover: /img/books/1794620.jpg
+      - title: 哲学家们都干了些什么
+        author: 林欣浩
+        link: 'https://book.douban.com/subject/26390842/'
+        douban_id: '26390842'
+        cover: /img/books/26390842.jpg
+      - title: 恶俗：现代文明的种种愚蠢
+        author: '[美] 保罗·福塞尔'
+        link: 'https://book.douban.com/subject/11612914/'
+        douban_id: '11612914'
+        cover: /img/books/11612914.jpg
+      - title: 资本主义与二十一世纪
+        author: '[美] 黄仁宇'
+        link: 'https://book.douban.com/subject/1047001/'
+        douban_id: '1047001'
+        cover: /img/books/1047001.jpg
+      - title: 贫穷的本质
+        author: '[印度] 阿比吉特·班纳吉'
+        link: 'https://book.douban.com/subject/30161884/'
+        douban_id: '30161884'
+        cover: /img/books/30161884.jpg
+      - title: 纵乐的困惑：明代的商业与文化
+        author: '[加] 卜正民'
+        link: 'https://book.douban.com/subject/26876054/'
+        douban_id: '26876054'
+        cover: /img/books/26876054.jpg
+      - title: 给青年诗人的信
+        author: '[奥] 里尔克'
+        link: 'https://book.douban.com/subject/26685994/'
+        douban_id: '26685994'
+        cover: /img/books/26685994.jpg
+      - title: 传播学引论
+        author: 李彬
+        link: 'https://book.douban.com/subject/1135735/'
+        douban_id: '1135735'
+        cover: /img/books/1135735.jpg
+      - title: 波斯人札记
+        author: '[法] 孟德斯鸠'
+        link: 'https://book.douban.com/subject/36088857/'
+        douban_id: '36088857'
+        cover: /img/books/36088857.jpg
+      - title: 我在阿里做运营
+        author: 芮曦（@小马鱼）
+        link: 'https://book.douban.com/subject/30275859/'
+        douban_id: '30275859'
+        cover: /img/books/30275859.jpg
+      - title: 运营之光
+        author: 黄有璨
+        link: 'https://book.douban.com/subject/26873486/'
+        douban_id: '26873486'
+        cover: /img/books/26873486.jpg
+      - title: 增长黑客
+        author: Sean Ellis
+        link: 'https://book.douban.com/subject/27593848/'
+        douban_id: '27593848'
+        cover: /img/books/27593848.jpg
+      - title: 颠覆者 周鸿祎自传
+        author: 周鸿祎
+        link: 'https://book.douban.com/subject/27173866/'
+        douban_id: '27173866'
+        cover: /img/books/27173866.jpg
+      - title: 具体生活
+        author: '[美] 吴军'
+        link: 'https://book.douban.com/subject/30356082/'
+        douban_id: '30356082'
+        cover: /img/books/30356082.jpg
+      - title: 腾讯传
+        author: 吴晓波
+        link: 'https://book.douban.com/subject/26929955/'
+        douban_id: '26929955'
+        cover: /img/books/26929955.jpg
+      - title: 心流
+        author: '[美] 米哈里·契克森米哈赖'
+        link: 'https://book.douban.com/subject/27186106/'
+        douban_id: '27186106'
+        cover: /img/books/27186106.jpg
+      - title: 超级运营术
+        author: 韩叙
+        link: 'https://book.douban.com/subject/27031544/'
+        douban_id: '27031544'
+        cover: /img/books/27031544.jpg
+      - title: 硅谷增长黑客实战笔记
+        author: 曲卉
+        link: 'https://book.douban.com/subject/30186119/'
+        douban_id: '30186119'
+        cover: /img/books/30186119.jpg
+      - title: 人人都是产品经理2.0
+        author: 苏杰
+        link: 'https://book.douban.com/subject/27029547/'
+        douban_id: '27029547'
+        cover: /img/books/27029547.jpg
+      - title: 番茄工作法
+        author: '[瑞典] Staffan Nöteberg'
+        link: 'https://book.douban.com/subject/5916234/'
+        douban_id: '5916234'
+        cover: /img/books/5916234.jpg
+      - title: 引爆点
+        author: '[美] 马尔科姆·格拉德威尔'
+        link: 'https://book.douban.com/subject/1473323/'
+        douban_id: '1473323'
+        cover: /img/books/1473323.jpg
+      - title: 疯传
+        author: ［美］乔纳·伯杰（Jonah Berger）
+        link: 'https://book.douban.com/subject/35035099/'
+        douban_id: '35035099'
+        cover: /img/books/35035099.jpg
+      - title: 知的资本论：茑屋书店的经营之道
+        author: '[日] 增田宗昭'
+        link: 'https://book.douban.com/subject/26996693/'
+        douban_id: '26996693'
+        cover: /img/books/26996693.jpg
+  - year: 2018
+    count: 38
+    books:
+      - title: 罗生门
+        author: 作家出版社
+        link: 'https://book.douban.com/subject/43188/'
+        douban_id: '43188'
+        cover: /img/books/3136271.jpg
+      - title: 芥川龙之介短篇小说
+        author: '[日] 芥川龙之介'
+        link: 'https://book.douban.com/subject/26627837/'
+        douban_id: '26627837'
+        cover: /img/books/26627837.jpg
+      - title: 北岛作品集
+        author: 北岛
+        link: 'https://book.douban.com/subject/5399267/'
+        cover: /img/books/5399267.jpg
+        douban_id: '5399267'
+      - title: 我为你洒下月光
+        author: 简媜
+        link: 'https://book.douban.com/subject/27061132/'
+        cover: /img/books/27061132.jpg
+        douban_id: '27061132'
+      - title: 漫画二十四节气
+        author: 马寅中
+        link: 'https://book.douban.com/subject/36638826/'
+        cover: /img/books/36638826.jpg
+        douban_id: '36638826'
+      - title: 器物帖
+        author: （日）SML公司 编
+        link: 'https://book.douban.com/subject/26844050/'
+        cover: /img/books/26844050.jpg
+        douban_id: '26844050'
+      - title: 我曾这样寂寞生活
+        author: '[波] 维斯拉瓦·辛波斯卡'
+        link: 'https://book.douban.com/subject/25801080/'
+        douban_id: '25801080'
+        cover: /img/books/25801080.jpg
+      - title: 深河
+        author: '[日] 远藤周作'
+        link: 'https://book.douban.com/subject/36497569/'
+        douban_id: '36497569'
+        cover: /img/books/36497569.jpg
+      - title: 金色梦乡
+        author: '[日] 伊坂幸太郎'
+        link: 'https://book.douban.com/subject/26864984/'
+        cover: /img/books/26864984.jpg
+        douban_id: '26864984'
+      - title: 苍狼
+        author: '[日] 井上靖'
+        link: 'https://book.douban.com/subject/26704407/'
+        douban_id: '26704407'
+        cover: /img/books/26704407.jpg
+      - title: 无端欢喜
+        author: 余秀华
+        link: 'https://book.douban.com/subject/30239751/'
+        cover: /img/books/30239751.jpg
+        douban_id: '30239751'
+      - title: 密密语
+        author: 简媜
+        link: 'https://book.douban.com/subject/2139438/'
+        cover: /img/books/2139438.jpg
+        douban_id: '2139438'
+      - title: 私房书
+        author: 简媜
+        link: 'https://book.douban.com/subject/1441440/'
+        cover: /img/books/1441440.jpg
+        douban_id: '1441440'
+      - title: 回家真好
+        author: 欧阳应霁
+        link: 'https://book.douban.com/subject/1024701/'
+        douban_id: '1024701'
+        cover: /img/books/1024701.jpg
+      - title: 如父如子
+        author: '[日] 是枝裕和'
+        link: 'https://book.douban.com/subject/27611824/'
+        douban_id: '27611824'
+        cover: /img/books/27611824.jpg
+      - title: 步履不停
+        author: '[日] 是枝裕和'
+        link: 'https://book.douban.com/subject/26963321/'
+        douban_id: '26963321'
+        cover: /img/books/26963321.jpg
+      - title: 冬牧场
+        author: 李娟
+        link: 'https://book.douban.com/subject/10522856/'
+        douban_id: '10522856'
+        cover: /img/books/10522856.jpg
+      - title: 羊道三部曲
+        author: 李娟
+        link: 'https://book.douban.com/subject/27116878/'
+        douban_id: '27116878'
+        cover: /img/books/27116878.jpg
+      - title: 遥远的向日葵地
+        author: 李娟
+        link: 'https://book.douban.com/subject/27184303/'
+        douban_id: '27184303'
+        cover: /img/books/27184303.jpg
+      - title: 我的阿勒泰
+        author: 李娟
+        link: 'https://book.douban.com/subject/30259726/'
+        douban_id: '30259726'
+        cover: /img/books/30259726.jpg
+      - title: 走夜路请放声歌唱
+        author: 李娟
+        link: 'https://book.douban.com/subject/26581961/'
+        douban_id: '26581961'
+        cover: /img/books/26581961.jpg
+      - title: 阿勒泰的角落
+        author: 李娟
+        link: 'https://book.douban.com/subject/36629769/'
+        douban_id: '36629769'
+        cover: /img/books/36629769.jpg
+      - title: 一个人的朝圣
+        author: '[英] 蕾秋·乔伊斯'
+        link: 'https://book.douban.com/subject/24934182/'
+        douban_id: '24934182'
+        cover: /img/books/24934182.jpg
+      - title: 月亮与六便士
+        author: '[英] 威廉·萨默塞特·毛姆'
+        link: 'https://book.douban.com/subject/26954760/'
+        douban_id: '26954760'
+        cover: /img/books/26954760.jpg
+      - title: 山茶文具店
+        author: '[日] 小川糸'
+        link: 'https://book.douban.com/subject/28656614/'
+        douban_id: '28656614'
+        cover: /img/books/28656614.jpg
+      - title: 一个人的好天气
+        author: '[日] 青山七惠'
+        link: 'https://book.douban.com/subject/2250587/'
+        douban_id: '2250587'
+        cover: /img/books/2250587.jpg
+      - title: 东京本屋
+        author: '[日] 吉井忍'
+        link: 'https://book.douban.com/subject/26819477/'
+        douban_id: '26819477'
+        cover: /img/books/26819477.jpg
+      - title: CALL ME BY YOUR NAME
+        author: Andre Aciman
+        link: 'https://book.douban.com/subject/27150656/'
+        douban_id: '27150656'
+        cover: /img/books/27150656.jpg
+      - title: 人类简史
+        author: '[以色列] 尤瓦尔·赫拉利'
+        link: 'https://book.douban.com/subject/25985021/'
+        douban_id: '25985021'
+        cover: /img/books/25985021.jpg
+      - title: 我很好啊，妈
+        author: 乌云装扮者
+        link: 'https://book.douban.com/subject/27117553/'
+        douban_id: '27117553'
+        cover: /img/books/27117553.jpg
+      - title: 诗经国风
+        author: 袁行霈
+        link: 'https://book.douban.com/subject/30210153/'
+        douban_id: '30210153'
+        cover: /img/books/30210153.jpg
+      - title: 诗经雅颂
+        author: 骆玉明 解注
+        link: 'https://book.douban.com/subject/30136325/'
+        douban_id: '30136325'
+        cover: /img/books/30136325.jpg
+      - title: 阅读是一座随身携带的避难所
+        author: '[英] 毛姆'
+        link: 'https://book.douban.com/subject/27024398/'
+        douban_id: '27024398'
+        cover: /img/books/27024398.jpg
+      - title: 像世界一样宽广地活
+        author: 曹頔
+        link: 'https://book.douban.com/subject/30135706/'
+        douban_id: '30135706'
+        cover: /img/books/30135706.jpg
+      - title: 何为理想生活
+        author: '[奥] 伊戈尔·约西福维奇'
+        link: 'https://book.douban.com/subject/35054574/'
+        douban_id: '35054574'
+        cover: /img/books/35054574.jpg
+      - title: 房思琪的初恋乐园
+        author: 林奕含
+        link: 'https://book.douban.com/subject/27614904/'
+        douban_id: '27614904'
+        cover: /img/books/27614904.jpg
+      - title: 生活的艺术
+        author: 林语堂
+        link: 'https://book.douban.com/subject/26680340/'
+        douban_id: '26680340'
+        cover: /img/books/26680340.jpg
+      - title: 一间自己的房间
+        author: '[英] 维吉尼亚·伍尔夫'
+        link: 'https://book.douban.com/subject/34834155/'
+        douban_id: '34834155'
+        cover: /img/books/34834155.jpg
