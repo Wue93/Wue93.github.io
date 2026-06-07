@@ -25,13 +25,21 @@
                         <a href="<%= config.root %>">Home</a>
                     </li>
 
-                    <% site.pages.forEach(function(page){ %>
-
-                        <% if(page.title){ %>
-                        <li>
-                            <a href="<%= config.root %><%= page.path.replace('index.html', '') %>"><%= page.navTitle || page.title %></a>
-                        </li>
-                        <% } %>
+                    <%
+                        var navOrder = ['archive/', 'tags/', 'books/', 'about/'];
+                        var navPages = [];
+                        navOrder.forEach(function(path){
+                            site.pages.forEach(function(page){
+                                if(page.path.replace('index.html', '') === path && page.title) {
+                                    navPages.push(page);
+                                }
+                            });
+                        });
+                    %>
+                    <% navPages.forEach(function(page){ %>
+                    <li>
+                        <a href="<%= config.root %><%= page.path.replace('index.html', '') %>"><%= page.navTitle || page.title %></a>
+                    </li>
                     <% }); %>
                     
                 </ul>
