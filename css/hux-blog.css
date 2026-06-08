@@ -1971,6 +1971,7 @@ img::-moz-selection {
 .book-year-heading {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: 12px;
   margin: 0 0 18px;
 }
@@ -1981,9 +1982,11 @@ img::-moz-selection {
   line-height: 1.2;
 }
 .book-year-heading p {
+  flex: 1 1 320px;
   margin: 0;
   color: #a3a3a3;
   font-size: 13px;
+  line-height: 1.6;
 }
 .book-grid {
   display: grid;
