@@ -226,7 +226,7 @@ years:
         cover: /img/books/36953607.jpg
         douban_id: '36953607'
   - year: 2024
-    count: 29
+    count: 30
     note: 在日常生活的褶皱里，辨认自由、性别、阶层与时间的真实重量。
     books:
       - title: 最后死亡的是心脏
@@ -259,6 +259,11 @@ years:
         link: 'https://book.douban.com/subject/36494081/'
         cover: /img/books/36494081.jpg
         douban_id: '36494081'
+      - title: 身份政治：对尊严与认同的渴求
+        author: '[美] 弗朗西斯·福山'
+        link: 'https://book.douban.com/subject/35604961/'
+        cover: /img/books/35604961.jpg
+        douban_id: '35604961'
       - title: 时代的精神状况
         author: '[德] 卡尔·雅斯贝斯'
         link: 'https://book.douban.com/subject/23774527/'
@@ -375,7 +380,7 @@ years:
         cover: /img/books/34840609.jpg
         douban_id: '34840609'
   - year: 2023
-    count: 18
+    count: 19
     note: 从工作方法到人生尺度，从反思职业到思考自由，阅读开始转向对生活结构的重新校准。
     books:
       - title: 每周工作4小时
@@ -393,11 +398,16 @@ years:
         link: 'https://book.douban.com/subject/4323275/'
         douban_id: '4323275'
         cover: /img/books/4323275.jpg
-      - title: 区分（上/下）
-        author: 艾尔肯·米吉提
-        link: 'https://book.douban.com/subject/20483755/'
-        douban_id: '20483755'
-        cover: /img/books/20483755.jpg
+      - title: 区分：判断力的社会批判
+        author: '[法] 皮埃尔·布尔迪厄'
+        link: 'https://book.douban.com/subject/26354330/'
+        douban_id: '26354330'
+        cover: /img/books/26354330.jpg
+      - title: 聪明人的个人成长
+        author: '[美] 史蒂夫·帕弗利纳'
+        link: 'https://book.douban.com/subject/36018994/'
+        douban_id: '36018994'
+        cover: /img/books/36018994.jpg
       - title: 工作的迷思
         author: '[英] 阿兰·德波顿'
         link: 'https://book.douban.com/subject/35542573/'
@@ -469,7 +479,7 @@ years:
         douban_id: '1031526'
         cover: /img/books/1031526.jpg
   - year: 2022
-    count: 3
+    count: 4
     note: 这是被考研备考占据的一年，读得很少，但问题意识没有中断。
     books:
       - title: 如何抑制女性写作
@@ -477,6 +487,11 @@ years:
         link: 'https://book.douban.com/subject/35229199/'
         douban_id: '35229199'
         cover: /img/books/35229199.jpg
+      - title: 被讨厌的勇气
+        author: '[日] 岸见一郎 / [日] 古贺史健'
+        link: 'https://book.douban.com/subject/26369699/'
+        douban_id: '26369699'
+        cover: /img/books/26369699.jpg
       - title: 每周工作4小时
         author: '[美] 蒂莫西·费里斯'
         link: 'https://book.douban.com/subject/27065607/'
@@ -488,7 +503,7 @@ years:
         douban_id: '10945606'
         cover: /img/books/10945606.jpg
   - year: 2021
-    count: 60
+    count: 61
     note: 这一年像一场密集训练：产品、营销、组织、社会与自我，都被拿来重新拆解了一遍。
     books:
       - title: 如何阅读一本书
@@ -591,6 +606,11 @@ years:
         link: 'https://book.douban.com/subject/36110828/'
         douban_id: '36110828'
         cover: /img/books/36110828.jpg
+      - title: 厌女
+        author: 上野千鹤子
+        link: 'https://book.douban.com/subject/25836270/'
+        douban_id: '25836270'
+        cover: /img/books/25836270.jpg
       - title: 体验设计｜创意就为改变世界
         author: 电通体验设计工作室（Experience Design Stuio）
         link: 'https://book.douban.com/subject/26452775/'
@@ -1026,7 +1046,7 @@ years:
         douban_id: '4010969'
         cover: /img/books/4010969.jpg
   - year: 2019
-    count: 52
+    count: 53
     note: 文学、哲学、商业和生活方式交错，寻找一种既清醒又热爱的生活姿态。
     books:
       - title: 下一站，天国
@@ -1164,6 +1184,11 @@ years:
         link: 'https://book.douban.com/subject/2053102/'
         douban_id: '2053102'
         cover: /img/books/2053102.jpg
+      - title: 权力精英
+        author: '[美] C. 赖特·米尔斯'
+        link: 'https://book.douban.com/subject/27025112/'
+        douban_id: '27025112'
+        cover: /img/books/27025112.jpg
       - title: 一个孤独漫步者的遐想
         author: '[法] 让-雅克·卢梭'
         link: 'https://book.douban.com/subject/26905777/'

@@ -1988,7 +1988,7 @@ img::-moz-selection {
 }
 .featured-book-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px 10px;
 }
 .featured-book {
@@ -2134,6 +2134,7 @@ img::-moz-selection {
 }
 @media only screen and (min-width: 640px) {
   .featured-book-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 16px 12px;
   }
   .featured-book h4 {
@@ -2151,10 +2152,6 @@ img::-moz-selection {
   }
 }
 @media only screen and (min-width: 992px) {
-  .featured-list-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 34px;
-  }
   .featured-list {
     padding-top: 20px;
   }
