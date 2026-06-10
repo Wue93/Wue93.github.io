@@ -1,3 +1,110 @@
+featuredLists:
+  - title: 曾改变我生活方式的十本书
+    note: 这些书改变的不是观点，而是我安排生活、理解阶层、亲密关系与时间的方式。
+    books:
+      - title: 格调：社会等级与生活品味
+        author: '[美] 保罗·福塞尔'
+        link: 'https://book.douban.com/subject/6858527/'
+        cover: /img/books/6858527.jpg
+        douban_id: '6858527'
+      - title: 文凭社会
+        author: '[美] 兰德尔·柯林斯'
+        link: 'https://book.douban.com/subject/30143236/'
+        cover: /img/books/30143236.jpg
+        douban_id: '30143236'
+      - title: 景观社会
+        author: '[法] 居伊·德波'
+        link: 'https://book.douban.com/subject/26865819/'
+        cover: /img/books/26865819.jpg
+        douban_id: '26865819'
+      - title: 爱的艺术
+        author: '[美] 艾·弗洛姆'
+        link: 'https://book.douban.com/subject/3026879/'
+        cover: /img/books/3026879.jpg
+        douban_id: '3026879'
+      - title: 论不服从
+        author: '[美] 艾里希·弗洛姆'
+        link: 'https://book.douban.com/subject/27063276/'
+        cover: /img/books/27063276.jpg
+        douban_id: '27063276'
+      - title: 过一种女性主义的生活
+        author: '[英] 萨拉·艾哈迈德'
+        link: 'https://book.douban.com/subject/36494081/'
+        cover: /img/books/36494081.jpg
+        douban_id: '36494081'
+      - title: 聪明人的个人成长
+        author: '[美] 史蒂夫·帕弗利纳'
+        link: 'https://book.douban.com/subject/36018994/'
+        cover: /img/books/36018994.jpg
+        douban_id: '36018994'
+      - title: 被讨厌的勇气
+        author: '[日] 岸见一郎 / [日] 古贺史健'
+        link: 'https://book.douban.com/subject/26369699/'
+        cover: /img/books/26369699.jpg
+        douban_id: '26369699'
+      - title: 百岁人生：长寿时代的生活和工作
+        author: '[英] 琳达·格拉顿'
+        link: 'https://book.douban.com/subject/30245089/'
+        cover: /img/books/30245089.jpg
+        douban_id: '30245089'
+      - title: 贫穷的本质
+        author: '[印度] 阿比吉特·班纳吉'
+        link: 'https://book.douban.com/subject/30161884/'
+        cover: /img/books/30161884.jpg
+        douban_id: '30161884'
+  - title: 曾让我醍醐灌顶的十本书
+    note: 它们像一些迟来的解释，把许多原本模糊的不适、困惑和愤怒照亮了。
+    books:
+      - title: 厌女
+        author: 上野千鹤子
+        link: 'https://book.douban.com/subject/25836270/'
+        cover: /img/books/25836270.jpg
+        douban_id: '25836270'
+      - title: 权力精英
+        author: '[美] C. 赖特·米尔斯'
+        link: 'https://book.douban.com/subject/27025112/'
+        cover: /img/books/27025112.jpg
+        douban_id: '27025112'
+      - title: 父权制与资本主义
+        author: '[日] 上野千鹤子'
+        link: 'https://book.douban.com/subject/34896921/'
+        cover: /img/books/34896921.jpg
+        douban_id: '34896921'
+      - title: 逃避自由
+        author: '[美] 艾里希·弗洛姆'
+        link: 'https://book.douban.com/subject/26418475/'
+        cover: /img/books/26418475.jpg
+        douban_id: '26418475'
+      - title: 风险社会
+        author: '[德] 乌尔里希·贝克'
+        link: 'https://book.douban.com/subject/27136548/'
+        cover: /img/books/27136548.jpg
+        douban_id: '27136548'
+      - title: 身份政治：对尊严与认同的渴求
+        author: '[美] 弗朗西斯·福山'
+        link: 'https://book.douban.com/subject/35604961/'
+        cover: /img/books/35604961.jpg
+        douban_id: '35604961'
+      - title: 回归故里
+        author: '[法] 迪迪埃·埃里蓬'
+        link: 'https://book.douban.com/subject/34942789/'
+        cover: /img/books/34942789.jpg
+        douban_id: '34942789'
+      - title: 稀缺
+        author: '[美] 塞德希尔·穆来纳森'
+        link: 'https://book.douban.com/subject/36110828/'
+        cover: /img/books/36110828.jpg
+        douban_id: '36110828'
+      - title: 如何抑制女性写作
+        author: 乔安娜·拉斯
+        link: 'https://book.douban.com/subject/35229199/'
+        cover: /img/books/35229199.jpg
+        douban_id: '35229199'
+      - title: 现代性的五个悖论
+        author: '[法] 安托瓦纳·贡巴尼翁'
+        link: 'https://book.douban.com/subject/25832805/'
+        cover: /img/books/25832805.jpg
+        douban_id: '25832805'
 years:
   - year: 2025
     count: 23
@@ -649,7 +756,7 @@ years:
         link: 'https://book.douban.com/subject/34894027/'
         douban_id: '34894027'
         cover: /img/books/34894027.jpg
-      - title: 现代性的五个侧面
+      - title: 现代性的五个悖论
         author: '[法] 安托瓦纳·贡巴尼翁'
         link: 'https://book.douban.com/subject/25832805/'
         douban_id: '25832805'

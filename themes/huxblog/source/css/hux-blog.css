@@ -1938,11 +1938,90 @@ img::-moz-selection {
   font-size: 15px;
   line-height: 1.8;
 }
+.books-featured {
+  margin: 0 0 36px;
+  padding: 0 0 32px;
+  border-bottom: 1px solid #edf1f0;
+}
+.books-featured-heading,
+.books-annual-heading {
+  margin: 0 0 22px;
+}
+.books-featured-heading h2,
+.books-annual-heading h2 {
+  margin: 0 0 8px;
+  color: #404040;
+  font-size: 24px;
+  line-height: 1.25;
+}
+.books-featured-heading p {
+  max-width: 760px;
+  margin: 0;
+  color: #7f8a86;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.featured-list-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.featured-list {
+  min-width: 0;
+  padding-top: 18px;
+  border-top: 1px solid #edf1f0;
+}
+.featured-list-heading {
+  margin: 0 0 16px;
+}
+.featured-list-heading h3 {
+  margin: 0 0 7px;
+  color: #404040;
+  font-size: 18px;
+  line-height: 1.35;
+}
+.featured-list-heading p {
+  margin: 0;
+  color: #8a8a8a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.featured-book-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px 10px;
+}
+.featured-book {
+  min-width: 0;
+}
+.featured-book-cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: 3px;
+  box-shadow: 0 7px 16px rgba(64, 64, 64, 0.1);
+  object-fit: cover;
+}
+.featured-book h4 {
+  margin: 8px 0 0;
+  color: #404040;
+  font-size: 11px;
+  line-height: 1.35;
+}
+.featured-book h4 a {
+  color: #404040;
+  text-decoration: none;
+}
+.featured-book h4 a:hover,
+.featured-book h4 a:focus {
+  color: #3F6B63;
+  text-decoration: none;
+}
 .books-year-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 0 0 34px;
+  margin: 0 0 30px;
   padding: 0 0 24px;
   border-bottom: 1px solid #edf1f0;
 }
@@ -1975,10 +2054,10 @@ img::-moz-selection {
   gap: 12px;
   margin: 0 0 18px;
 }
-.book-year-heading h2 {
+.book-year-heading h3 {
   margin: 0;
   color: #404040;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.2;
 }
 .book-year-heading p {
@@ -2054,6 +2133,12 @@ img::-moz-selection {
   line-height: 1.35;
 }
 @media only screen and (min-width: 640px) {
+  .featured-book-grid {
+    gap: 16px 12px;
+  }
+  .featured-book h4 {
+    font-size: 12px;
+  }
   .book-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 22px 14px;
@@ -2066,6 +2151,13 @@ img::-moz-selection {
   }
 }
 @media only screen and (min-width: 992px) {
+  .featured-list-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 34px;
+  }
+  .featured-list {
+    padding-top: 20px;
+  }
   .book-grid {
     grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 28px 20px;

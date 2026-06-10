@@ -23,6 +23,7 @@ layout: layout
     }).sort(function(a, b){
         return b.year - a.year;
     });
+    var featuredLists = bookData.featuredLists || [];
     var navYears = years;
     function resolveBookCover(cover) {
         if (!cover) return "";
@@ -44,6 +45,52 @@ layout: layout
                     <p class="books-intro"><%= bookData.intro %></p>
                 <% } %>
 
+                <% if(featuredLists.length) { %>
+                    <section class="books-featured" aria-labelledby="books-featured-title">
+                        <div class="books-featured-heading">
+                            <h2 id="books-featured-title">主题书单</h2>
+                        </div>
+
+                        <div class="featured-list-grid">
+                            <% featuredLists.forEach(function(list){ %>
+                                <section class="featured-list">
+                                    <div class="featured-list-heading">
+                                        <h3><%= list.title %></h3>
+                                        <% if(list.note) { %>
+                                            <p><%= list.note %></p>
+                                        <% } %>
+                                    </div>
+
+                                    <div class="featured-book-grid">
+                                        <% (list.books || []).forEach(function(book){ %>
+                                            <article class="featured-book">
+                                                <% if(book.cover) { %>
+                                                    <img class="featured-book-cover" src="<%= resolveBookCover(book.cover) %>" alt="《<%= book.title %>》封面">
+                                                <% } else { %>
+                                                    <div class="featured-book-cover book-cover-fallback" style="--book-color: <%= book.color || '#7FA296' %>;">
+                                                        <span class="book-cover-title"><%= book.title %></span>
+                                                    </div>
+                                                <% } %>
+                                                <h4>
+                                                    <% if(book.link) { %>
+                                                        <a href="<%= book.link %>" target="_blank" rel="noopener"><%= book.title %></a>
+                                                    <% } else { %>
+                                                        <%= book.title %>
+                                                    <% } %>
+                                                </h4>
+                                            </article>
+                                        <% }) %>
+                                    </div>
+                                </section>
+                            <% }) %>
+                        </div>
+                    </section>
+                <% } %>
+
+                <div class="books-annual-heading">
+                    <h2>年度书单</h2>
+                </div>
+
                 <nav class="books-year-nav" aria-label="年度书单导航">
                     <% navYears.forEach(function(yearGroup){ %>
                         <a href="#books-<%= yearGroup.year %>"><%= yearGroup.year %></a>
@@ -53,7 +100,7 @@ layout: layout
                 <% years.forEach(function(yearGroup){ %>
                     <section class="book-year-section" id="books-<%= yearGroup.year %>">
                         <div class="book-year-heading">
-                            <h2><%= yearGroup.year %></h2>
+                            <h3><%= yearGroup.year %></h3>
                             <% if(yearGroup.note) { %>
                                 <p><%= yearGroup.note %></p>
                             <% } %>
