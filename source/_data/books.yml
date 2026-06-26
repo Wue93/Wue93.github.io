@@ -106,6 +106,55 @@ featuredLists:
         cover: /img/books/25832805.jpg
         douban_id: '25832805'
 years:
+  - year: 2026
+    count: 9
+    note: 从城市空间、公共生活、制度结构到时间与组织，继续把个人经验放进更大的秩序里辨认。
+    books:
+      - title: 城市小空间的社会生活
+        author: '[美] 威廉·H.怀特'
+        link: 'https://book.douban.com/subject/37347928/'
+        cover: /img/books/37347928.jpg
+        douban_id: '37347928'
+      - title: 重新发现市中心
+        author: '[美] 威廉·H.怀特'
+        link: 'https://book.douban.com/subject/37262623/'
+        cover: /img/books/37262623.jpg
+        douban_id: '37262623'
+      - title: 皇权与绅权
+        author: 吴晗 / 费孝通 等
+        link: 'https://book.douban.com/subject/2121714/'
+        cover: /img/books/2121714.jpg
+        douban_id: '2121714'
+      - title: 哥本哈根三部曲
+        author: '[丹麦] 托芙·迪特莱弗森'
+        link: 'https://book.douban.com/subject/36823202/'
+        cover: /img/books/36823202.jpg
+        douban_id: '36823202'
+      - title: 时间游戏
+        author: 周洛华
+        link: 'https://book.douban.com/subject/36905188/'
+        cover: /img/books/36905188.jpg
+        douban_id: '36905188'
+      - title: 流程即组织力
+        author: 杨勇
+        link: 'https://book.douban.com/subject/36867125/'
+        cover: /img/books/36867125.jpg
+        douban_id: '36867125'
+      - title: 公共生活的发生
+        author: 张康之 / 张乾友
+        link: 'https://book.douban.com/subject/36799222/'
+        cover: /img/books/36799222.jpg
+        douban_id: '36799222'
+      - title: 流动的盛宴
+        author: '[美] 海明威'
+        link: 'https://book.douban.com/subject/35084613/'
+        cover: /img/books/35084613.jpg
+        douban_id: '35084613'
+      - title: 带一本书去巴黎
+        author: 林达
+        link: 'https://book.douban.com/subject/26706901/'
+        cover: /img/books/26706901.jpg
+        douban_id: '26706901'
   - year: 2025
     count: 23
     note: 在城市、自然、女性写作与自我经验之间，找到安放自己的位置，做出选择并承受代价。
