@@ -21,7 +21,7 @@
     <%- css('css/bootstrap.min.css') %>
 
     <!-- Custom CSS -->
-    <%- css('css/hux-blog.css') %>
+    <link rel="stylesheet" href="<%= config.root || '/' %>css/hux-blog.css?v=<%= config.asset_version || '1' %>">
 
     <!-- Pygments Highlight CSS -->
     <%- css('css/highlight') %>

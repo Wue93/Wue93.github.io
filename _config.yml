@@ -19,6 +19,7 @@ permalink: :year/:month/:day/:title/
 
 # Site settings
 SEOTitle: Stay Out Space
+asset_version: 20260627
 header-img: img/background.jpg
 email: 1149256261@qq.com
 description: "Wue's blog"
