@@ -1,0 +1,110 @@
+---
+layout: layout
+---
+
+<header class="intro-header inner-hero" style="background-image: url('<%= config.root %><%= page["header-img"] || config["header-img"] %>')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1><%= page.title || config.title %></h1>
+                    <span class="subheading"><%= page.description || config.subtitle || "" %></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<%
+    var projectData = site.data.projects || {};
+    var products = projectData.products || [];
+    var podcast = projectData.podcast || {};
+    var episodes = podcast.episodes || [];
+    function projectLink(url) {
+        if (!url) return "";
+        if (/^(https?:|\/\/|\/)/.test(url)) return url;
+        return config.root + url;
+    }
+%>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+            <main class="projects-page">
+                <% if(projectData.intro) { %>
+                    <p class="projects-intro"><%= projectData.intro %></p>
+                <% } %>
+
+                <section class="projects-section" aria-labelledby="projects-products-title">
+                    <div class="projects-section-heading">
+                        <h2 id="projects-products-title">小报童</h2>
+                    </div>
+
+                    <div class="project-card-list">
+                        <% products.forEach(function(project){ %>
+                            <article class="project-card">
+                                <div class="project-card-main">
+                                    <% if(project.type) { %>
+                                        <span class="project-kicker"><%= project.type %></span>
+                                    <% } %>
+                                    <h3><%= project.title %></h3>
+                                    <p class="project-description"><%= project.description %></p>
+                                    <% if(project.audience) { %>
+                                        <p class="project-audience"><%= project.audience %></p>
+                                    <% } %>
+                                </div>
+
+                                <div class="project-actions">
+                                    <% if(project.link) { %>
+                                        <a class="project-action-primary" href="<%= projectLink(project.link) %>">查看介绍</a>
+                                    <% } %>
+                                    <% if(project.external) { %>
+                                        <a class="project-action-secondary" href="<%= project.external %>" target="_blank" rel="noopener">前往小报童</a>
+                                    <% } %>
+                                </div>
+                            </article>
+                        <% }) %>
+                    </div>
+                </section>
+
+                <section class="projects-section projects-podcast" aria-labelledby="projects-podcast-title">
+                    <div class="projects-section-heading">
+                        <h2 id="projects-podcast-title"><%= podcast.title || "播客" %></h2>
+                        <% if(podcast.description) { %>
+                            <p><%= podcast.description %></p>
+                        <% } %>
+                    </div>
+
+                    <div class="podcast-episode-list">
+                        <% episodes.forEach(function(episode){ %>
+                            <article class="podcast-episode">
+                                <div class="podcast-episode-meta"><%= episode.date %></div>
+                                <div class="podcast-episode-main">
+                                    <h3>
+                                        <% if(episode.link) { %>
+                                            <a href="<%= projectLink(episode.link) %>"><%= episode.title %></a>
+                                        <% } else { %>
+                                            <%= episode.title %>
+                                        <% } %>
+                                    </h3>
+                                    <% if(episode.description) { %>
+                                        <p><%= episode.description %></p>
+                                    <% } %>
+                                </div>
+                            </article>
+                        <% }) %>
+                    </div>
+                </section>
+
+                <% if(projectData.contact) { %>
+                    <section class="projects-contact">
+                        <p><%= projectData.contact.text %></p>
+                        <% if(projectData.contact.link) { %>
+                            <a href="<%= projectLink(projectData.contact.link) %>">了解更多</a>
+                        <% } %>
+                    </section>
+                <% } %>
+            </main>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+intro: 这里收集了一些我做过的东西：关于产品营销、内容工作、AI 工作流，也关于我如何把思考变成可交付的作品。
+products:
+  - title: 产品营销强壮手册
+    type: 小报童 / 专栏 / 手册
+    description: 面向 B2B / 技术产品从业者的产品营销方法手册，关注定位、内容、增长与商业化。
+    audience: 适合产品营销、市场、运营，以及正在转向 B2B 增长与商业化工作的从业者。
+    link: /2024/05/27/产品营销强壮手册/
+    external: https://xiaobot.net/p/pmmhandbook
+  - title: 内容营销强壮手册
+    type: 小报童 / 专栏 / 手册
+    description: 从策略到执行，梳理内容营销如何真正服务业务，而不是停留在表达和热闹。
+    audience: 适合内容营销、新媒体、市场团队，以及希望把内容工作做进业务核心的人。
+    link: /2026/01/24/内容营销强壮手册小报童/
+    external: https://xiaobot.net/p/ContentBeast
+podcast:
+  title: 播客：事外
+  description: 和朋友一起，把生活、阅读与情绪放到更远一点的位置看。
+  episodes:
+    - title: Vol.1 旅行，是大型表演也是反结构的“仪式过程”
+      date: 2021.09.20
+      link: /2021/09/20/Podcast-1/
+      description: 从旅行、表演和仪式过程出发，聊人为什么需要短暂离开日常秩序。
+    - title: Vol.2 从个体感受到星火力量，我们如何谈论女性？
+      date: 2022.01.12
+      link: /2022/01/12/Podcast-2/
+      description: 关于性别意识、家庭经验、自洽状态，以及普通女性如何重新理解自己。
+    - title: Vol.3 Me, How to Nourish My Spirit
+      date: 2022.06.18
+      link: /2022/06/18/Podcast-3/
+      description: 用英文谈自我、精神养分，以及为什么想要录制一档播客。
+    - title: Vol.4 了解女性主义，从这4个词开始
+      date: 2022.08.13
+      link: /2022/08/13/Podcast-4/
+      description: 从性别认知、认知劳动、母职惩罚和厌女症开始理解女性主义。
+contact:
+  text: 如果你对这些作品里的问题感兴趣，也欢迎从公众号「事外」找到我。
+  link: /about/
