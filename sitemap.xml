@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wue93.github.io/2026/06/27/%E5%B7%B4%E9%BB%8E%E4%B8%80%E5%91%A8%EF%BC%9A%E6%B5%81%E5%8A%A8%E7%9A%84%E7%9B%9B%E5%AE%B4%E4%B8%8D%E5%9C%A8%E5%92%96%E5%95%A1%E9%A6%86%E9%87%8C/</loc>
+    
+    <lastmod>2026-06-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wue93.github.io/projects/index.html</loc>
     
     <lastmod>2026-06-27</lastmod>
@@ -678,6 +687,13 @@
   
   <url>
     <loc>https://wue93.github.io/tags/%E5%AE%B6%E5%BA%AD%E5%85%B3%E7%B3%BB/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wue93.github.io/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
