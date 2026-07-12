@@ -107,7 +107,7 @@ featuredLists:
         douban_id: '25832805'
 years:
   - year: 2026
-    count: 11
+    count: 12
     note: 从城市空间、公共生活、制度结构到时间与组织，继续把个人经验放进更大的秩序里辨认。
     books:
       - title: 城市小空间的社会生活
@@ -165,6 +165,11 @@ years:
         link: 'https://book.douban.com/subject/35050696/'
         cover: /img/books/35050696.jpg
         douban_id: '35050696'
+      - title: 惶然录
+        author: '[葡] 费尔南多·佩索阿'
+        link: 'https://book.douban.com/subject/34437694/'
+        cover: /img/books/34437694.jpg
+        douban_id: '34437694'
   - year: 2025
     count: 23
     note: 在城市、自然、女性写作与自我经验之间，找到安放自己的位置，做出选择并承受代价。
