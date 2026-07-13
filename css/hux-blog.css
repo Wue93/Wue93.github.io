@@ -36,7 +36,8 @@
   border-color: #3F6B63;
 }
 .sidebar-container .short-about img {
-  width: 80%;
+  width: 100%;
+  height: auto;
   display: block;
   border-radius: 5px;
   margin-bottom: 20px;
