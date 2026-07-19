@@ -157,25 +157,25 @@
                 
                     <section class="projects-section projects-experiments" aria-labelledby="projects-experiments-title">
                         <div class="projects-section-heading">
-                            <h2 id="projects-experiments-title">Vibe Coding</h2>
+                            <h2 id="projects-experiments-title">AI 策展</h2>
                             <p>用AI为生活、阅读与创意策展</p>
                         </div>
 
                         <div class="project-card-list">
                             
-                                <article class="project-card project-card--atlas">
+                                <article class="project-card project-card--atlas" data-map-sync data-map-url="/atlas-of-her-becoming/">
                                     <div class="project-card-main">
                                         
-                                            <span class="project-kicker">互动阅读地图 / 第一版</span>
+                                            <span class="project-kicker" data-map-version>互动地图 / V1.0.0</span>
                                         
-                                        <h3>女性成长散步地图</h3>
-                                        <p class="project-description">一张由书籍、女性经验与人生岔路共同组成的精神地图。七片成长地貌彼此连接，三条阅读路线从“认识真实”出发，经过“学习爱”，走向“增强能量”。</p>
+                                        <h3 data-map-title>她的成长地图</h3>
+                                        <p class="project-description">在没有标准答案的人生里，读书、散步、成长。</p>
                                         
                                             <p class="project-audience">年龄告诉你走了多远，困惑决定你从哪里出发。</p>
                                         
                                     </div>
                                     <div class="project-actions">
-                                        <a class="project-action-primary" href="/women-growth-map/">进入地图</a>
+                                        <a class="project-action-primary" href="/atlas-of-her-becoming/">进入地图</a>
                                     </div>
                                 </article>
                             
@@ -319,6 +319,35 @@
     </div>
 </div>
 
+<script>
+    (function () {
+        var cards = document.querySelectorAll("[data-map-sync]");
+        if (!cards.length || !window.fetch || !window.DOMParser) return;
+        Array.prototype.forEach.call(cards, function (card) {
+            var mapUrl = card.getAttribute("data-map-url");
+            if (!mapUrl) return;
+            window.fetch(mapUrl, { credentials: "same-origin" })
+                .then(function (response) {
+                    if (!response.ok) throw new Error("Map metadata unavailable");
+                    return response.text();
+                })
+                .then(function (html) {
+                    var mapDocument = new window.DOMParser().parseFromString(html, "text/html");
+                    var mapTitle = mapDocument.querySelector("#atlasTitle");
+                    var mapEdition = mapDocument.querySelector(".atlas-nav__edition");
+                    var versionMatch = mapEdition && mapEdition.textContent.match(/V\d+(?:\.\d+){2}/i);
+                    var titleTarget = card.querySelector("[data-map-title]");
+                    var versionTarget = card.querySelector("[data-map-version]");
+                    if (mapTitle && titleTarget) titleTarget.textContent = mapTitle.textContent.trim();
+                    if (versionMatch && versionTarget) versionTarget.textContent = "互动地图 / " + versionMatch[0].toUpperCase();
+                })
+                .catch(function () {
+                    /* Keep the built-in title and version when the map cannot be reached. */
+                });
+        });
+    })();
+</script>
+
 
     <!-- Footer -->
     <!-- Footer -->
@@ -405,21 +434,6 @@
 <img src="https://Wue93.github.io/img/shiwai.jpg" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>

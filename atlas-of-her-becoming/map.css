@@ -81,7 +81,7 @@ input:focus-visible {
 
 html.is-first-visit .first-visit-mist {
   display: block;
-  animation: atlas-mist-clear 3s cubic-bezier(.2, .66, .28, 1) both;
+  animation: atlas-mist-clear 4s cubic-bezier(.2, .66, .28, 1) both;
 }
 
 .mist-cloud {
@@ -96,10 +96,10 @@ html.is-first-visit .first-visit-mist {
   mix-blend-mode: screen;
 }
 
-.mist-cloud--one { top: 19%; left: 18%; animation: mist-drift-one 3s ease-out both; }
-.mist-cloud--two { top: 20%; right: 12%; animation: mist-drift-two 3s ease-out both; }
-.mist-cloud--three { bottom: 8%; left: 12%; animation: mist-drift-three 3s ease-out both; }
-.mist-cloud--four { right: 9%; bottom: 5%; animation: mist-drift-four 3s ease-out both; }
+.mist-cloud--one { top: 19%; left: 18%; animation: mist-drift-one 4s ease-out both; }
+.mist-cloud--two { top: 20%; right: 12%; animation: mist-drift-two 4s ease-out both; }
+.mist-cloud--three { bottom: 8%; left: 12%; animation: mist-drift-three 4s ease-out both; }
+.mist-cloud--four { right: 9%; bottom: 5%; animation: mist-drift-four 4s ease-out both; }
 
 .growth-atlas {
   --intro-left: clamp(34px, 4.2vw, 70px);
@@ -113,6 +113,8 @@ html.is-first-visit .first-visit-mist {
     repeating-radial-gradient(ellipse at 88% 84%, transparent 0 31px, rgba(83, 125, 116, 0.028) 32px 33px),
     var(--paper);
 }
+
+html.is-intro-collapsed .growth-atlas { --map-start: 44px; }
 
 .growth-atlas::before {
   position: fixed;
@@ -211,6 +213,55 @@ html.is-first-visit .first-visit-mist {
   width: min(31vw, 510px, calc(var(--map-start) - var(--intro-left) - 28px));
   container-type: inline-size;
   transform: translateY(-52%);
+  transition: opacity .28s ease, transform .42s cubic-bezier(.22, .72, .2, 1), visibility .42s;
+}
+
+html.is-intro-collapsed .atlas-intro {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-115%, -52%);
+}
+
+.intro-drawer-toggle {
+  position: absolute;
+  top: 25%;
+  left: calc(var(--map-start) - 13px);
+  z-index: 32;
+  display: grid;
+  width: 26px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid rgba(48, 71, 67, .18);
+  border-radius: 999px;
+  color: var(--ink);
+  background: rgba(250, 247, 239, .82);
+  box-shadow: 0 6px 16px rgba(38, 58, 52, .1), inset 0 1px rgba(255, 255, 255, .72);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  place-items: center;
+  transform: translateY(-50%);
+  transition: left .42s cubic-bezier(.22, .72, .2, 1), color .18s ease, background .18s ease, box-shadow .18s ease;
+}
+
+.intro-drawer-toggle::before {
+  position: absolute;
+  inset: -6px;
+  content: "";
+}
+
+.intro-drawer-toggle:hover {
+  color: var(--paper-light);
+  background: var(--ink);
+  box-shadow: 0 8px 20px rgba(38, 58, 52, .16);
+}
+
+.intro-drawer-toggle span {
+  font-family: Georgia, serif;
+  font-size: 21px;
+  line-height: 1;
+  transform: translateY(-1px);
 }
 
 @supports (font-size: 1cqi) {
@@ -429,6 +480,7 @@ html.is-first-visit .first-visit-mist {
   cursor: grab;
   user-select: none;
   touch-action: none;
+  transition: left .42s cubic-bezier(.22, .72, .2, 1);
 }
 
 .map-stage.is-dragging { cursor: grabbing; }
@@ -1503,6 +1555,8 @@ html.is-first-visit .first-visit-mist {
     transform: none;
   }
 
+  html.is-intro-collapsed .atlas-intro { transform: translateX(-115%); }
+
   .atlas-intro::-webkit-scrollbar { width: 4px; }
   .atlas-intro::-webkit-scrollbar-thumb { border-radius: 999px; background: rgba(49, 92, 80, .2); }
   .atlas-kicker { margin-bottom: 8px; }
@@ -1522,6 +1576,8 @@ html.is-first-visit .first-visit-mist {
   .atlas-nav { position: relative; grid-template-columns: 1fr auto; min-height: 62px; padding: 0 18px; }
   .atlas-nav__edition { display: none; }
   .atlas-intro { --intro-type-display: clamp(42px, 12.8vw, 64px); position: relative; top: auto; bottom: auto; left: auto; width: auto; max-height: none; padding: 42px 22px 24px; overflow: visible; transform: none; }
+  html.is-intro-collapsed .atlas-intro { visibility: visible; pointer-events: auto; opacity: 1; transform: none; }
+  .intro-drawer-toggle { display: none; }
   .atlas-lead { margin-top: 20px; }
   .age-filter__options { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .question-entrances { margin-top: 20px; }
