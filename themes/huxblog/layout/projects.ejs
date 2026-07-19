@@ -17,6 +17,7 @@ layout: layout
 
 <%
     var projectData = site.data.projects || {};
+    var experiments = projectData.experiments || [];
     var products = projectData.products || [];
     var podcast = projectData.podcast || {};
     var episodes = podcast.episodes || [];
@@ -33,6 +34,35 @@ layout: layout
             <main class="projects-page">
                 <% if(projectData.intro) { %>
                     <p class="projects-intro"><%= projectData.intro %></p>
+                <% } %>
+
+                <% if(experiments.length) { %>
+                    <section class="projects-section projects-experiments" aria-labelledby="projects-experiments-title">
+                        <div class="projects-section-heading">
+                            <h2 id="projects-experiments-title">Vibe Coding</h2>
+                            <p>用AI为生活、阅读与创意策展</p>
+                        </div>
+
+                        <div class="project-card-list">
+                            <% experiments.forEach(function(project){ %>
+                                <article class="project-card project-card--atlas">
+                                    <div class="project-card-main">
+                                        <% if(project.type) { %>
+                                            <span class="project-kicker"><%= project.type %></span>
+                                        <% } %>
+                                        <h3><%= project.title %></h3>
+                                        <p class="project-description"><%= project.description %></p>
+                                        <% if(project.audience) { %>
+                                            <p class="project-audience"><%= project.audience %></p>
+                                        <% } %>
+                                    </div>
+                                    <div class="project-actions">
+                                        <a class="project-action-primary" href="<%= projectLink(project.link) %>">进入地图</a>
+                                    </div>
+                                </article>
+                            <% }) %>
+                        </div>
+                    </section>
                 <% } %>
 
                 <section class="projects-section" aria-labelledby="projects-products-title">

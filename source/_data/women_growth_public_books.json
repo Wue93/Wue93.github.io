@@ -1,0 +1,777 @@
+{
+  "books": [
+    {
+      "title": "精英的傲慢",
+      "author": "[美] 迈克尔·桑德尔",
+      "link": "https://book.douban.com/subject/35586814/",
+      "cover": "/img/books/35586814.jpg",
+      "douban_id": "35586814",
+      "matched_title": "精英的傲慢 : 好的社会该如何定义成功？",
+      "source": "douban-via-public-reader"
+    },
+    {
+      "title": "身份的焦虑",
+      "author": "[英] 阿兰·德波顿",
+      "link": "https://book.douban.com/subject/2033081/",
+      "cover": "/img/books/2033081.jpg",
+      "douban_id": "2033081",
+      "matched_title": "身份的焦虑",
+      "source": "douban-via-public-reader"
+    },
+    {
+      "title": "存在主义是一种人道主义",
+      "author": "[法] 让-保罗·萨特",
+      "link": "https://book.douban.com/subject/10608319/",
+      "cover": "/img/books/10608319.jpg",
+      "douban_id": "10608319",
+      "matched_title": "存在主义是一种人道主义",
+      "source": "douban-via-public-reader"
+    },
+    {
+      "title": "西西弗神话",
+      "author": "【法】加缪",
+      "link": "https://book.douban.com/subject/5312095/",
+      "cover": "/img/books/5312095.jpg",
+      "douban_id": "5312095",
+      "matched_title": "西西弗神话",
+      "source": "douban-via-public-reader"
+    },
+    {
+      "title": "为什么爱会伤人",
+      "author": "拉玛尼·德瓦苏拉",
+      "link": "https://book.douban.com/subject/35764779/",
+      "cover": "/img/books/35764779.jpg",
+      "douban_id": "35764779",
+      "matched_title": "为什么爱会伤人 : 亲密关系中的自恋型人格障碍",
+      "source": "douban-via-public-reader"
+    },
+    {
+      "title": "卓有成效的管理者",
+      "author": "[美] 彼得·德鲁克",
+      "link": "https://book.douban.com/subject/36336321/",
+      "cover": "/img/books/36336321.jpg",
+      "douban_id": "36336321",
+      "matched_title": "卓有成效的管理者",
+      "source": "douban-via-public-reader"
+    },
+    {
+      "title": "浮木",
+      "author": "杨本芬",
+      "link": "https://book.douban.com/subject/35479662/",
+      "cover": "/img/books/35479662.jpg",
+      "douban_id": "35479662",
+      "matched_title": "浮木",
+      "source": "douban-via-public-reader"
+    },
+    {
+      "title": "可能性的艺术",
+      "author": "刘瑜",
+      "link": "https://book.douban.com/subject/35819419/",
+      "cover": "/img/books/35819419.jpg",
+      "douban_id": "35819419",
+      "matched_title": "可能性的艺术",
+      "publication_date": "2022-4",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "我们的身体，我们自己",
+      "author": "美国波士顿妇女健康写作集体",
+      "link": "https://book.douban.com/subject/1028853/",
+      "cover": "/img/books/1028853.jpg",
+      "douban_id": "1028853",
+      "matched_title": "美国妇女自我保健经典",
+      "publication_date": "1998-05",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "女生呵护指南",
+      "author": "六层楼先生 / 六层楼",
+      "link": "https://book.douban.com/subject/36316682/",
+      "cover": "/img/books/36316682.jpg",
+      "douban_id": "36316682",
+      "matched_title": "女生呵护指南 升级修订版",
+      "publication_date": "2023-3",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "身体从未忘记",
+      "author": "[美] 巴塞尔·范德考克",
+      "link": "https://book.douban.com/subject/26796536/",
+      "cover": "/img/books/26796536.jpg",
+      "douban_id": "26796536",
+      "matched_title": "身体从未忘记",
+      "publication_date": "2016-3",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "海蒂性学报告：女人篇",
+      "author": "[美]雪儿·海蒂",
+      "link": "https://book.douban.com/subject/36302077/",
+      "cover": "/img/books/36302077.jpg",
+      "douban_id": "36302077",
+      "matched_title": "海蒂性学报告：女人篇（典藏版）",
+      "publication_date": "2023-3-8",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "厌女症",
+      "author": "上野千鹤子",
+      "link": "https://book.douban.com/subject/25836270/",
+      "cover": "/img/books/25836270.jpg",
+      "douban_id": "25836270",
+      "matched_title": "厌女",
+      "publication_date": "2015-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "成为母亲",
+      "author": "[英] 蕾切尔·卡斯克",
+      "link": "https://book.douban.com/subject/30258589/",
+      "cover": "/img/books/30258589.jpg",
+      "douban_id": "30258589",
+      "matched_title": "成为母亲",
+      "publication_date": "2019-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "82年生的金智英",
+      "author": "[韩] 赵南柱",
+      "link": "https://book.douban.com/subject/35653386/",
+      "cover": "/img/books/35653386.jpg",
+      "douban_id": "35653386",
+      "matched_title": "82年生的金智英",
+      "publication_date": "2021-11",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "坡道上的家",
+      "author": "[日] 角田光代",
+      "link": "https://book.douban.com/subject/34911983/",
+      "cover": "/img/books/34911983.jpg",
+      "douban_id": "34911983",
+      "matched_title": "坡道上的家",
+      "publication_date": "2020-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "使女的故事",
+      "author": "[加拿大] 玛格丽特·阿特伍德",
+      "link": "https://book.douban.com/subject/35114057/",
+      "cover": "/img/books/35114057.jpg",
+      "douban_id": "35114057",
+      "matched_title": "使女的故事",
+      "publication_date": "2020-7",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "论衰老",
+      "author": "[法] 西蒙娜·德·波伏瓦",
+      "link": "https://book.douban.com/subject/37384295/",
+      "cover": "/img/books/37384295.jpg",
+      "douban_id": "37384295",
+      "matched_title": "老年",
+      "publication_date": "2025-8-8",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "最好的告别",
+      "author": "[美] 阿图·葛文德（Atul Gawande）",
+      "link": "https://book.douban.com/subject/26576861/",
+      "cover": "/img/books/26576861.jpg",
+      "douban_id": "26576861",
+      "matched_title": "最好的告别",
+      "publication_date": "2015-7-31",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "看不见的女性",
+      "author": "卡罗琳·克里亚多·佩雷斯",
+      "link": "https://book.douban.com/subject/35942057/",
+      "cover": "/img/books/35942057.jpg",
+      "douban_id": "35942057",
+      "matched_title": "看不见的女性",
+      "publication_date": "2022-8",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "女性主义有什么用？",
+      "author": "[英]塔比·杰克逊·吉 / [英]弗雷亚·罗斯",
+      "link": "https://book.douban.com/subject/35518116/",
+      "cover": "/img/books/35518116.jpg",
+      "douban_id": "35518116",
+      "matched_title": "女性主义有什么用？",
+      "publication_date": "2021-9",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "爱的终结",
+      "author": "[法]伊娃·易洛思",
+      "link": "https://book.douban.com/subject/36509145/",
+      "cover": "/img/books/36509145.jpg",
+      "douban_id": "36509145",
+      "matched_title": "爱的终结",
+      "publication_date": "2023-10",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "冷亲密",
+      "author": "[法]伊娃·易洛思",
+      "link": "https://book.douban.com/subject/36282710/",
+      "cover": "/img/books/36282710.jpg",
+      "douban_id": "36282710",
+      "matched_title": "冷亲密",
+      "publication_date": "2023-4",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "爱的五种语言",
+      "author": "盖瑞·查普曼",
+      "link": "https://book.douban.com/subject/36680787/",
+      "cover": "/img/books/36680787.jpg",
+      "douban_id": "36680787",
+      "matched_title": "爱的五种语言",
+      "publication_date": "2023-10-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "依恋",
+      "author": "[美国] 苏珊·福沃德 / [美]琼·托雷斯",
+      "link": "https://book.douban.com/subject/30199459/",
+      "cover": "/img/books/30199459.jpg",
+      "douban_id": "30199459",
+      "matched_title": "依恋",
+      "publication_date": "2018-5",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "礼物",
+      "author": "[美]刘易斯·海德（Lewis Hyde）",
+      "link": "https://book.douban.com/subject/26184244/",
+      "cover": "/img/books/26184244.jpg",
+      "douban_id": "26184244",
+      "matched_title": "礼物",
+      "publication_date": "2015-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "母爱的羁绊",
+      "author": "卡瑞尔·麦克布莱德 (Karyl McBride)",
+      "link": "https://book.douban.com/subject/26628491/",
+      "cover": "/img/books/26628491.jpg",
+      "douban_id": "26628491",
+      "matched_title": "母爱的羁绊",
+      "publication_date": "2015-9",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "家庭、私有制和国家的起源",
+      "author": "弗里德里希·恩格斯",
+      "link": "https://book.douban.com/subject/36671181/",
+      "cover": "/img/books/36671181.jpg",
+      "douban_id": "36671181",
+      "matched_title": "家庭、私有制和国家的起源",
+      "publication_date": "2023-8",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "第二轮班",
+      "author": "[美]阿莉·拉塞尔·霍克希尔德 / Arlie Russell Hochschild",
+      "link": "https://book.douban.com/subject/35481663/",
+      "cover": "/img/books/35481663.jpg",
+      "douban_id": "35481663",
+      "matched_title": "职场妈妈不下班",
+      "publication_date": "2021-9",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "东京贫困女子",
+      "author": "[日]中村淳彦",
+      "link": "https://book.douban.com/subject/34933208/",
+      "cover": "/img/books/34933208.jpg",
+      "douban_id": "34933208",
+      "matched_title": "东京贫困女子",
+      "publication_date": "2021-8",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "中国人的关系原理",
+      "author": "翟学伟",
+      "link": "https://book.douban.com/subject/6537368/",
+      "cover": "/img/books/6537368.jpg",
+      "douban_id": "6537368",
+      "matched_title": "中国人的关系原理",
+      "publication_date": "2011-6",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "被管理的心",
+      "author": "(美) 阿莉·拉塞尔·霍克希尔德 / Arlie Russell Hochschild",
+      "link": "https://book.douban.com/subject/34902581/",
+      "cover": "/img/books/34902581.jpg",
+      "douban_id": "34902581",
+      "matched_title": "心灵的整饰",
+      "publication_date": "2020-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "社会性别研究导论",
+      "author": "佟新",
+      "link": "https://book.douban.com/subject/6865258/",
+      "cover": "/img/books/6865258.jpg",
+      "douban_id": "6865258",
+      "matched_title": "社会性别研究导论",
+      "publication_date": "2011-9-19",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "乡土中国 生育制度",
+      "author": "费孝通",
+      "link": "https://book.douban.com/subject/36467385/",
+      "cover": "/img/books/36467385.jpg",
+      "douban_id": "36467385",
+      "matched_title": "乡土中国 生育制度",
+      "publication_date": "2017-11",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "单身社会",
+      "author": "(美) 克里南伯格",
+      "link": "https://book.douban.com/subject/26235729/",
+      "cover": "/img/books/26235729.jpg",
+      "douban_id": "26235729",
+      "matched_title": "单身社会",
+      "publication_date": "2015-2",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "亲密关系的购买",
+      "author": "[美]薇薇安娜·A.泽利泽 / 薇薇安娜·泽利泽",
+      "link": "https://book.douban.com/subject/36072388/",
+      "cover": "/img/books/36072388.jpg",
+      "douban_id": "36072388",
+      "matched_title": "亲密关系的购买",
+      "publication_date": "2022-10",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "远见",
+      "author": "[美] 布赖恩·费瑟斯通豪",
+      "link": "https://book.douban.com/subject/27609489/",
+      "cover": "/img/books/27609489.jpg",
+      "douban_id": "27609489",
+      "matched_title": "远见",
+      "publication_date": "2018-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "能力陷阱",
+      "author": "【美】埃米尼亚•伊贝拉",
+      "link": "https://book.douban.com/subject/30489331/",
+      "cover": "/img/books/30489331.jpg",
+      "douban_id": "30489331",
+      "matched_title": "能力陷阱",
+      "publication_date": "2019-4",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "精要主义",
+      "author": "[英] 格雷戈·麦吉沃恩 (Greg McKeown)",
+      "link": "https://book.douban.com/subject/26761859/",
+      "cover": "/img/books/26761859.jpg",
+      "douban_id": "26761859",
+      "matched_title": "精要主义",
+      "publication_date": "2016-4-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "刻意练习",
+      "author": "[美] 安德斯·艾利克森（Anders Ericsson） / 罗伯特·普尔（Robert Pool）",
+      "link": "https://book.douban.com/subject/26895993/",
+      "cover": "/img/books/26895993.jpg",
+      "douban_id": "26895993",
+      "matched_title": "刻意练习",
+      "publication_date": "2016-11-6",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "组织社会学十讲",
+      "author": "周雪光",
+      "link": "https://book.douban.com/subject/1085366/",
+      "cover": "/img/books/1085366.jpg",
+      "douban_id": "1085366",
+      "matched_title": "组织社会学十讲",
+      "publication_date": "2003-12-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "管理的实践",
+      "author": "[美]彼得·德鲁克（Peter F. Drucker）",
+      "link": "https://book.douban.com/subject/34915504/",
+      "cover": "/img/books/34915504.jpg",
+      "douban_id": "34915504",
+      "matched_title": "管理的实践（中英文双语版）",
+      "publication_date": "2019-12",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "第五项修炼",
+      "author": "[美] 彼得·圣吉",
+      "link": "https://book.douban.com/subject/4051739/",
+      "cover": "/img/books/4051739.jpg",
+      "douban_id": "4051739",
+      "matched_title": "第五项修炼",
+      "publication_date": "2009-10-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "关键对话",
+      "author": "[美] 科里·帕特森（Kerry Patterson） / 约瑟夫·格雷尼（Joseph Grenny） / 罗恩·麦克米兰（Ron McMillan） / 艾尔·史威茨勒（Al Switzler）",
+      "link": "https://book.douban.com/subject/27046682/",
+      "cover": "/img/books/27046682.jpg",
+      "douban_id": "27046682",
+      "matched_title": "关键对话：如何高效能沟通（原书第2版）（珍藏版）",
+      "publication_date": "2017-5",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "谈判力",
+      "author": "[美] 罗杰·费希尔（Roger Fisher） / [美] 威廉·尤里（William Ury） / [美] 布鲁斯·巴顿（Bruce Patton）",
+      "link": "https://book.douban.com/subject/36577720/",
+      "cover": "/img/books/36577720.jpg",
+      "douban_id": "36577720",
+      "matched_title": "谈判力",
+      "publication_date": "2018-2",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "影响力",
+      "author": "[美] 罗伯特·西奥迪尼",
+      "link": "https://book.douban.com/subject/37118117/",
+      "cover": "/img/books/37118117.jpg",
+      "douban_id": "37118117",
+      "matched_title": "影响力 (第5版)",
+      "publication_date": "2024-11-20",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "深度工作",
+      "author": "[美] 卡尔·纽波特",
+      "link": "https://book.douban.com/subject/27056409/",
+      "cover": "/img/books/27056409.jpg",
+      "douban_id": "27056409",
+      "matched_title": "深度工作",
+      "publication_date": "2017-7",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "债：第一个5000年",
+      "author": "[美]大卫·格雷伯",
+      "link": "https://book.douban.com/subject/20272111/",
+      "cover": "/img/books/20272111.jpg",
+      "douban_id": "20272111",
+      "matched_title": "债",
+      "publication_date": "2012-11",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "存在的艺术",
+      "author": "[美]艾里希·弗洛姆",
+      "link": "https://book.douban.com/subject/27667766/",
+      "cover": "/img/books/27667766.jpg",
+      "douban_id": "27667766",
+      "matched_title": "存在的艺术",
+      "publication_date": "2018-11",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "生活的减法",
+      "author": "佐木夕",
+      "link": "https://book.douban.com/subject/30230384/",
+      "cover": "/img/books/30230384.jpg",
+      "douban_id": "30230384",
+      "matched_title": "不如极简过生活",
+      "publication_date": "2018-6",
+      "source": "douban-nearest-theme-match"
+    },
+    {
+      "title": "工作、消费主义和新穷人",
+      "author": "[英]齐格蒙特·鲍曼",
+      "link": "https://book.douban.com/subject/35593780/",
+      "cover": "/img/books/35593780.jpg",
+      "douban_id": "35593780",
+      "matched_title": "工作、消费主义和新穷人",
+      "publication_date": "2021-9",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "支配社会学",
+      "author": "马克斯·韦伯",
+      "link": "https://book.douban.com/subject/6436044/",
+      "cover": "/img/books/6436044.jpg",
+      "douban_id": "6436044",
+      "matched_title": "支配社会学",
+      "publication_date": "2010-11",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "规训与惩罚",
+      "author": "[法] 米歇尔·福柯",
+      "link": "https://book.douban.com/subject/33455183/",
+      "cover": "/img/books/33455183.jpg",
+      "douban_id": "33455183",
+      "matched_title": "规训与惩罚",
+      "publication_date": "2019-10",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "新教伦理与资本主义精神",
+      "author": "(德) 马克斯·韦伯",
+      "link": "https://book.douban.com/subject/35013403/",
+      "cover": "/img/books/35013403.jpg",
+      "douban_id": "35013403",
+      "matched_title": "新教伦理与资本主义精神",
+      "publication_date": "2020-5",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "新自由主义简史",
+      "author": "大卫·哈维",
+      "link": "https://book.douban.com/subject/26606359/",
+      "cover": "/img/books/26606359.jpg",
+      "douban_id": "26606359",
+      "matched_title": "新自由主义简史",
+      "publication_date": "2016-2",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "资本主义现实主义",
+      "author": "[英]马克·费舍",
+      "link": "https://book.douban.com/subject/36615454/",
+      "cover": "/img/books/36615454.jpg",
+      "douban_id": "36615454",
+      "matched_title": "资本主义现实主义",
+      "publication_date": "2024-3-3",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "奥兰多",
+      "author": "[英] 弗吉尼亚·伍尔夫",
+      "link": "https://book.douban.com/subject/36062384/",
+      "cover": "/img/books/36062384.jpg",
+      "douban_id": "36062384",
+      "matched_title": "奥兰多",
+      "publication_date": "2022-10",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "美国大城市的死与生",
+      "author": "[加] 简·雅各布斯",
+      "link": "https://book.douban.com/subject/34907883/",
+      "cover": "/img/books/34907883.jpg",
+      "douban_id": "34907883",
+      "matched_title": "美国大城市的死与生",
+      "publication_date": "2020-7",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "城市意象",
+      "author": "[美]凯文·林奇",
+      "link": "https://book.douban.com/subject/27105901/",
+      "cover": "/img/books/27105901.jpg",
+      "douban_id": "27105901",
+      "matched_title": "城市意象",
+      "publication_date": "2017-7",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "地方与无地方",
+      "author": "[加]爱德华·雷尔夫",
+      "link": "https://book.douban.com/subject/34393548/",
+      "cover": "/img/books/34393548.jpg",
+      "douban_id": "34393548",
+      "matched_title": "地方与无地方",
+      "publication_date": "2021-2",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "旅行的艺术",
+      "author": "[英] 阿兰·德波顿",
+      "link": "https://book.douban.com/subject/11505636/",
+      "cover": "/img/books/11505636.jpg",
+      "douban_id": "11505636",
+      "matched_title": "旅行的艺术",
+      "publication_date": "2012-8",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "看不见的城市",
+      "author": "[意] 伊塔洛·卡尔维诺",
+      "link": "https://book.douban.com/subject/36545668/",
+      "cover": "/img/books/36545668.jpg",
+      "douban_id": "36545668",
+      "matched_title": "看不见的城市",
+      "publication_date": "2023-10",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "走出非洲",
+      "author": "[丹麦] 凯伦·布里克森",
+      "link": "https://book.douban.com/subject/26308388/",
+      "cover": "/img/books/26308388.jpg",
+      "douban_id": "26308388",
+      "matched_title": "走出非洲",
+      "publication_date": "2015-3",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "树的秘密生命",
+      "author": "[德国] 彼得·渥雷本 Peter Wohlleben",
+      "link": "https://book.douban.com/subject/27025200/",
+      "cover": "/img/books/27025200.jpg",
+      "douban_id": "27025200",
+      "matched_title": "树的秘密生命",
+      "publication_date": "2018-4-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "植物知道生命的答案",
+      "author": "[美] 丹尼尔•查莫维茨",
+      "link": "https://book.douban.com/subject/25793667/",
+      "cover": "/img/books/25793667.jpg",
+      "douban_id": "25793667",
+      "matched_title": "植物知道生命的答案",
+      "publication_date": "2014-1-31",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "大地上的事情",
+      "author": "苇岸",
+      "link": "https://book.douban.com/subject/25874670/",
+      "cover": "/img/books/25874670.jpg",
+      "douban_id": "25874670",
+      "matched_title": "大地上的事情",
+      "publication_date": "2014-6",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "观看之道",
+      "author": "[英]约翰·伯格",
+      "link": "https://book.douban.com/subject/26427579/",
+      "cover": "/img/books/26427579.jpg",
+      "douban_id": "26427579",
+      "matched_title": "观看之道",
+      "publication_date": "2015-7",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "到灯塔去",
+      "author": "【英】弗吉尼亚·伍尔夫",
+      "link": "https://book.douban.com/subject/37426419/",
+      "cover": "/img/books/37426419.jpg",
+      "douban_id": "37426419",
+      "matched_title": "到灯塔去",
+      "publication_date": "2025-8",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "时间的秩序",
+      "author": "[意] 卡洛·罗韦利",
+      "link": "https://book.douban.com/subject/33424487/",
+      "cover": "/img/books/33424487.jpg",
+      "douban_id": "33424487",
+      "matched_title": "时间的秩序",
+      "publication_date": "2019-6",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "长日将尽",
+      "author": "[英] 石黑一雄",
+      "link": "https://book.douban.com/subject/36536552/",
+      "cover": "/img/books/36536552.jpg",
+      "douban_id": "36536552",
+      "matched_title": "长日将尽",
+      "publication_date": "2023-10",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "当呼吸化为空气",
+      "author": "[美] 保罗·卡拉尼什",
+      "link": "https://book.douban.com/subject/36628385/",
+      "cover": "/img/books/36628385.jpg",
+      "douban_id": "36628385",
+      "matched_title": "当呼吸化为空气",
+      "publication_date": "2023-11",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "生命最后的读书会",
+      "author": "﹝美﹞威尔•施瓦尔贝",
+      "link": "https://book.douban.com/subject/24875416/",
+      "cover": "/img/books/24875416.jpg",
+      "douban_id": "24875416",
+      "matched_title": "生命最后的读书会",
+      "publication_date": "2013-8",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "时间停止的那一天",
+      "author": "[英] 蕾秋·乔伊斯",
+      "link": "https://book.douban.com/subject/27112399/",
+      "cover": "/img/books/27112399.jpg",
+      "douban_id": "27112399",
+      "matched_title": "时间停止的那一天",
+      "publication_date": "2017-9",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "追忆似水年华",
+      "author": "[法] 马塞尔·普鲁斯特",
+      "link": "https://book.douban.com/subject/10779650/",
+      "cover": "/img/books/10779650.jpg",
+      "douban_id": "10779650",
+      "matched_title": "追忆似水年华",
+      "publication_date": "2012-6",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "昨日的世界",
+      "author": "[奥] 斯蒂芬·茨威格",
+      "link": "https://book.douban.com/subject/36345664/",
+      "cover": "/img/books/36345664.jpg",
+      "douban_id": "36345664",
+      "matched_title": "昨日的世界",
+      "publication_date": "2024-11-10",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "秋园",
+      "author": "杨本芬",
+      "link": "https://book.douban.com/subject/34998019/",
+      "cover": "/img/books/34998019.jpg",
+      "douban_id": "34998019",
+      "matched_title": "秋园",
+      "publication_date": "2020-6",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "我本芬芳",
+      "author": "杨本芬",
+      "link": "https://book.douban.com/subject/35695541/",
+      "cover": "/img/books/35695541.jpg",
+      "douban_id": "35695541",
+      "matched_title": "我本芬芳",
+      "publication_date": "2022-2-1",
+      "source": "douban-latest-match"
+    },
+    {
+      "title": "百年孤独",
+      "author": "[哥伦比亚]加西亚·马尔克斯",
+      "link": "https://book.douban.com/subject/37144359/",
+      "cover": "/img/books/37144359.jpg",
+      "douban_id": "37144359",
+      "matched_title": "百年孤独",
+      "publication_date": "2025-1",
+      "source": "douban-latest-match"
+    }
+  ]
+}

@@ -1984,6 +1984,34 @@ img::-moz-selection {
   background: #fbfcfc;
   box-shadow: 0 8px 20px rgba(64, 64, 64, 0.06);
 }
+.project-card--atlas {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(63, 107, 99, 0.25);
+  background:
+    radial-gradient(circle at 86% 22%, rgba(200, 216, 181, 0.72), transparent 24%),
+    radial-gradient(circle at 74% 78%, rgba(223, 191, 143, 0.55), transparent 25%),
+    linear-gradient(135deg, #f6f3ea, #edf4f0);
+}
+.project-card--atlas::after {
+  position: absolute;
+  top: -54px;
+  right: -38px;
+  width: 170px;
+  height: 170px;
+  border: 1px dashed rgba(63, 107, 99, 0.18);
+  border-radius: 48% 52% 42% 58%;
+  content: "";
+  pointer-events: none;
+}
+.project-card--atlas .project-card-main,
+.project-card--atlas .project-actions {
+  position: relative;
+  z-index: 1;
+}
+.projects-experiments {
+  margin-bottom: 48px;
+}
 .project-kicker {
   display: inline-block;
   margin: 0 0 10px;
