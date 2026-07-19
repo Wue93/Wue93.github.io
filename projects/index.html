@@ -154,6 +154,35 @@
                     <p class="projects-intro">这里收集了一些我做过的东西：关于产品营销、内容工作、AI 工作流，也关于我如何把思考变成可交付的作品。</p>
                 
 
+                
+                    <section class="projects-section projects-experiments" aria-labelledby="projects-experiments-title">
+                        <div class="projects-section-heading">
+                            <h2 id="projects-experiments-title">Vibe Coding</h2>
+                            <p>用AI为生活、阅读与创意策展</p>
+                        </div>
+
+                        <div class="project-card-list">
+                            
+                                <article class="project-card project-card--atlas">
+                                    <div class="project-card-main">
+                                        
+                                            <span class="project-kicker">互动阅读地图 / 第一版</span>
+                                        
+                                        <h3>女性成长散步地图</h3>
+                                        <p class="project-description">一张由书籍、女性经验与人生岔路共同组成的精神地图。七片成长地貌彼此连接，三条阅读路线从“认识真实”出发，经过“学习爱”，走向“增强能量”。</p>
+                                        
+                                            <p class="project-audience">年龄告诉你走了多远，困惑决定你从哪里出发。</p>
+                                        
+                                    </div>
+                                    <div class="project-actions">
+                                        <a class="project-action-primary" href="/women-growth-map/">进入地图</a>
+                                    </div>
+                                </article>
+                            
+                        </div>
+                    </section>
+                
+
                 <section class="projects-section" aria-labelledby="projects-products-title">
                     <div class="projects-section-heading">
                         <h2 id="projects-products-title">小报童</h2>
@@ -212,7 +241,7 @@
                     <div class="projects-section-heading">
                         <h2 id="projects-podcast-title">播客：事外</h2>
                         
-                            <p>和朋友一起，把生活、阅读与情绪放到更远一点的位置看。</p>
+                            <p>和朋友一起，把生活、阅读与情绪放到更远一点的位置看</p>
                         
                     </div>
 
@@ -376,6 +405,21 @@
 <img src="https://Wue93.github.io/img/shiwai.jpg" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>

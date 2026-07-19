@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="一张由书籍、女性经验与人生岔路共同组成的成长散步地图。">
+    <meta name="theme-color" content="#f3eee3">
+    <title>女性成长散步地图 · Stay Out Space</title>
+    <link rel="stylesheet" href="./map.css">
+    <script>
+      (() => {
+        const mistKey = "women-growth-map-mist-seen-v1";
+        const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+        if (reduceMotion) return;
+        try {
+          if (localStorage.getItem(mistKey)) return;
+          localStorage.setItem(mistKey, "1");
+        } catch (_) {}
+        document.documentElement.classList.add("is-first-visit");
+      })();
+    </script>
+  </head>
+  <body>
+    <main class="growth-atlas">
+      <div class="first-visit-mist" id="firstVisitMist" aria-hidden="true">
+        <i class="mist-cloud mist-cloud--one"></i>
+        <i class="mist-cloud mist-cloud--two"></i>
+        <i class="mist-cloud mist-cloud--three"></i>
+        <i class="mist-cloud mist-cloud--four"></i>
+      </div>
+      <header class="atlas-nav">
+        <a class="atlas-nav__back" href="/projects/" aria-label="返回 Projects">← Stay Out Space</a>
+        <p class="atlas-nav__edition"><em>Atlas of Her Becoming</em> V1.0.0</p>
+        <button class="satchel-button" id="satchelButton" type="button" aria-controls="satchel" aria-expanded="false">
+          <span>我的行囊</span><strong id="savedCount">0</strong>
+        </button>
+      </header>
+
+      <section class="atlas-intro" aria-labelledby="atlasTitle">
+        <p class="atlas-kicker">一个女孩的成长 · 精神路书</p>
+        <h1 id="atlasTitle"><span>她的成长地图</span></h1>
+        <p class="atlas-title-en">Atlas of Her Becoming</p>
+        <p class="atlas-lead">在没有标准答案的人生里，读书、散步、成长</p>
+
+        <form class="atlas-search" id="searchForm" role="search">
+          <label class="sr-only" for="atlasSearch">搜索困惑、主题或书名</label>
+          <span aria-hidden="true">⌕</span>
+          <input id="atlasSearch" type="search" autocomplete="off" placeholder="你此刻正在为什么感到迷惑？">
+          <button id="clearSearch" type="button" aria-label="清除搜索" hidden>×</button>
+        </form>
+        <p class="search-suggestions">
+          试着寻找：
+          <button type="button" data-query="职业发展">职业发展</button>
+          <button type="button" data-query="原生家庭">原生家庭</button>
+          <button type="button" data-query="亲密关系">亲密关系</button>
+        </p>
+
+        <section class="age-filter" aria-labelledby="ageFilterTitle">
+          <div class="age-filter__heading">
+            <p id="ageFilterTitle">按人生阶段看</p>
+          </div>
+          <div class="age-filter__options" role="group" aria-label="选择人生阶段">
+            <button class="is-active" type="button" data-age="all">全部</button>
+            <button type="button" data-age="18-25">18～25</button>
+            <button type="button" data-age="25-35">25～35</button>
+            <button type="button" data-age="35-45">35～45</button>
+            <button type="button" data-age="45-60">45～60</button>
+            <button type="button" data-age="60+">60+</button>
+          </div>
+        </section>
+
+        <div class="question-entrances">
+          <p>也许你正面临：</p>
+          <div class="question-entrances__list" id="featuredQuestions"></div>
+        </div>
+      </section>
+
+      <section class="map-stage" aria-label="女性成长七片精神地貌地图" aria-describedby="mapGestureHint">
+        <div class="map-world">
+          <img class="map-world__art" src="./assets/women-growth-landscapes-cinematic-v2.jpg" alt="" aria-hidden="true">
+          <div class="age-contours" aria-hidden="true">
+            <span class="age-contour age-contour--one">初次独立</span>
+          </div>
+          <div class="route-threads" aria-hidden="true">
+            <i class="route-thread route-thread--truth"></i>
+            <i class="route-thread route-thread--love"></i>
+            <i class="route-thread route-thread--energy"></i>
+          </div>
+          <div id="terrainLayer" class="terrain-layer"></div>
+        </div>
+        <div class="map-controls" role="group" aria-label="地图缩放控制">
+          <button id="mapZoomOut" type="button" aria-label="缩小地图">−</button>
+          <span id="mapZoomLevel" aria-live="polite">100%</span>
+          <button id="mapZoomIn" type="button" aria-label="放大地图">＋</button>
+          <button id="mapReset" class="map-controls__reset" type="button" aria-label="复位地图">↺</button>
+        </div>
+        <p class="map-hint" id="mapGestureHint">拖动地图 · 滚轮或双指缩放</p>
+      </section>
+
+      <nav class="journey-nav" aria-label="三段成长路径">
+        <button class="journey-stop" type="button" data-route="truth">
+          <span>01</span><strong>认识真实</strong><small>看见塑造我们的结构</small>
+        </button>
+        <i aria-hidden="true"></i>
+        <button class="journey-stop" type="button" data-route="love">
+          <span>02</span><strong>学习爱</strong><small>练习连接、边界与照护</small>
+        </button>
+        <i aria-hidden="true"></i>
+        <button class="journey-stop" type="button" data-route="energy">
+          <span>03</span><strong>增强能量</strong><small>把理解变成生活的力量</small>
+        </button>
+      </nav>
+
+      <aside class="route-panel" id="routePanel" aria-live="polite" hidden>
+        <button class="panel-close" id="panelClose" type="button" aria-label="关闭路线">×</button>
+        <p class="route-panel__eyebrow" id="panelEyebrow"></p>
+        <h2 id="panelTitle"></h2>
+        <p class="route-panel__question" id="panelQuestion"></p>
+        <p class="route-panel__note" id="panelNote"></p>
+        <div class="route-panel__books" id="panelBooks"></div>
+      </aside>
+
+      <section class="search-panel" id="searchPanel" aria-live="polite" hidden>
+        <div class="search-panel__heading">
+          <div>
+            <p>从地图中找到</p>
+            <div class="search-panel__title-row">
+              <h2 id="searchTitle">搜索结果</h2>
+              <span class="search-panel__stats" id="searchStats"></span>
+            </div>
+          </div>
+          <button id="searchPanelClose" type="button">回到地图</button>
+        </div>
+        <div class="search-panel__questions" id="searchQuestionMatches"></div>
+        <div class="search-panel__grid" id="searchResults"></div>
+      </section>
+
+      <section class="question-panel" id="questionPanel" aria-live="polite" hidden>
+        <div class="question-panel__heading">
+          <button class="question-panel__back" id="questionPanelClose" type="button">← 回到地图</button>
+          <p id="questionPanelEyebrow"></p>
+          <h2 id="questionPanelTitle"></h2>
+          <p class="question-panel__summary" id="questionPanelSummary"></p>
+        </div>
+        <div class="question-bookmarks" id="questionBookmarks"></div>
+      </section>
+
+      <aside class="satchel" id="satchel" aria-labelledby="satchelTitle" hidden>
+        <div class="satchel__top">
+          <div>
+            <p>MY READING SATCHEL · 随身行囊</p>
+            <h2 id="satchelTitle">此刻想带走的书</h2>
+            <span>把沿途遇见的书票暂存在这里，随时回来继续阅读。</span>
+          </div>
+          <button id="satchelClose" type="button" aria-label="关闭行囊">×</button>
+        </div>
+        <div class="satchel__summary">
+          <span id="satchelMeta">0 本成长路书</span>
+          <i aria-hidden="true"></i>
+          <span>沿途拾取 · 私人书架</span>
+        </div>
+        <div class="satchel__empty" id="satchelEmpty">
+          <span class="satchel__empty-mark" aria-hidden="true">⌑</span>
+          <strong>行囊还是空的</strong>
+          <p>去地图上走一走，把此刻真正想读的书放进来。</p>
+          <button id="satchelExplore" type="button">回到地图继续散步</button>
+        </div>
+        <div class="satchel__shelf" id="satchelShelf"></div>
+      </aside>
+      <div class="page-scrim" id="pageScrim" hidden></div>
+
+      <dialog class="book-dialog" id="bookDialog">
+        <form method="dialog"><button class="book-dialog__close" aria-label="关闭书票">×</button></form>
+        <article class="book-ticket">
+          <div class="book-ticket__cover" id="ticketCover"></div>
+          <div class="book-ticket__body">
+            <p class="book-ticket__location" id="ticketLocation"></p>
+            <h2 id="ticketTitle"></h2>
+            <p class="book-ticket__author" id="ticketAuthor"></p>
+            <div class="book-ticket__why" id="ticketWhy"></div>
+            <blockquote id="ticketPrompt"></blockquote>
+            <div class="book-ticket__actions">
+              <button id="saveBook" type="button">放进行囊</button>
+              <a id="ticketLink" href="#" target="_blank" rel="noopener">去看看</a>
+            </div>
+          </div>
+        </article>
+      </dialog>
+    </main>
+    <script src="./map.js"></script>
+  </body>
+</html>
