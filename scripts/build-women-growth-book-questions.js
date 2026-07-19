@@ -4,8 +4,8 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
-const mapPath = path.join(root, "source/women-growth-map/map.js");
-const metadataPath = path.join(root, "public/women-growth-map/books-data.json");
+const mapPath = path.join(root, "source/atlas-of-her-becoming/map.js");
+const metadataPath = path.join(root, "public/atlas-of-her-becoming/books-data.json");
 const dataPath = path.join(root, "source/_data/women_growth_book_questions.json");
 const reviewPath = path.join(root, "docs/女性成长散步地图-书籍问题审阅.md");
 

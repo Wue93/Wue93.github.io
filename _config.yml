@@ -90,9 +90,10 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - atlas-of-her-becoming/index.html
+  - atlas-of-her-becoming/*.css
+  - atlas-of-her-becoming/*.js
   - women-growth-map/index.html
-  - women-growth-map/*.css
-  - women-growth-map/*.js
 
 # Writing
 new_post_name: :title.md # File name of new posts

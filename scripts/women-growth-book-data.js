@@ -35,7 +35,7 @@ hexo.extend.generator.register("women-growth-book-data", function generateWomenG
   });
 
   return {
-    path: "women-growth-map/books-data.json",
+    path: "atlas-of-her-becoming/books-data.json",
     data: JSON.stringify({ books: [...uniqueBooks.values()] })
   };
 });

@@ -39,18 +39,18 @@ layout: layout
                 <% if(experiments.length) { %>
                     <section class="projects-section projects-experiments" aria-labelledby="projects-experiments-title">
                         <div class="projects-section-heading">
-                            <h2 id="projects-experiments-title">Vibe Coding</h2>
+                            <h2 id="projects-experiments-title">AI 策展</h2>
                             <p>用AI为生活、阅读与创意策展</p>
                         </div>
 
                         <div class="project-card-list">
                             <% experiments.forEach(function(project){ %>
-                                <article class="project-card project-card--atlas">
+                                <article class="project-card project-card--atlas"<% if(project.sync_map) { %> data-map-sync data-map-url="<%= projectLink(project.link) %>"<% } %>>
                                     <div class="project-card-main">
                                         <% if(project.type) { %>
-                                            <span class="project-kicker"><%= project.type %></span>
+                                            <span class="project-kicker"<% if(project.sync_map) { %> data-map-version<% } %>><%= project.type %></span>
                                         <% } %>
-                                        <h3><%= project.title %></h3>
+                                        <h3<% if(project.sync_map) { %> data-map-title<% } %>><%= project.title %></h3>
                                         <p class="project-description"><%= project.description %></p>
                                         <% if(project.audience) { %>
                                             <p class="project-audience"><%= project.audience %></p>
@@ -138,3 +138,32 @@ layout: layout
         </div>
     </div>
 </div>
+
+<script>
+    (function () {
+        var cards = document.querySelectorAll("[data-map-sync]");
+        if (!cards.length || !window.fetch || !window.DOMParser) return;
+        Array.prototype.forEach.call(cards, function (card) {
+            var mapUrl = card.getAttribute("data-map-url");
+            if (!mapUrl) return;
+            window.fetch(mapUrl, { credentials: "same-origin" })
+                .then(function (response) {
+                    if (!response.ok) throw new Error("Map metadata unavailable");
+                    return response.text();
+                })
+                .then(function (html) {
+                    var mapDocument = new window.DOMParser().parseFromString(html, "text/html");
+                    var mapTitle = mapDocument.querySelector("#atlasTitle");
+                    var mapEdition = mapDocument.querySelector(".atlas-nav__edition");
+                    var versionMatch = mapEdition && mapEdition.textContent.match(/V\d+(?:\.\d+){2}/i);
+                    var titleTarget = card.querySelector("[data-map-title]");
+                    var versionTarget = card.querySelector("[data-map-version]");
+                    if (mapTitle && titleTarget) titleTarget.textContent = mapTitle.textContent.trim();
+                    if (versionMatch && versionTarget) versionTarget.textContent = "互动地图 / " + versionMatch[0].toUpperCase();
+                })
+                .catch(function () {
+                    /* Keep the built-in title and version when the map cannot be reached. */
+                });
+        });
+    })();
+</script>

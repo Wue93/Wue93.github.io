@@ -474,6 +474,7 @@ const bookDialog = document.querySelector("#bookDialog");
 const satchel = document.querySelector("#satchel");
 const pageScrim = document.querySelector("#pageScrim");
 const firstVisitMist = document.querySelector("#firstVisitMist");
+const introDrawerToggle = document.querySelector("#introDrawerToggle");
 let activeTopic = null;
 let activeBook = null;
 let activeAge = "all";
@@ -488,7 +489,7 @@ if (document.documentElement.classList.contains("is-first-visit")) {
   window.setTimeout(() => {
     document.documentElement.classList.remove("is-first-visit");
     firstVisitMist?.remove();
-  }, 3200);
+  }, 4200);
 } else {
   firstVisitMist?.remove();
 }
@@ -1504,6 +1505,25 @@ function bindHeldZoom(button, direction) {
 bindHeldZoom(document.querySelector("#mapZoomOut"), -1);
 bindHeldZoom(document.querySelector("#mapZoomIn"), 1);
 document.querySelector("#mapReset").addEventListener("click", resetMap);
+function syncIntroDrawerControl() {
+  const collapsed = document.documentElement.classList.contains("is-intro-collapsed");
+  introDrawerToggle.setAttribute("aria-expanded", String(!collapsed));
+  introDrawerToggle.setAttribute("aria-label", collapsed ? "展开标题与搜索区域" : "收起标题与搜索区域");
+  introDrawerToggle.title = collapsed ? "展开标题与搜索区域" : "收起标题与搜索区域";
+  introDrawerToggle.querySelector("span").textContent = collapsed ? "›" : "‹";
+}
+
+introDrawerToggle.addEventListener("click", () => {
+  const collapsed = document.documentElement.classList.toggle("is-intro-collapsed");
+  try { localStorage.setItem("atlas-intro-collapsed-v1", collapsed ? "1" : "0"); }
+  catch (_) {}
+  syncIntroDrawerControl();
+  window.setTimeout(() => {
+    renderMapTransform();
+    scheduleMapLabelLayout();
+  }, 440);
+});
+syncIntroDrawerControl();
 window.addEventListener("resize", () => {
   renderMapTransform();
   scheduleMapLabelLayout();

@@ -1,10 +1,11 @@
 intro: 这里收集了一些我做过的东西：关于产品营销、内容工作、AI 工作流，也关于我如何把思考变成可交付的作品。
 experiments:
-  - title: 女性成长散步地图
-    type: 互动阅读地图 / 第一版
-    description: 一张由书籍、女性经验与人生岔路共同组成的精神地图。七片成长地貌彼此连接，三条阅读路线从“认识真实”出发，经过“学习爱”，走向“增强能量”。
+  - title: 她的成长地图
+    type: 互动地图 / V1.0.0
+    description: 在没有标准答案的人生里，读书、散步、成长。
     audience: 年龄告诉你走了多远，困惑决定你从哪里出发。
-    link: /women-growth-map/
+    link: /atlas-of-her-becoming/
+    sync_map: true
 products:
   - title: 产品营销强壮手册
     type: 小报童 / 专栏 / 手册
