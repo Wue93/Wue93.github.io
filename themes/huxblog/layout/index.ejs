@@ -3,6 +3,24 @@ layout: page
 ---
 <!-- Main Content -->
 
+<%
+var homeProjectData = site.data.projects || {};
+var homeAtlasProject = (homeProjectData.experiments || []).filter(function(project){
+    return project.sync_map;
+})[0];
+%>
+
+<% if(homeAtlasProject) { %>
+<a class="home-ai-curation" href="<%= homeAtlasProject.link %>" aria-label="进入<%= homeAtlasProject.title %>">
+    <span class="home-ai-curation__meta">AI 策展 · <%= homeAtlasProject.type %></span>
+    <span class="home-ai-curation__main">
+        <strong><%= homeAtlasProject.title %></strong>
+        <small><%= homeAtlasProject.description %></small>
+    </span>
+    <span class="home-ai-curation__action">进入地图 <i aria-hidden="true">→</i></span>
+</a>
+<% } %>
+
 <ul id="Tabs" class="nav nav-tabs">
     <%
     var tabs = [

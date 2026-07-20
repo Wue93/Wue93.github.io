@@ -225,9 +225,9 @@ const legacyBooks = [
 ];
 
 const topicPositions = [
-  { x: 18, y: 31 }, { x: 48, y: 27 }, { x: 76, y: 33 },
-  { x: 25, y: 48 }, { x: 54, y: 47 }, { x: 80, y: 51 },
-  { x: 20, y: 68 }, { x: 49, y: 67 }, { x: 75, y: 72 }
+  { x: 50, y: 17 }, { x: 70, y: 23 }, { x: 82, y: 40 },
+  { x: 78, y: 61 }, { x: 61, y: 77 }, { x: 39, y: 77 },
+  { x: 22, y: 61 }, { x: 18, y: 40 }, { x: 30, y: 23 }
 ];
 
 function compactTopicLabel(title) {
@@ -484,6 +484,7 @@ let savedBooks = loadSavedBooks();
 let labelLayoutFrame = 0;
 let hoveredRegion = null;
 let regionPreviewTimer = 0;
+const stagedMapInteraction = window.matchMedia("(hover: none), (pointer: coarse)");
 
 if (document.documentElement.classList.contains("is-first-visit")) {
   window.setTimeout(() => {
@@ -513,6 +514,19 @@ function resetRegionPreview() {
   document.querySelectorAll(".terrain").forEach((terrain) => {
     terrain.classList.remove("is-previewing", "is-preview-muted");
   });
+}
+
+function supportsHoverPreview(event) {
+  return !stagedMapInteraction.matches && (!event.pointerType || event.pointerType === "mouse");
+}
+
+function handleRegionHeadingClick(event, regionId) {
+  const isDirectKeyboardAction = event.detail === 0;
+  if (stagedMapInteraction.matches && !isDirectKeyboardAction && hoveredRegion !== regionId) {
+    previewRegion(regionId);
+    return;
+  }
+  openRegion(regionId);
 }
 
 function previewRegion(regionId) {
@@ -559,11 +573,19 @@ function renderTerrains() {
     const en = document.createElement("small");
     en.textContent = region.en;
     heading.append(number, title, en);
-    heading.addEventListener("pointerenter", () => previewRegion(regionId));
-    heading.addEventListener("pointerleave", () => clearRegionPreview(regionId));
-    heading.addEventListener("focus", () => previewRegion(regionId));
-    heading.addEventListener("blur", () => clearRegionPreview(regionId));
-    heading.addEventListener("click", () => openRegion(regionId));
+    heading.addEventListener("pointerenter", (event) => {
+      if (supportsHoverPreview(event)) previewRegion(regionId);
+    });
+    heading.addEventListener("pointerleave", (event) => {
+      if (supportsHoverPreview(event)) clearRegionPreview(regionId);
+    });
+    heading.addEventListener("focus", () => {
+      if (!stagedMapInteraction.matches) previewRegion(regionId);
+    });
+    heading.addEventListener("blur", () => {
+      if (!stagedMapInteraction.matches) clearRegionPreview(regionId);
+    });
+    heading.addEventListener("click", (event) => handleRegionHeadingClick(event, regionId));
     terrain.append(heading);
 
     topics.filter((topic) => topic.region === regionId).forEach((topic) => {
@@ -660,7 +682,9 @@ function updatePinVisibility() {
   const hint = document.querySelector("#mapGestureHint");
   if (hoveredRegion) {
     const routeCount = topics.filter((topic) => topic.region === hoveredRegion).length;
-    hint.textContent = `${regions[hoveredRegion].title} · 已浮现 ${routeCount} 站路标 · 点击地貌查看书单`;
+    hint.textContent = stagedMapInteraction.matches
+      ? `${regions[hoveredRegion].title} · 已展开 ${routeCount} 站路标 · 再点地貌或路标打开书单`
+      : `${regions[hoveredRegion].title} · 已浮现 ${routeCount} 站路标 · 点击地貌查看书单`;
   }
   else if (densityLevel === 2) hint.textContent = "全部路标已展开 · 拖动地图继续探索";
   else if (densityLevel === 1) hint.textContent = "更多路标已出现 · 继续放大查看全部主题";
@@ -1463,12 +1487,14 @@ mapStage.addEventListener("click", (event) => {
     suppressNextMapClick = false;
     return;
   }
+  if (stagedMapInteraction.matches && hoveredRegion) clearRegionPreview(hoveredRegion, true);
   if (!routePanel.hidden) closeTopic();
   if (!searchPanel.hidden) closeSearch();
 });
 
 document.querySelector(".atlas-intro").addEventListener("click", (event) => {
   if (event.target.closest("button, a, input, form")) return;
+  if (stagedMapInteraction.matches && hoveredRegion) clearRegionPreview(hoveredRegion, true);
   if (!routePanel.hidden) closeTopic();
   if (!searchPanel.hidden) closeSearch();
 });
