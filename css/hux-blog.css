@@ -1581,6 +1581,108 @@ samp {
     font-size: 16px;
   }
 }
+.home-ai-curation {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 9px 22px;
+  overflow: hidden;
+  margin: 0 0 26px;
+  padding: 22px 24px 21px;
+  border: 1px solid #dce7e2;
+  border-radius: 12px;
+  color: #304b45;
+  background:
+    radial-gradient(circle at 83% 24%, rgba(104, 143, 130, 0.16), transparent 30%),
+    repeating-linear-gradient(90deg, rgba(63, 107, 99, 0.035) 0 1px, transparent 1px 74px),
+    linear-gradient(135deg, #f5f8f4, #edf4f1);
+  box-shadow: 0 12px 30px rgba(53, 82, 73, 0.08);
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.home-ai-curation::after {
+  position: absolute;
+  right: -42px;
+  bottom: -58px;
+  width: 172px;
+  height: 112px;
+  border: 1px dashed rgba(63, 107, 99, 0.18);
+  border-radius: 50%;
+  content: "";
+  transform: rotate(-12deg);
+}
+.home-ai-curation:hover,
+.home-ai-curation:focus {
+  border-color: #8ca9a0;
+  color: #2f5e55;
+  box-shadow: 0 16px 36px rgba(53, 82, 73, 0.14);
+  outline: none;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+.home-ai-curation__meta {
+  grid-column: 1 / -1;
+  color: #718b83;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+}
+.home-ai-curation__main {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-width: 0;
+}
+.home-ai-curation__main strong,
+.home-ai-curation__main small {
+  display: block;
+}
+.home-ai-curation__main strong {
+  margin-bottom: 5px;
+  color: #304b45;
+  font-family: Georgia, "Songti SC", STSong, serif;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.home-ai-curation__main small {
+  color: #6f7f7b;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.home-ai-curation__action {
+  position: relative;
+  z-index: 1;
+  align-self: end;
+  color: #3f6b63;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.home-ai-curation__action i {
+  display: inline-block;
+  margin-left: 6px;
+  font-family: Georgia, serif;
+  font-style: normal;
+  transition: transform 0.2s ease;
+}
+.home-ai-curation:hover .home-ai-curation__action i {
+  transform: translateX(4px);
+}
+@media only screen and (max-width: 500px) {
+  .home-ai-curation {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 19px 18px 18px;
+  }
+  .home-ai-curation__main strong {
+    font-size: 21px;
+  }
+  .home-ai-curation__action {
+    justify-self: start;
+  }
+}
 #Tabs {
   display: flex;
   flex-wrap: wrap;
