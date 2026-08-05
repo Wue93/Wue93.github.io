@@ -111,9 +111,9 @@
   </main>
 
   <nav class="bottom-nav" aria-label="随机招待所导航">
-    <button type="button" data-go="menu"><span aria-hidden="true">📋</span><small>招待单</small></button>
-    <button class="draw-nav" type="button" id="navDrawButton"><span aria-hidden="true">🎲</span><small>随机</small></button>
-    <button type="button" data-go="order"><span aria-hidden="true">🧾</span><small>已选 <b id="navOrderCount">0</b></small></button>
+    <button type="button" data-go="menu" data-nav-view="menu"><span aria-hidden="true">📋</span><small>招待单</small></button>
+    <button type="button" id="navDrawButton" data-nav-view="result"><span aria-hidden="true">🎲</span><small>随机</small></button>
+    <button type="button" data-go="order" data-nav-view="order"><span aria-hidden="true">🧾</span><small>已选 <b id="navOrderCount">0</b></small></button>
   </nav>
 
   <dialog id="dishDialog" class="sheet-dialog" aria-labelledby="dialogTitle">
@@ -191,7 +191,7 @@
     </div>
     <div class="ticket-actions">
       <button class="primary-button full-width" id="saveTicketImageButton" type="button">⬇️ 保存图片到手机</button>
-      <p class="ticket-save-hint">手机端可在系统菜单中选择“存储到照片”</p>
+      <p class="ticket-save-hint">点击后直接下载高清 PNG 图片</p>
       <button class="secondary-button full-width" id="photoModeButton" type="button">📸 准备截图</button>
       <button class="text-button full-width" id="newSessionButton" type="button">收好小票，再招待一轮</button>
     </div>

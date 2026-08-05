@@ -125,6 +125,12 @@ function escapeHtml(value) {
 function go(view) {
   state.view = view;
   views.forEach(section => section.classList.toggle('is-active', section.dataset.view === view));
+  document.querySelectorAll('[data-nav-view]').forEach(button => {
+    const active = button.dataset.navView === view;
+    button.classList.toggle('is-active', active);
+    if (active) button.setAttribute('aria-current', 'page');
+    else button.removeAttribute('aria-current');
+  });
   if (view === 'menu') renderMenu();
   if (view === 'order') renderOrder();
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -312,87 +318,239 @@ function showToast(message) {
   toastTimer = window.setTimeout(() => toast.classList.remove('is-visible'), 1800);
 }
 
-function collectExportStyles() {
-  return Array.from(document.styleSheets).map(styleSheet => {
-    try {
-      return Array.from(styleSheet.cssRules).map(rule => rule.cssText).join('\n');
-    } catch (error) {
-      return '';
-    }
-  }).join('\n');
-}
-
 function canvasToPng(canvas) {
   return new Promise((resolve, reject) => {
-    canvas.toBlob(blob => {
-      if (blob) resolve(blob);
-      else reject(new Error('无法生成 PNG'));
-    }, 'image/png', 1);
+    if (canvas.toBlob) {
+      canvas.toBlob(blob => {
+        if (blob) resolve(blob);
+        else reject(new Error('无法生成 PNG'));
+      }, 'image/png', 1);
+      return;
+    }
+
+    try {
+      const dataUrl = canvas.toDataURL('image/png', 1);
+      const binary = window.atob(dataUrl.split(',')[1]);
+      const bytes = new Uint8Array(binary.length);
+      for (let index = 0; index < binary.length; index += 1) bytes[index] = binary.charCodeAt(index);
+      resolve(new Blob([bytes], { type: 'image/png' }));
+    } catch (error) {
+      reject(error);
+    }
   });
 }
 
-function loadExportImage(url) {
-  return new Promise((resolve, reject) => {
-    const image = new Image();
-    image.onload = () => resolve(image);
-    image.onerror = () => reject(new Error('无法渲染小票'));
-    image.src = url;
-  });
+function roundedRectPath(context, x, y, width, height, radius) {
+  const safeRadius = Math.min(radius, width / 2, height / 2);
+  context.beginPath();
+  context.moveTo(x + safeRadius, y);
+  context.lineTo(x + width - safeRadius, y);
+  context.quadraticCurveTo(x + width, y, x + width, y + safeRadius);
+  context.lineTo(x + width, y + height - safeRadius);
+  context.quadraticCurveTo(x + width, y + height, x + width - safeRadius, y + height);
+  context.lineTo(x + safeRadius, y + height);
+  context.quadraticCurveTo(x, y + height, x, y + height - safeRadius);
+  context.lineTo(x, y + safeRadius);
+  context.quadraticCurveTo(x, y, x + safeRadius, y);
+  context.closePath();
+}
+
+function fittedText(context, text, maxWidth) {
+  if (context.measureText(text).width <= maxWidth) return text;
+  let shortened = text;
+  while (shortened.length && context.measureText(`${shortened}…`).width > maxWidth) shortened = shortened.slice(0, -1);
+  return `${shortened}…`;
+}
+
+function drawCenteredText(context, text, x, y) {
+  context.textAlign = 'center';
+  context.fillText(text, x, y);
 }
 
 async function createTicketImage() {
   if (document.fonts && document.fonts.ready) await document.fonts.ready;
 
-  const source = document.getElementById('keepsakeTicket');
-  const sourceRect = source.getBoundingClientRect();
-  const ticketWidth = Math.ceil(sourceRect.width);
-  const ticketHeight = Math.ceil(sourceRect.height);
-  const padding = 26;
-  const exportWidth = ticketWidth + padding * 2;
-  const exportHeight = ticketHeight + padding * 2;
-  const clone = source.cloneNode(true);
-  clone.removeAttribute('title');
-  clone.style.width = `${ticketWidth}px`;
-  clone.style.height = `${ticketHeight}px`;
-  clone.style.margin = '0';
-  clone.style.flex = 'none';
-  clone.style.setProperty('--ticket-cutout', '#493738');
-  clone.style.boxShadow = '0 24px 62px rgba(28, 17, 18, .34)';
+  const itemRows = Array.from(document.querySelectorAll('#ticketItems .ticket-item')).map(row => ({
+    name: row.children[0] ? row.children[0].textContent : '',
+    status: row.children[1] ? row.children[1].textContent : ''
+  }));
+  const rowHeight = 72;
+  const ticketX = 54;
+  const ticketY = 54;
+  const ticketWidth = 972;
+  const itemsTop = 520;
+  const tearY = itemsTop + Math.max(itemRows.length, 1) * rowHeight + 34;
+  const ticketHeight = tearY + 390;
+  const canvas = document.createElement('canvas');
+  canvas.width = 1080;
+  canvas.height = ticketHeight + 108;
+  const context = canvas.getContext('2d');
+  if (!context) throw new Error('浏览器不支持图片生成');
 
-  const variables = [
-    '--cream:#efe1cd', '--paper:#fffaf0', '--ink:#3f302d', '--muted:#7b655e',
-    '--wine:#984d59', '--wine-dark:#7b3843', '--mustard:#c8923f',
-    '--rose:#e8c7c1', '--line:rgba(98,65,57,.19)', '--ticket-cutout:#493738'
-  ].join(';');
-  const ticketMarkup = new XMLSerializer().serializeToString(clone);
-  const svgMarkup = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="${exportWidth}" height="${exportHeight}" viewBox="0 0 ${exportWidth} ${exportHeight}">
-      <foreignObject width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml" style="${variables};width:${exportWidth}px;height:${exportHeight}px;padding:${padding}px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;background:#493738;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;">
-          <style>${collectExportStyles()}</style>
-          ${ticketMarkup}
-        </div>
-      </foreignObject>
-    </svg>`;
-  const svgUrl = URL.createObjectURL(new Blob([svgMarkup], { type: 'image/svg+xml;charset=utf-8' }));
+  const paper = '#fffaf0';
+  const ink = '#3f302d';
+  const muted = '#7b655e';
+  const wine = '#984d59';
+  const wineDark = '#7b3843';
+  const gold = '#c8923f';
+  const backdrop = '#493738';
+  const centerX = canvas.width / 2;
 
-  try {
-    const image = await loadExportImage(svgUrl);
-    const maxDimensionScale = Math.min(3, 8192 / exportWidth, 8192 / exportHeight);
-    const maxPixelScale = Math.sqrt(24000000 / (exportWidth * exportHeight));
-    const scale = Math.max(1, Math.min(maxDimensionScale, maxPixelScale));
-    const canvas = document.createElement('canvas');
-    canvas.width = Math.round(exportWidth * scale);
-    canvas.height = Math.round(exportHeight * scale);
-    const context = canvas.getContext('2d');
-    if (!context) throw new Error('浏览器不支持图片生成');
-    context.fillStyle = '#493738';
-    context.fillRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(image, 0, 0, canvas.width, canvas.height);
-    return canvasToPng(canvas);
-  } finally {
-    URL.revokeObjectURL(svgUrl);
+  context.fillStyle = backdrop;
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  context.save();
+  context.shadowColor = 'rgba(28, 17, 18, .35)';
+  context.shadowBlur = 42;
+  context.shadowOffsetY = 20;
+  roundedRectPath(context, ticketX, ticketY, ticketWidth, ticketHeight, 32);
+  context.fillStyle = paper;
+  context.fill();
+  context.restore();
+
+  context.save();
+  roundedRectPath(context, ticketX, ticketY, ticketWidth, ticketHeight, 32);
+  context.clip();
+  context.fillStyle = 'rgba(152, 77, 89, .018)';
+  for (let y = ticketY + 9; y < ticketY + ticketHeight; y += 13) context.fillRect(ticketX, y, ticketWidth, 2);
+  context.fillStyle = 'rgba(200, 146, 63, .022)';
+  for (let x = ticketX + 7; x < ticketX + ticketWidth; x += 23) context.fillRect(x, ticketY, 1, ticketHeight);
+  context.restore();
+
+  roundedRectPath(context, ticketX + 20, ticketY + 20, ticketWidth - 40, ticketHeight - 40, 22);
+  context.strokeStyle = 'rgba(152, 77, 89, .22)';
+  context.lineWidth = 2;
+  context.stroke();
+
+  context.fillStyle = backdrop;
+  for (let x = ticketX + 16; x < ticketX + ticketWidth; x += 31) {
+    context.beginPath();
+    context.arc(x, ticketY, 7, 0, Math.PI * 2);
+    context.fill();
+    context.beginPath();
+    context.arc(x, ticketY + ticketHeight, 7, 0, Math.PI * 2);
+    context.fill();
   }
+
+  const bookmarkX = ticketX + ticketWidth - 170;
+  context.beginPath();
+  context.moveTo(bookmarkX, ticketY);
+  context.lineTo(bookmarkX + 88, ticketY);
+  context.lineTo(bookmarkX + 88, ticketY + 184);
+  context.lineTo(bookmarkX + 44, ticketY + 158);
+  context.lineTo(bookmarkX, ticketY + 184);
+  context.closePath();
+  context.fillStyle = wineDark;
+  context.fill();
+  context.strokeStyle = 'rgba(226, 190, 123, .72)';
+  context.lineWidth = 2;
+  context.strokeRect(bookmarkX + 11, ticketY + 12, 66, 139);
+  context.fillStyle = 'rgba(255, 250, 240, .92)';
+  context.font = '700 22px "Songti SC", serif';
+  drawCenteredText(context, '留', bookmarkX + 44, ticketY + 71);
+  drawCenteredText(context, '念', bookmarkX + 44, ticketY + 101);
+  context.fillStyle = 'rgba(255, 235, 205, .78)';
+  context.font = '12px Georgia, serif';
+  drawCenteredText(context, 'MÉMOIRE', bookmarkX + 44, ticketY + 133);
+
+  context.beginPath();
+  context.arc(centerX, ticketY + 119, 54, 0, Math.PI * 2);
+  context.strokeStyle = gold;
+  context.lineWidth = 5;
+  context.stroke();
+  context.beginPath();
+  context.moveTo(centerX - 25, ticketY + 142);
+  context.lineTo(centerX + 25, ticketY + 96);
+  context.strokeStyle = 'rgba(152, 77, 89, .45)';
+  context.lineWidth = 2;
+  context.stroke();
+  context.fillStyle = wine;
+  context.font = '700 34px Georgia, serif';
+  context.textAlign = 'center';
+  context.fillText('W', centerX - 17, ticketY + 117);
+  context.fillText('Y', centerX + 18, ticketY + 148);
+
+  context.fillStyle = gold;
+  context.font = '700 16px Georgia, serif';
+  drawCenteredText(context, 'PRIVATE GUEST EDITION', centerX, ticketY + 205);
+  context.fillStyle = ink;
+  context.font = '700 56px Georgia, "Songti SC", serif';
+  drawCenteredText(context, '随机招待所', centerX, ticketY + 270);
+  context.fillStyle = muted;
+  context.font = '15px Georgia, serif';
+  drawCenteredText(context, 'MAISON DU HASARD · A LITTLE JOY', centerX, ticketY + 306);
+  context.strokeStyle = 'rgba(152, 77, 89, .34)';
+  context.beginPath();
+  context.moveTo(centerX - 155, ticketY + 340);
+  context.lineTo(centerX - 35, ticketY + 340);
+  context.moveTo(centerX + 35, ticketY + 340);
+  context.lineTo(centerX + 155, ticketY + 340);
+  context.stroke();
+  context.fillStyle = wine;
+  context.font = '28px Georgia, serif';
+  drawCenteredText(context, '❦', centerX, ticketY + 349);
+  context.fillStyle = ink;
+  context.font = '700 34px Georgia, "Songti SC", serif';
+  drawCenteredText(context, '今日招待小票', centerX, ticketY + 399);
+  context.fillStyle = muted;
+  context.font = '20px -apple-system, "PingFang SC", sans-serif';
+  const dateText = document.getElementById('ticketDate').textContent;
+  const numberText = document.getElementById('ticketNumber').textContent;
+  drawCenteredText(context, `${dateText}   ·   ${numberText}`, centerX, ticketY + 441);
+
+  context.font = '24px -apple-system, "PingFang SC", sans-serif';
+  itemRows.forEach((item, index) => {
+    const y = ticketY + itemsTop + index * rowHeight;
+    context.setLineDash([3, 7]);
+    context.strokeStyle = 'rgba(98, 65, 57, .32)';
+    context.beginPath();
+    context.moveTo(ticketX + 76, y + rowHeight - 10);
+    context.lineTo(ticketX + ticketWidth - 76, y + rowHeight - 10);
+    context.stroke();
+    context.setLineDash([]);
+    context.fillStyle = ink;
+    context.textAlign = 'left';
+    context.fillText(fittedText(context, item.name, 650), ticketX + 80, y + 38);
+    context.fillStyle = wine;
+    context.textAlign = 'right';
+    context.fillText(item.status, ticketX + ticketWidth - 80, y + 38);
+  });
+
+  const absoluteTearY = ticketY + tearY;
+  context.setLineDash([10, 12]);
+  context.strokeStyle = 'rgba(152, 77, 89, .38)';
+  context.beginPath();
+  context.moveTo(ticketX, absoluteTearY);
+  context.lineTo(ticketX + ticketWidth, absoluteTearY);
+  context.stroke();
+  context.setLineDash([]);
+  context.fillStyle = backdrop;
+  [ticketX, ticketX + ticketWidth].forEach(x => {
+    context.beginPath();
+    context.arc(x, absoluteTearY, 24, 0, Math.PI * 2);
+    context.fill();
+  });
+
+  const awardY = absoluteTearY + 54;
+  roundedRectPath(context, ticketX + 84, awardY, ticketWidth - 168, 146, 26);
+  context.fillStyle = 'rgba(232, 199, 193, .38)';
+  context.fill();
+  context.strokeStyle = 'rgba(152, 77, 89, .2)';
+  context.stroke();
+  context.fillStyle = muted;
+  context.font = '18px -apple-system, "PingFang SC", sans-serif';
+  drawCenteredText(context, '今日来客称号', centerX, awardY + 42);
+  context.fillStyle = wine;
+  context.font = '700 40px Georgia, "Songti SC", serif';
+  drawCenteredText(context, fittedText(context, document.getElementById('ticketAward').textContent, 650), centerX, awardY + 101);
+  context.fillStyle = ink;
+  context.font = '24px "Songti SC", serif';
+  drawCenteredText(context, '谢谢到访，愿这点快乐刚刚好。', centerX, awardY + 210);
+  context.fillStyle = muted;
+  context.font = '14px Georgia, "Songti SC", serif';
+  drawCenteredText(context, 'POUR LES AMIS · 只为朋友开放', centerX, awardY + 250);
+
+  return canvasToPng(canvas);
 }
 
 function ticketImageName() {
@@ -406,10 +564,11 @@ function downloadTicketImage(blob, fileName) {
   const link = document.createElement('a');
   link.href = imageUrl;
   link.download = fileName;
+  link.rel = 'noopener';
   document.body.appendChild(link);
   link.click();
   link.remove();
-  window.setTimeout(() => URL.revokeObjectURL(imageUrl), 1000);
+  window.setTimeout(() => URL.revokeObjectURL(imageUrl), 60000);
 }
 
 async function saveTicketImage() {
@@ -421,21 +580,8 @@ async function saveTicketImage() {
   try {
     const blob = await createTicketImage();
     const fileName = ticketImageName();
-    const file = new File([blob], fileName, { type: 'image/png' });
-    const canShareFile = navigator.share && navigator.canShare && navigator.canShare({ files: [file] });
-
-    if (canShareFile) {
-      try {
-        await navigator.share({ files: [file], title: '随机招待所 · 今日招待小票' });
-        showToast('小票已经交给你啦');
-        return;
-      } catch (error) {
-        if (error && error.name === 'AbortError') return;
-      }
-    }
-
     downloadTicketImage(blob, fileName);
-    showToast('小票图片已开始保存');
+    showToast('小票 PNG 已开始下载');
   } catch (error) {
     showToast('图片生成失败，请使用截图模式保存');
   } finally {
