@@ -2111,6 +2111,48 @@ img::-moz-selection {
   position: relative;
   z-index: 1;
 }
+.project-card--nest {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(152, 77, 89, 0.2);
+  background:
+    radial-gradient(circle at 88% 18%, rgba(232, 199, 193, 0.58), transparent 27%),
+    radial-gradient(circle at 76% 86%, rgba(200, 146, 63, 0.17), transparent 28%),
+    linear-gradient(135deg, #fffaf0, #f8ece5);
+}
+.project-card--nest::after {
+  position: absolute;
+  top: -58px;
+  right: -42px;
+  width: 176px;
+  height: 176px;
+  border: 1px dashed rgba(152, 77, 89, 0.16);
+  border-radius: 52% 48% 58% 42%;
+  content: "";
+  pointer-events: none;
+  transform: rotate(8deg);
+}
+.project-card--nest .project-card-main,
+.project-card--nest .project-actions {
+  position: relative;
+  z-index: 1;
+}
+.project-card--nest .project-kicker {
+  color: #984d59;
+}
+.project-card--nest .project-audience {
+  color: #8b6261;
+  font-family: Georgia, "Songti SC", serif;
+}
+.project-card--nest .project-action-primary {
+  border-color: #984d59;
+  background: #984d59;
+}
+.project-card--nest .project-action-primary:hover,
+.project-card--nest .project-action-primary:focus {
+  border-color: #7b3843;
+  background: #7b3843;
+}
 .projects-experiments {
   margin-bottom: 48px;
 }
