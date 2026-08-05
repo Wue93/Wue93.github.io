@@ -40,12 +40,12 @@ layout: layout
                     <section class="projects-section projects-experiments" aria-labelledby="projects-experiments-title">
                         <div class="projects-section-heading">
                             <h2 id="projects-experiments-title">AI 策展</h2>
-                            <p>用AI为生活、阅读与创意策展</p>
+                            <p>用 Vibe Coding 为生活、阅读与创意策展</p>
                         </div>
 
                         <div class="project-card-list">
                             <% experiments.forEach(function(project){ %>
-                                <article class="project-card project-card--atlas"<% if(project.sync_map) { %> data-map-sync data-map-url="<%= projectLink(project.link) %>"<% } %>>
+                                <article class="project-card<% if(project.theme) { %> project-card--<%= project.theme %><% } %>"<% if(project.sync_map) { %> data-map-sync data-map-url="<%= projectLink(project.link) %>"<% } %>>
                                     <div class="project-card-main">
                                         <% if(project.type) { %>
                                             <span class="project-kicker"<% if(project.sync_map) { %> data-map-version<% } %>><%= project.type %></span>
@@ -57,7 +57,7 @@ layout: layout
                                         <% } %>
                                     </div>
                                     <div class="project-actions">
-                                        <a class="project-action-primary" href="<%= projectLink(project.link) %>">进入地图</a>
+                                        <a class="project-action-primary" href="<%= projectLink(project.link) %>"><%= project.action || "查看项目" %></a>
                                     </div>
                                 </article>
                             <% }) %>

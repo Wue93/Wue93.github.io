@@ -1,11 +1,20 @@
 intro: 这里收集了一些我做过的东西：关于产品营销、内容工作、AI 工作流，也关于我如何把思考变成可交付的作品。
 experiments:
   - title: 她的成长地图
+    theme: atlas
     type: 互动地图 / V1.0.0
     description: 在没有标准答案的人生里，读书、散步、成长。
     audience: 年龄告诉你走了多远，困惑决定你从哪里出发。
     link: /atlas-of-her-becoming/
+    action: 进入地图
     sync_map: true
+  - title: 随机招待所
+    theme: nest
+    type: 互动体验 / V1.0.0
+    description: 为朋友小聚设计的随机体验菜单，把游戏、影音、饮食与限定隐藏体验编排成一场刚刚好的招待。
+    audience: 欢迎到访，招待一些刚刚好的快乐。
+    link: /little-nest/
+    action: 进入招待所
 products:
   - title: 产品营销强壮手册
     type: 小报童 / 专栏 / 手册
