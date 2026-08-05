@@ -94,9 +94,10 @@ skip_render:
   - atlas-of-her-becoming/*.css
   - atlas-of-her-becoming/*.js
   - women-growth-map/index.html
+  - bistro/index.html
+  - bistro/*.css
+  - bistro/*.js
   - little-nest/index.html
-  - little-nest/*.css
-  - little-nest/*.js
 
 # Writing
 new_post_name: :title.md # File name of new posts

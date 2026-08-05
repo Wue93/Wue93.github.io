@@ -13,7 +13,7 @@ experiments:
     type: 互动体验 / V1.0.0
     description: 为朋友小聚设计的随机体验菜单，把游戏、影音、饮食与限定隐藏体验编排成一场刚刚好的招待。
     audience: 欢迎到访，招待一些刚刚好的快乐。
-    link: /little-nest/
+    link: /bistro/
     action: 进入招待所
 products:
   - title: 产品营销强壮手册
