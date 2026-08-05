@@ -65,3 +65,7 @@ Hi，我是吴仪（Ylva Wu）。
 你也可以只是读一读这里的文章。
 
 如果某一篇让你觉得“原来不只是我这样想”，那它就已经实现了价值。
+
+<div class="little-nest-entry" style="margin-top: 56px; text-align: center;">
+  <a href="/little-nest/" aria-label="进入随机招待所" title="嘘，随机招待所今日开放" style="display: inline-block; text-decoration: none; font-size: 28px; line-height: 1; transition: transform .2s ease;">🏠</a>
+</div>
