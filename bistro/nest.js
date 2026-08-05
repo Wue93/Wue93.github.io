@@ -375,17 +375,21 @@ async function createTicketImage() {
     status: row.children[1] ? row.children[1].textContent : ''
   }));
   const rowHeight = 72;
-  const ticketX = 54;
-  const ticketY = 54;
-  const ticketWidth = 972;
+  const canvasWidth = 680;
+  const ticketX = 38;
+  const ticketY = 42;
+  const ticketWidth = 604;
   const itemsTop = 520;
   const tearY = itemsTop + Math.max(itemRows.length, 1) * rowHeight + 34;
   const ticketHeight = tearY + 390;
+  const canvasHeight = ticketHeight + 84;
+  const outputScale = 2;
   const canvas = document.createElement('canvas');
-  canvas.width = 1080;
-  canvas.height = ticketHeight + 108;
+  canvas.width = canvasWidth * outputScale;
+  canvas.height = canvasHeight * outputScale;
   const context = canvas.getContext('2d');
   if (!context) throw new Error('浏览器不支持图片生成');
+  context.scale(outputScale, outputScale);
 
   const paper = '#fffaf0';
   const ink = '#3f302d';
@@ -394,10 +398,10 @@ async function createTicketImage() {
   const wineDark = '#7b3843';
   const gold = '#c8923f';
   const backdrop = '#493738';
-  const centerX = canvas.width / 2;
+  const centerX = canvasWidth / 2;
 
   context.fillStyle = backdrop;
-  context.fillRect(0, 0, canvas.width, canvas.height);
+  context.fillRect(0, 0, canvasWidth, canvasHeight);
 
   context.save();
   context.shadowColor = 'rgba(28, 17, 18, .35)';
@@ -423,7 +427,7 @@ async function createTicketImage() {
   context.stroke();
 
   context.fillStyle = backdrop;
-  for (let x = ticketX + 16; x < ticketX + ticketWidth; x += 31) {
+  for (let x = ticketX + 13; x < ticketX + ticketWidth; x += 25) {
     context.beginPath();
     context.arc(x, ticketY, 7, 0, Math.PI * 2);
     context.fill();
@@ -474,17 +478,17 @@ async function createTicketImage() {
   context.font = '700 16px Georgia, serif';
   drawCenteredText(context, 'PRIVATE GUEST EDITION', centerX, ticketY + 205);
   context.fillStyle = ink;
-  context.font = '700 56px Georgia, "Songti SC", serif';
+  context.font = '700 48px Georgia, "Songti SC", serif';
   drawCenteredText(context, '随机招待所', centerX, ticketY + 270);
   context.fillStyle = muted;
   context.font = '15px Georgia, serif';
   drawCenteredText(context, 'MAISON DU HASARD · A LITTLE JOY', centerX, ticketY + 306);
   context.strokeStyle = 'rgba(152, 77, 89, .34)';
   context.beginPath();
-  context.moveTo(centerX - 155, ticketY + 340);
+  context.moveTo(centerX - 120, ticketY + 340);
   context.lineTo(centerX - 35, ticketY + 340);
   context.moveTo(centerX + 35, ticketY + 340);
-  context.lineTo(centerX + 155, ticketY + 340);
+  context.lineTo(centerX + 120, ticketY + 340);
   context.stroke();
   context.fillStyle = wine;
   context.font = '28px Georgia, serif';
@@ -504,16 +508,16 @@ async function createTicketImage() {
     context.setLineDash([3, 7]);
     context.strokeStyle = 'rgba(98, 65, 57, .32)';
     context.beginPath();
-    context.moveTo(ticketX + 76, y + rowHeight - 10);
-    context.lineTo(ticketX + ticketWidth - 76, y + rowHeight - 10);
+    context.moveTo(ticketX + 54, y + rowHeight - 10);
+    context.lineTo(ticketX + ticketWidth - 54, y + rowHeight - 10);
     context.stroke();
     context.setLineDash([]);
     context.fillStyle = ink;
     context.textAlign = 'left';
-    context.fillText(fittedText(context, item.name, 650), ticketX + 80, y + 38);
+    context.fillText(fittedText(context, item.name, 360), ticketX + 58, y + 38);
     context.fillStyle = wine;
     context.textAlign = 'right';
-    context.fillText(item.status, ticketX + ticketWidth - 80, y + 38);
+    context.fillText(item.status, ticketX + ticketWidth - 58, y + 38);
   });
 
   const absoluteTearY = ticketY + tearY;
@@ -532,7 +536,7 @@ async function createTicketImage() {
   });
 
   const awardY = absoluteTearY + 54;
-  roundedRectPath(context, ticketX + 84, awardY, ticketWidth - 168, 146, 26);
+  roundedRectPath(context, ticketX + 56, awardY, ticketWidth - 112, 146, 26);
   context.fillStyle = 'rgba(232, 199, 193, .38)';
   context.fill();
   context.strokeStyle = 'rgba(152, 77, 89, .2)';
@@ -542,7 +546,7 @@ async function createTicketImage() {
   drawCenteredText(context, '今日来客称号', centerX, awardY + 42);
   context.fillStyle = wine;
   context.font = '700 40px Georgia, "Songti SC", serif';
-  drawCenteredText(context, fittedText(context, document.getElementById('ticketAward').textContent, 650), centerX, awardY + 101);
+  drawCenteredText(context, fittedText(context, document.getElementById('ticketAward').textContent, 410), centerX, awardY + 101);
   context.fillStyle = ink;
   context.font = '24px "Songti SC", serif';
   drawCenteredText(context, '谢谢到访，愿这点快乐刚刚好。', centerX, awardY + 210);
