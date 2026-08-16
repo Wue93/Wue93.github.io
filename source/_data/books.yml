@@ -107,7 +107,7 @@ featuredLists:
         douban_id: '25832805'
 years:
   - year: 2026
-    count: 14
+    count: 15
     note: 从城市空间、公共生活、制度结构到时间与组织，继续把个人经验放进更大的秩序里辨认。
     books:
       - title: 城市小空间的社会生活
@@ -180,6 +180,11 @@ years:
         link: 'https://book.douban.com/subject/38404232/'
         cover: /img/books/38404232.jpg
         douban_id: '38404232'
+      - title: 羞耻
+        author: '[法] 安妮·埃尔诺'
+        link: 'https://book.douban.com/subject/36331205/'
+        cover: /img/books/36331205.jpg
+        douban_id: '36331205'
   - year: 2025
     count: 23
     note: 在城市、自然、女性写作与自我经验之间，找到安放自己的位置，做出选择并承受代价。
