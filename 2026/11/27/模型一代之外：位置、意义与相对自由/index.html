@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wue&#39;s blog">
+    <meta name="keyword"  content="PMM">
+    <link rel="shortcut icon" href="/img/shiwai.jpg">
+
+    <title>
+        
+          模型一代之外：位置、意义与相对自由 - Stay Out Space
+        
+    </title>
+
+    <link rel="canonical" href="https://Wue93.github.io/2026/11/27/模型一代之外：位置、意义与相对自由/">
+
+    <!-- Bootstrap Core CSS -->
+    
+<link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.css?v=20260627">
+
+    <!-- Pygments Highlight CSS -->
+    
+<link rel="stylesheet" href="../../../../css/highlight.css">
+
+
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script></script>
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="atom.xml" title="Stay Out Space" type="application/atom+xml">
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Stay Out Space</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+                    
+                    <li>
+                        <a href="/archive/">Archive</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/">BOOKS</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/projects/">PROJECTS</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://Wue93.github.io/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    
+    header.intro-header{
+        background-image: url('/img/background.jpg')
+    }
+</style>
+<header class="intro-header post-hero" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#阅读与书影" title="阅读与书影">阅读与书影</a>
+                        
+                          <a class="tag" href="/tags/#AI思考" title="AI思考">AI思考</a>
+                        
+                    </div>
+                    <h1>模型一代之外：位置、意义与相对自由</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by Ylva on
+                        2026-11-27
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p><img src="01.jpg" alt="模型一代之外：位置、意义与相对自由-01"></p>
+<p>最近读到《模型一代》，作为文科生，很能理解文章里的那种震动。</p>
+<p>原本一起上课、一起讨论未来的同龄人，因为进入了 AI 领域，收入、资源和上升的幅度忽然拉开很大差距。有人在还不到三十岁时，就拿到了过去需要很长时间才能积累的金钱、机会和声望。对于没有进入这个行业，或者还站在行业边缘的人来说，这种差距很难不令人嫉妒。</p>
+<p>谈论收入本身没有什么可羞耻的。AI 正在重新分配技术、资本和人才，也确实让一部分人更早地获得了丰厚回报。</p>
+<p>但在生活中的实际感受是，即使进入 AI 风口，并不意味着高枕无忧，也不意味着享受收入领跑的优越感。</p>
+<p>做基础模型训练的人、做算力与基础设施优化的人、做 AI 应用的人、做产品与商业化的人，都可以算在这场浪潮之中。但 Ta 们接近的资源、承担的风险、获得的收入和社会评价并不相同。即使已经进入行业的人，也会继续比较：与更高的薪酬比较，与更核心的技术位置比较，与更大的影响力、更多的期权和更快的上升速度比较。</p>
+<p>风口打开了新的机会，也很快形成了新的排序。我想起2026上半年读的一本书——《时间游戏》，它主要谈的是人在组织中参与怎样的竞争。回忆起这本书后，我觉得，AI 正在同时制造两件事：它打开了一个巨大的“天外天”，也迅速把许多人带进另一场“人上人”的游戏。</p>
+<p><img src="02.jpg" alt="模型一代之外：位置、意义与相对自由-02"></p>
+<h2 id="在集体游戏里，找到自己的位置"><a href="#在集体游戏里，找到自己的位置" class="headerlink" title="在集体游戏里，找到自己的位置"></a>在集体游戏里，找到自己的位置</h2><p>《时间游戏》把组织中的游戏模式分为“天外天”与“人上人”。</p>
+<p>“天外天”关心的是探索新的问题、新的机会和新的可能性。它要求人进入未知，在还没有答案的地方创造价值。“人上人”关心的则是位置、认可与秩序：一个人如何证明能力，获得信任，在群体中拥有相对稳定的合作空间。</p>
+<p>选择互联网大厂和 AI 领域，某种程度上就是选择进入一个以“天外天”为主导的集体游戏。</p>
+<p>新的模型、新的工具、新的产品形态和新的商业机会，持续改变着工作的边界。人很难只依靠过去积累的一套知识安稳地待下去。技术迭代得足够快，曾经熟练的能力也会变成一段需要更新的经验。</p>
+<p>但这并不意味着“人上人”的游戏失效了。</p>
+<p>在团队和部门里，仍然需要证明能力，持续更新能力，也需要取得协作方与领导的信任。一个人有探索的结果，还要有把结果推进下去的位置。新的想法需要被理解，需要有人愿意共同投入，也需要在复杂的协作里留下信誉。</p>
+<p>如果一个人长时间只经营位置、熟悉流程，却不再进入新的技术和知识，迟早会在变化面前暴露出能力的空缺。组织不会永远为旧经验保留位置。</p>
+<p>反过来，只有探索、没有协作与信任，也很难走得长远。一个人的能力再新，如果无法与组织形成稳定关系，很多想法就只能停留在个人的兴奋里。</p>
+<p>这也慢慢解释了我如今在工作中不再那么内耗的原因。我开始承认，自己未必适合把全部风险都压在个人身上的个体户游戏。我更适合进入一个足够复杂的集体，在那里学习、协作、承担，也不断更新自己。这样的选择意味着无法一劳永逸，它要求我持续学习，对随机性保持适应，让真正的资产，也就是自己的技能和判断，保持强大与新鲜。</p>
+<p>这些年的职业经历，让我发现自己具备这种对新知识的学习能力，也应该对此更有信心。</p>
+<p>在集体游戏里，自信有时确实是一种美德。</p>
+<p><img src="03.jpg" alt="模型一代之外：位置、意义与相对自由-03"></p>
+<h2 id="技术、知识与机会分配"><a href="#技术、知识与机会分配" class="headerlink" title="技术、知识与机会分配"></a>技术、知识与机会分配</h2><p>在今年读的另一本书——《皇权与绅权》里，费孝通谈到传统中国的知识分化：自然知识、技术知识与规范知识。自然知识试图理解世界如何运作，技术知识把理解转化为实际能力，规范知识则关乎社会如何组织、人如何相处、秩序如何被解释与维持。</p>
+<p>在费孝通的描述里，传统社会中掌握规范知识的人往往拥有更高的地位。Ta 们熟悉经典、礼法和治理语言，也容易轻视自然知识与技术知识。</p>
+<p>到了今天，技术知识创造财富和机会的能力变得更直接、更显眼。尤其在 AI 行业，一个人对模型、数据、算力、工程和产品能力的理解，可能迅速改变自己的职业路径。</p>
+<p>但我认为，技术知识并没有让规范知识失去价值。</p>
+<p>技术团队一旦进入真实的商业世界，就不能只靠技术语言活下去。一项能力要真正进入现实，需要有人理解它能做什么、不能做什么；需要有人把能力翻译成用户能够感受到的问题，把客户的需求翻译成产品和研发可以行动的判断；也需要有人处理组织协作、市场信任、品牌表达、制度边界和长期关系。</p>
+<p>这套划分不能简单等同于理科与文科。真正重要的，是能否在不同知识之间来回移动。</p>
+<p>技术研究走到深处，也会重新碰到规范知识的问题：应该解决什么问题，谁来承担成本，如何分配资源，怎样让一项能力获得社会信任，面对伦理问题。技术并不生活在真空里。</p>
+<p>当技术团队开始走向更复杂的产品与组织阶段，往往需要有人承担产品、市场、运营与组织之间的连接工作。在有的公司里，这样的管理职位可以叫 CPO、CMO、COO，当然也可以没有那么明确的名称，但 Ta 们做的是同一种事：让技术不只停留在技术人的语言里，而能变成产品、叙事、协作与真实的商业价值。</p>
+<p>我现在的职业，就是这样一种时常在“移动”的状态。</p>
+<p>我未必站在离基础模型最近的地方，但仍然要去理解技术的边界，关注技术如何改变行业，再把它放进客户、产品、市场和组织的具体语境里。对我而言，学习 AI 并不只是学习一个新工具，也是在学习一种正在重写行业规则的语言。</p>
+<p>如果技术知识无法与基层生活、真实业务和普通人的经验发生关系，它最终也可能只是一种新的阶层文化符号。</p>
+<p>知识如何被分配，也意味着谁有机会进入新的权力中心。想到这里，我也会想到女性与技术知识之间长期存在的距离。这不意味着每个女性都必须去做 AI 算法，或者把理工科当成唯一正确的道路。但在 AI、数据和技术决策越来越影响资源分配的今天，女性需要有更多机会理解技术、使用技术，也进入技术带来的收入、权力与决策位置。</p>
+<p>如果女性始终把技术理解、数据能力和 AI 判断让渡给别人，所谓更平等的分工，常常也只是被动接受一轮新的分配。</p>
+<h2 id="收入之外，建立自己的尺度"><a href="#收入之外，建立自己的尺度" class="headerlink" title="收入之外，建立自己的尺度"></a>收入之外，建立自己的尺度</h2><p>《模型一代》里最让人不安的，或许不只是 AI 带来的收入神话，而是它让很多人忽然发现：自己正在用一把非常窄的尺子衡量生活。</p>
+<p>风口、收入、职位、城市、公司、学历、技术方向，这些真实的差别，会影响一个人能获得什么样的生活，也影响一个人在组织里能拥有多少选择权。我依然在意这些。因为，物质安全感很重要，尤其在生活成本高、风险感强的现实里。只是如果一个人把全部自我价值都放进收入和相对位置的比较里，即使已经站在风口中，也很难真正安稳下来。比较不会因为收入增长而结束，它只会更换参照物。</p>
+<p>人活着，需要一些不完全由收入决定的东西来支撑自己。</p>
+<p>意义感不能替代收入，也不该被用来安慰那些暂时没有获得收入的人。它更像另一把尺子，让人不必只按照市场的即时定价来理解自己。</p>
+<p>对我而言，进入或留在 AI 行业的意义，不只在于追逐一份更高的薪酬，也在于理解一项正在重写行业规则的技术，参与它在真实业务和真实生活中的落地。我不是一个技术人才，但还是可以在技术、产品、客户与组织之间做一些转译的工作，让新的能力真正进入具体的人和场景。</p>
+<p><img src="04.jpg" alt="模型一代之外：位置、意义与相对自由-04"></p>
+<p>阅读、创造、关系、对世界的理解，以及一件自己愿意长期投入的事，也都构成另一种坐标。</p>
+<p>有这些坐标，并不会让人从此不再羡慕别人。但至少，当下一次新的收入神话出现时，我们不必立刻怀疑自己的生活已经落后。</p>
+<p>我越来越觉得，财务上的从容感和自由感对我来说很重要，但是它仍然无法解决生活中的不安感。</p>
+<p>即使拥有一笔可观的财富，人仍然会面对欲望如何膨胀、风险是否会到来、时间怎样安排，以及自己为什么而活的问题。尤其在一个生产、消费和比较都高度紧密的社会里，“退出”集体游戏也不太能带来全然轻松。</p>
+<p>比起一个绝对的终点，我更愿意追求一种相对的自由。</p>
+<p>一部分是物质上的自由。理解并克制自己的欲望，允许一定的享受，也为风险留出缓冲，不让生活被不断膨胀的支出推着走。</p>
+<p>另一部分是心理上的自由。除了工作这条谋生之路，也要有别的精神寄托：阅读、写作、关系、旅行，或者另一些愿意投入的集体游戏。一个人不能只在绩效、收入和头衔里确认自己的存在。</p>
+<p>最后，是智力上的自由。它意味着理解随机性，理解世界并不会按照个人期待展开，也意味着保持学习，尽量不让自己被陌生的变化吓住。当自己的技能仍然可以更新，判断仍然可靠，世界就不再那么陌生与可怕。</p>
+<p><img src="05.jpg" alt="模型一代之外：位置、意义与相对自由-05"></p>
+<p>对我来说，这意味着继续学习 AI，也继续阅读、写作和保留与工作无关的生活。前者让我不至于被行业甩下，后者则提醒我——人不只是一份被市场即时定价的劳动力。</p>
+<p>我想追求的，不是永远退出游戏的自由。而是在不同的游戏里，能够理解规则，能够不断更新，也保有下一次重新选择的能力。收入和位置当然重要。但它们无法回答，一个人究竟想过怎样的生活啊。</p>
+<p>当我们拥有不止一把理解自己的尺子，或许才会拥有一点相对而真实的自由。</p>
+
+
+                
+                
+                <section class="related-posts">
+                    <h5>相关文章</h5>
+                    <div class="related-post-list">
+                        
+                        <a class="related-post-item" href="/2026/10/15/欧洲十日：那些不必赶路的时刻/">
+                            <span class="related-post-title">欧洲十日：那些不必赶路的时刻</span>
+                            <span class="related-post-meta">2026-10-15</span>
+                        </a>
+                        
+                        <a class="related-post-item" href="/2026/09/07/在陈绮贞的歌里，和过去的自己坐在一起/">
+                            <span class="related-post-title">在陈绮贞的歌里，和过去的自己坐在一起</span>
+                            <span class="related-post-meta">2026-09-07</span>
+                        </a>
+                        
+                        <a class="related-post-item" href="/2026/09/01/《新家庭主义兴衰》（二）：做自己之后，怎样生活？/">
+                            <span class="related-post-title">《新家庭主义兴衰》（二）：做自己之后，怎样生活？</span>
+                            <span class="related-post-meta">2026-09-01</span>
+                        </a>
+                        
+                    </div>
+                </section>
+                
+
+                <hr>
+
+                
+
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2026/11/08/33岁，我设立了一个奖学金/" data-toggle="tooltip" data-placement="top" title="33岁，我设立了一个奖学金">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                
+
+                
+
+            </div>
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#阅读与书影" title="阅读与书影">阅读与书影</a>
+                        
+                          <a class="tag" href="/tags/#AI思考" title="AI思考">AI思考</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted">
+                    Copyright &copy; Stay Out Space 2026 
+                    <br>
+                    Made with love by <a href="https://Wue93.github.io">Wue</a> 
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+<script src="../../../../js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="../../../../js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="../../../../js/hux-blog.min.js"></script>
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://Wue93.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                size: {start: 12, end: 15, unit: 'px'},
+                color: {start: '#7FA296', end: '#2F5E55'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="https://Wue93.github.io/img/shiwai.jpg" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
